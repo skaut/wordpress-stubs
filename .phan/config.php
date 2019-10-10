@@ -1,4 +1,9 @@
 <?php
+/**
+ * PHAN configuration
+ *
+ * @package phan-wordpress-stubs
+ */
 
 return [
 	'target_php_version'                        => '7.3',
