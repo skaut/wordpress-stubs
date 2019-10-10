@@ -1,9 +1,25 @@
 <?php
+/**
+ * @package phan-wordpress-stubs
+ */
 
+/**
+ */
 class WP_Http {
-	public static function processHeaders( $a ) {
+	/**
+	 * @param string|array $headers
+	 * @param string       $url
+	 *
+	 * @return array
+	 */
+	public static function processHeaders( $headers, $url = '' ) {
 	}
 
-	public static function processResponse( $a ) {
+	/**
+	 * @param string $strResponse
+	 *
+	 * @return array
+	 */
+	public static function processResponse( $strResponse ) {
 	}
 }
