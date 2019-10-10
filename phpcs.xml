@@ -14,7 +14,13 @@
 	<config name="testVersion" value="7.0-"/>
 
 	<config name="minimum_supported_wp_version" value="4.9"/>
-	<rule ref="WordPress"/>
+	<rule ref="WordPress">
+		<exclude name="Generic.Commenting.DocComment.Empty"/>
+		<exclude name="Generic.Commenting.DocComment.MissingShort"/>
+		<exclude name="Squiz.Commenting.ClassComment.Missing"/>
+		<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
+		<exclude name="WordPress.NamingConventions"/>
+	</rule>
 	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
 		<properties>
 			<property name="blank_line_check" value="true"/>
