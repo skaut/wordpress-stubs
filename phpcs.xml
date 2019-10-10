@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset>
+	<file>stubs</file>
+	<file>.phan</file>
+
+	<config name="installed_paths" value="vendor/wp-coding-standards/wpcs"/>
+
+	<arg name="basepath" value="./"/>
+	<arg name="colors"/>
+	<arg value="s"/>
+	<arg name="extensions" value="php"/>
+	<arg name="parallel" value="8"/>
+
+	<config name="testVersion" value="7.0-"/>
+
+	<config name="minimum_supported_wp_version" value="4.9"/>
+	<rule ref="WordPress"/>
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
+		<properties>
+			<property name="blank_line_check" value="true"/>
+		</properties>
+	</rule>
+</ruleset>
