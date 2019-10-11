@@ -220,156 +220,340 @@ function esc_url( $url, $protocols = [], $_context = '' ) {
 function esc_url_raw( $url, $protocols = [] ) {
 }
 
+/**
+ * @return string
+ */
 function get_admin_page_title() {
 }
 
+/**
+ * @return string
+ */
 function get_locale() {
-	return '';
-}
-
-function get_option( $a, $b ) {
-	switch ( wp_rand( 0, 2 ) ) {
-		case 0:
-			return [];
-		case 1:
-			return false;
-		case 2:
-			return '';
-	}
-}
-
-function get_settings_errors() {
-	return [];
-}
-
-function get_site_url() {
-}
-
-function get_transient( $a ) {
-	switch ( wp_rand( 0, 1 ) ) {
-		case 0:
-			return [
-				'root'      => '',
-				'overriden' => [],
-			];
-		case 1:
-			return false;
-	}
 }
 
 /**
+ * @param string $option
+ * @param mixed  $default
+ *
  * @return mixed
  */
-function get_user_option( $a ) {
+function get_option( $option, $default = false ) {
 }
 
+/**
+ * @param string  $setting
+ * @param boolean $sanitize
+ *
+ * @return array
+ */
+function get_settings_errors( $setting = '', $sanitize = false ) {
+}
+
+/**
+ * @param int    $blog_id
+ * @param string $path
+ * @param string $scheme
+ *
+ * @return string
+ */
+function get_site_url( $blog_id = null, $path = '', $scheme = '' ) {
+}
+
+/**
+ * @param string $transient
+ *
+ * @return mixed
+ */
+function get_transient( $transient ) {
+}
+
+/**
+ * @param string $option
+ * @param int    $user
+ * @param string $deprecated
+ *
+ * @return mixed
+ */
+function get_user_option( $option, $user, $deprecated = '' ) {
+}
+
+/**
+ * @return bool
+ */
 function is_admin() {
-	return false;
 }
 
-function plugin_basename( $a ) {
+/**
+ * @param string $filename
+ *
+ * @return string
+ */
+function plugin_basename( $filename ) {
 }
 
-function plugins_url( $a ) {
+/**
+ * @param string $file
+ *
+ * @return string
+ */
+function plugin_dir_path( $file ) {
 }
 
-function plugin_dir_path( $a ) {
-	return '';
+/**
+ * @param string $file
+ *
+ * @return string
+ */
+function plugin_dir_url( $file ) {
 }
 
-function plugin_dir_url( $a ) {
-	return '';
+/**
+ * @param string $path
+ * @param string $plugin
+ *
+ * @return string
+ */
+function plugins_url( $path = '', $plugin = '' ) {
 }
 
-function register_activation_hook( $a, $b ) {
+/**
+ * @param string   $file
+ * @param callable $function
+ *
+ * @return void
+ */
+function register_activation_hook( $file, $function ) {
 }
 
-function register_block_type( $a, $b ) {
+/**
+ * @param string|WP_Block_Type $name
+ * @param array                $args
+ *
+ * @return WP_Block_Type|false
+ */
+function register_block_type( $name, $args = [] ) {
 }
 
-function register_setting( $a, $b, $c ) {
+/**
+ * @param string $option_group
+ * @param string $option_name
+ * @param array  $args
+ *
+ * @return void
+ */
+function register_setting( $option_group, $option_name, $args = [] ) {
 }
 
-function sanitize_text_field( $a ) {
-	return '';
+/**
+ * @param string $str
+ *
+ * @return string
+ */
+function sanitize_text_field( $str ) {
 }
 
-function set_transient( $a, $b, $c ) {
+/**
+ * @param string $transient
+ * @param mixed  $value
+ * @param int    $expiration
+ *
+ * @return bool
+ */
+function set_transient( $transient, $value, $expiration ) {
 }
 
-function settings_errors() {
+/**
+ * @param string $setting
+ * @param bool   $sanitize
+ * @param bool   $hide_on_update
+ *
+ * @return void
+ */
+function settings_errors( $setting = '', $sanitize = false, $hide_on_update = false ) {
 }
 
-function submit_button( $a ) {
+/**
+ * @param string       $text
+ * @param string       $type
+ * @param string       $name
+ * @param bool         $wrap
+ * @param array|string $other_attributes
+ *
+ * @return void
+ */
+function submit_button( $text = null, $type = '', $name = '', $wrap = false, $other_attributes = null ) {
 }
 
 function tests_add_filter( $a, $b ) {
 }
 
-function update_option( $a, $b ) {
+/**
+ * @param string      $option
+ * @param mixed       $value
+ * @param string|bool $autoload
+ *
+ * @return bool
+ */
+function update_option( $option, $value, $autoload = null ) {
 }
 
-function wp_add_inline_style( $a, $b ) {
+/**
+ * @param string $handle
+ * @param string $data
+ *
+ * @return bool
+ */
+function wp_add_inline_style( $handle, $data ) {
 }
 
-function wp_create_nonce( $a ) {
+/**
+ * @param string|int $action
+ *
+ * @return string
+ */
+function wp_create_nonce( $action = 0 ) {
 }
 
-// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-function wp_die( $a ) {
+/**
+ * @param string|WP_Error  $message
+ * @param string|int       $title
+ * @param string|array|int $args
+ *
+ * @return never
+ */
+function wp_die( $message = '', $title = '', $args = [] ) {
 }
 
-function wp_enqueue_script( $a ) {
+/**
+ * @param string           $handle
+ * @param string           $src
+ * @param array            $deps
+ * @param string|bool|null $ver
+ * @param bool             $in_footer
+ *
+ * @return void
+ */
+function wp_enqueue_script( $handle, $src = '', $deps = [], $ver = false, $in_footer = false ) {
 }
 
-function wp_enqueue_style( $a ) {
+/**
+ * @param string           $handle
+ * @param string           $src
+ * @param array            $deps
+ * @param string|bool|null $ver
+ * @param string           $media
+ *
+ * @return void
+ */
+function wp_enqueue_style( $handle, $src = '', $deps = [], $ver = false, $media = '' ) {
 }
 
-function wp_json_encode( $a, $b ) {
+/**
+ * @param mixed $data
+ * @param int   $options
+ * @param int   $depth
+ *
+ * @return string|false
+ */
+function wp_json_encode( $data, $options, $depth = 0 ) {
 }
 
-function wp_localize_script( $a, $b, $c ) {
+/**
+ * @param string $handle
+ * @param string $object_name
+ * @param array  $l10n
+ *
+ * @return bool
+ */
+function wp_localize_script( $handle, $object_name, $l10n ) {
 }
 
-function wp_nonce_field( $a ) {
+/**
+ * @param int|string $action
+ * @param string     $name
+ * @param bool       $referer
+ * @param bool       $echo
+ *
+ * @return string
+ */
+function wp_nonce_field( $action = 0, $name = '', $referer = false, $echo = false ) {
 }
 
-function wp_nonce_url( $a, $b ) {
+/**
+ * @param string     $actionurl
+ * @param int|string $action
+ * @param string     $name
+ *
+ * @return string
+ */
+function wp_nonce_url( $actionurl, $action = 0, $name = '' ) {
 }
 
-function wp_parse_url( $a ) {
-	return [
-		'host'   => '',
-		'scheme' => '',
-	];
+/**
+ * @param string $url
+ * @param int    $component
+ *
+ * @return mixed
+ */
+function wp_parse_url( $url, $component = 0 ) {
 }
 
-function wp_rand( $a, $b ) {
+/**
+ * @param int $min
+ * @param int $max
+ *
+ * @return int
+ */
+function wp_rand( $min, $max ) {
 }
 
-function wp_register_script( $a, $b, $c, $d, $e ) {
+/**
+ * @param string           $handle
+ * @param string|bool      $src
+ * @param array            $deps
+ * @param string|bool|null $ver
+ * @param bool             $in_footer
+ *
+ * @return bool
+ */
+function wp_register_script( $handle, $src, $deps = [], $ver = false, $in_footer = false ) {
 }
 
-function wp_register_style( $a, $b, $c, $d ) {
+/**
+ * @param string           $handle
+ * @param string|bool      $src
+ * @param array            $deps
+ * @param string|bool|null $ver
+ * @param string           $media
+ *
+ * @return bool
+ */
+function wp_register_style( $handle, $src, $deps = [], $ver = false, $media = '' ) {
 }
 
-function wp_send_json( $a ) {
+/**
+ * @param mixed $response
+ * @param int   $status_code
+ *
+ * @return never
+ */
+function wp_send_json( $response, $status_code = null ) {
 }
 
-function wp_unslash( $a ) {
-	switch ( wp_rand( 0, 1 ) ) {
-		case 0:
-			return [];
-		case 1:
-			return '';
-	}
+/**
+ * @param string|array $value
+ *
+ * @return string|array
+ */
+function wp_unslash( $value ) {
 }
 
-function wp_verify_nonce( $a, $b ) {
-	switch ( wp_rand( 0, 1 ) ) {
-		case 0:
-			return false;
-		case 1:
-			return true;
-	}
+/**
+ * @param string     $nonce
+ * @param string|int $action
+ *
+ * @return false|int
+ */
+function wp_verify_nonce( $nonce, $action = 0 ) {
 }

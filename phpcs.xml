@@ -21,6 +21,7 @@
 		<exclude name="Squiz.Commenting.FunctionComment.InvalidNoReturn"/>
 		<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
 		<exclude name="WordPress.NamingConventions"/>
+		<exclude name="WordPress.Security.EscapeOutput.OutputNotEscaped"/>
 	</rule>
 	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
 		<properties>
