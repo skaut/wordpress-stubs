@@ -14,7 +14,7 @@ return [
 		'.phan',
 	],
 	'suppress_issue_types'                      => [
-		'PhanTypeMissingReturn'
+		'PhanTypeMissingReturn',
 	],
 	'plugins'                                   => [
 		'PreferNamespaceUsePlugin',
