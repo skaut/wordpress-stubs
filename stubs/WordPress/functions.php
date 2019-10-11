@@ -1,78 +1,223 @@
 <?php
+/**
+ * @package phan-wordpress-stubs
+ */
 
+/**
+ * @var int
+ */
 const DAY_IN_SECONDS = null;
-const WP_PLUGIN_DIR  = null;
 
-function __( $a, $b ) {
+/**
+ * @param string $text
+ * @param string $domain
+ *
+ * @return string
+ */
+function __( $text, $domain = '' ) {
 }
 
-function add_action( $a, $b ) {
+/**
+ * @param string   $tag
+ * @param callable $function_to_add
+ * @param int      $priority
+ * @param int      $accepted_args
+ *
+ * @return true
+ */
+function add_action( $tag, $function_to_add, $priority = 0, $accepted_args = 0 ) {
 }
 
-function add_menu_page( $a, $b, $c, $d, $e, $f ) {
+/**
+ * @param string   $page_title
+ * @param string   $menu_title
+ * @param string   $capability
+ * @param string   $menu_slug
+ * @param callable $function
+ * @param string   $icon_url
+ * @param int      $position
+ *
+ * @return string
+ */
+function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function = '', $icon_url = '', $position = 0 ) {
 }
 
-function add_settings_error( $a, $b, $c, $d ) {
+/**
+ * @param string $setting
+ * @param string $code
+ * @param string $message
+ * @param string $type
+ *
+ * @return void
+ */
+function add_settings_error( $setting, $code, $message, $type = '' ) {
 }
 
-function add_settings_field( $a, $b, $c, $d, $e ) {
+/**
+ * @param string   $id
+ * @param string   $title
+ * @param callable $callback
+ * @param string   $page
+ * @param string   $section
+ * @param array    $args
+ *
+ * @return void
+ */
+function add_settings_field( $id, $title, $callback, $page, $section = '', $args = [] ) {
 }
 
-function add_settings_section( $a, $b, $c, $d ) {
+/**
+ * @param string   $id
+ * @param string   $title
+ * @param callable $callback
+ * @param string   $page
+ *
+ * @return void
+ */
+function add_settings_section( $id, $title, $callback, $page ) {
 }
 
-function add_shortcode( $a, $b ) {
+/**
+ * @param string   $tag
+ * @param callable $callback
+ *
+ * @return void
+ */
+function add_shortcode( $tag, $callback ) {
 }
 
-function add_submenu_page( $a, $b, $c, $d, $e, $f ) {
+/**
+ * @param string   $parent_slug
+ * @param string   $page_title
+ * @param string   $menu_title
+ * @param string   $capability
+ * @param string   $menu_slug
+ * @param callable $function
+ *
+ * @return false|string
+ */
+function add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function = '' ) {
 }
 
+/**
+ * @return void
+ */
 function add_thickbox() {
 }
 
-function admin_url( $a ) {
+/**
+ * @param string $path
+ * @param string $scheme
+ *
+ * @return string
+ */
+function admin_url( $path, $scheme ) {
 }
 
-function check_ajax_referer( $a ) {
+/**
+ * @param int|string   $action
+ * @param false|string $query_arg
+ * @param bool         $die
+ *
+ * @return false|int
+ */
+function check_ajax_referer( $action = 0, $query_arg = false, $die = false ) {
 }
 
-function checked( $a, $b ) {
+/**
+ * @param mixed $checked
+ * @param mixed $current
+ * @param bool  $echo
+ *
+ * @return string
+ */
+function checked( $checked, $current = false, $echo = false ) {
 }
 
-function current_user_can( $a ) {
-	return false;
+/**
+ * @param string $capability
+ *
+ * @return bool
+ */
+function current_user_can( $capability ) {
 }
 
-function deactivate_plugins( $a ) {
+/**
+ * @param string|array $plugins
+ * @param bool         $silent
+ * @param mixed        $network_wide
+ *
+ * @return void
+ */
+function deactivate_plugins( $plugins, $silent = false, $network_wide = null ) {
 }
 
-function delete_option( $a ) {
+/**
+ * @param string $option
+ *
+ * @return bool
+ */
+function delete_option( $option ) {
 }
 
-function delete_transient( $a ) {
+/**
+ * @param string $transient
+ *
+ * @return bool
+ */
+function delete_transient( $transient ) {
 }
 
-function do_settings_sections( $a ) {
+/**
+ * @param string $page
+ *
+ * @return void
+ */
+function do_settings_sections( $page ) {
 }
 
-function esc_attr( $a ) {
-	return '';
+/**
+ * @param string $text
+ *
+ * @return string
+ */
+function esc_attr( $text ) {
 }
 
-function esc_html( $a ) {
-	return '';
+/**
+ * @param string $text
+ *
+ * @return string
+ */
+function esc_html( $text ) {
 }
 
-function esc_html__( $a, $b ) {
-	return '';
+/**
+ * @param string $text
+ * @param string $domain
+ *
+ * @return string
+ */
+function esc_html__( $text, $domain = '' ) {
 }
 
-function esc_url( $a ) {
-	return '';
+/**
+ * @param string $url
+ * @param array  $protocols
+ * @param string $_context
+ *
+ * @return string
+ */
+function esc_url( $url, $protocols = [], $_context = '' ) {
 }
 
-function esc_url_raw( $a ) {
-	return '';
+/**
+ * @param string $url
+ * @param array  $protocols
+ *
+ * @return string
+ */
+function esc_url_raw( $url, $protocols = [] ) {
 }
 
 function get_admin_page_title() {
