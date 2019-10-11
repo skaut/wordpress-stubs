@@ -1,0 +1,40 @@
+version: 2.1
+workflows:
+  main:
+    jobs:
+      - lint:
+
+job-references:
+  restore_composer: &restore_composer
+    keys:
+      - v1-dependencies-{{ checksum "composer.json" }}
+      - v1-dependencies-
+
+  install_composer: &install_composer
+    name: "Install Composer dependencies"
+    command: composer install -n
+
+  save_composer: &save_composer
+    key: v1-dependencies-{{ checksum "composer.json" }}
+    paths:
+      - vendor
+
+jobs:
+  lint:
+    docker:
+      - image: circleci/php:7.3-node
+    steps:
+      - checkout
+
+      - restore_cache: *restore_composer
+      - run: *install_composer
+      - save_cache: *save_composer
+
+      - run:
+          name: "Install php-ast"
+          command: |
+            sudo pecl install ast
+            echo 'extension=ast.so' | sudo tee /usr/local/etc/php/php.ini > /dev/null
+      - run:
+          name: "Lint"
+          command: composer run-script lint
