@@ -417,7 +417,7 @@ function wp_create_nonce( $action = 0 ) {
  * @param string|int       $title
  * @param string|array|int $args
  *
- * @return never
+ * @return void
  */
 function wp_die( $message = '', $title = '', $args = [] ) {
 }
@@ -533,7 +533,7 @@ function wp_register_style( $handle, $src, $deps = [], $ver = false, $media = ''
  * @param mixed $response
  * @param int   $status_code
  *
- * @return never
+ * @return void
  */
 function wp_send_json( $response, $status_code = null ) {
 }
