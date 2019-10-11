@@ -2,7 +2,7 @@ version: 2.1
 workflows:
   main:
     jobs:
-      - lint:
+      - lint
 
 job-references:
   restore_composer: &restore_composer
