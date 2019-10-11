@@ -29,6 +29,17 @@ function add_action( $tag, $function_to_add, $priority = 0, $accepted_args = 0 )
 }
 
 /**
+ * @param string   $tag
+ * @param callable $function_to_add
+ * @param int      $priority
+ * @param int      $accepted_args
+ *
+ * @return true
+ */
+function add_filter( $tag, $function_to_add, $priority = 0, $accepted_args = 0 ) {
+}
+
+/**
  * @param string   $page_title
  * @param string   $menu_title
  * @param string   $capability
@@ -115,6 +126,15 @@ function admin_url( $path = '', $scheme = '' ) {
 }
 
 /**
+ * @param string $tag
+ * @param mixed  $value
+ *
+ * @return mixed
+ */
+function apply_filters( $tag, $value ) {
+}
+
+/**
  * @param int|string   $action
  * @param false|string $query_arg
  * @param bool         $die
@@ -169,6 +189,15 @@ function delete_transient( $transient ) {
 }
 
 /**
+ * @param string $tag
+ * @param mixed  $arg
+ *
+ * @return void
+ */
+function do_action( $tag, $arg = [] ) {
+}
+
+/**
  * @param string $page
  *
  * @return void
@@ -182,6 +211,15 @@ function do_settings_sections( $page ) {
  * @return string
  */
 function esc_attr( $text ) {
+}
+
+/**
+ * @param string $text
+ * @param string $domain
+ *
+ * @return string
+ */
+function esc_attr__( $text, $domain = '' ) {
 }
 
 /**
@@ -251,6 +289,18 @@ function get_settings_errors( $setting = '', $sanitize = false ) {
 }
 
 /**
+ * @return string
+ */
+function get_stylesheet_directory() {
+}
+
+/**
+ * @return string
+ */
+function get_stylesheet_directory_uri() {
+}
+
+/**
  * @param int    $blog_id
  * @param string $path
  * @param string $scheme
@@ -258,6 +308,27 @@ function get_settings_errors( $setting = '', $sanitize = false ) {
  * @return string
  */
 function get_site_url( $blog_id = null, $path = '', $scheme = '' ) {
+}
+
+/**
+ * @return string
+ */
+function get_template_directory() {
+}
+
+/**
+ * @return string
+ */
+function get_template_directory_uri() {
+}
+
+/**
+ * @param string      $name
+ * @param bool|string $default
+ *
+ * @return mixed
+ */
+function get_theme_mod( $name, $default = false ) {
 }
 
 /**
@@ -279,9 +350,31 @@ function get_user_option( $option, $user = 0, $deprecated = '' ) {
 }
 
 /**
+ * @param int|WP_Post $post
+ *
+ * @return bool
+ */
+function has_post_thumbnail( $post = null ) {
+}
+
+/**
  * @return bool
  */
 function is_admin() {
+}
+
+/**
+ * @param int|string|array $page
+ *
+ * @return bool
+ */
+function is_page( $page = '' ) {
+}
+
+/**
+ * @return bool
+ */
+function is_rtl() {
 }
 
 /**
@@ -346,6 +439,16 @@ function register_setting( $option_group, $option_name, $args = [] ) {
 }
 
 /**
+ * @param string   $tag
+ * @param callable $function_to_remove
+ * @param int      $priority
+ *
+ * @return bool
+ */
+function remove_action( $tag, $function_to_remove, $priority = 0 ) {
+}
+
+/**
  * @param string $str
  *
  * @return string
@@ -383,6 +486,49 @@ function settings_errors( $setting = '', $sanitize = false, $hide_on_update = fa
  * @return void
  */
 function submit_button( $text = null, $type = '', $name = '', $wrap = false, $other_attributes = null ) {
+}
+
+/**
+ * @param string $stylesheet
+ *
+ * @return void
+ */
+function switch_theme( $stylesheet ) {
+}
+
+/**
+ * @param string|array $size
+ * @param string|array $attr
+ *
+ * @return void
+ */
+function the_post_thumbnail( $size = '', $attr = '' ) {
+}
+
+/**
+ * @param string $before
+ * @param string $after
+ * @param bool   $echo
+ *
+ * @return string|void
+ */
+function the_title( $before = '', $after = '', $echo = false ) {
+}
+
+/**
+ * @param string|array $args
+ *
+ * @return string|void
+ */
+function the_title_attribute( $args = [] ) {
+}
+
+/**
+ * @param string $string
+ *
+ * @return string
+ */
+function trailingslashit( $string ) {
 }
 
 /**
@@ -485,6 +631,15 @@ function wp_nonce_field( $action = 0, $name = '', $referer = false, $echo = fals
  * @return string
  */
 function wp_nonce_url( $actionurl, $action = 0, $name = '' ) {
+}
+
+/**
+ * @param string|array|object $args
+ * @param array               $defaults
+ *
+ * @return array
+ */
+function wp_parse_args( $args, $defaults = [] ) {
 }
 
 /**

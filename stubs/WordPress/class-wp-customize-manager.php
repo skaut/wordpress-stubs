@@ -7,8 +7,8 @@
  */
 class WP_Customize_Manager {
 	/**
-	 * @param WP_Customize_Control $id
-	 * @param array                $args
+	 * @param WP_Customize_Control|string $id
+	 * @param array                       $args
 	 *
 	 * @return WP_Customize_Control
 	 */
