@@ -111,7 +111,7 @@ function add_thickbox() {
  *
  * @return string
  */
-function admin_url( $path, $scheme ) {
+function admin_url( $path = '', $scheme = '' ) {
 }
 
 /**
@@ -275,7 +275,7 @@ function get_transient( $transient ) {
  *
  * @return mixed
  */
-function get_user_option( $option, $user, $deprecated = '' ) {
+function get_user_option( $option, $user = 0, $deprecated = '' ) {
 }
 
 /**
