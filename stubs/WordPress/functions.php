@@ -6,7 +6,7 @@
 /**
  * @var int
  */
-const DAY_IN_SECONDS = null;
+const DAY_IN_SECONDS = 0;
 
 /**
  * @param string $text
