@@ -385,9 +385,6 @@ function settings_errors( $setting = '', $sanitize = false, $hide_on_update = fa
 function submit_button( $text = null, $type = '', $name = '', $wrap = false, $other_attributes = null ) {
 }
 
-function tests_add_filter( $a, $b ) {
-}
-
 /**
  * @param string      $option
  * @param mixed       $value
