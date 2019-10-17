@@ -70,7 +70,10 @@ function add_settings_error( $setting, $code, $message, $type = '' ) {
  * @param callable $callback
  * @param string   $page
  * @param string   $section
- * @param array    $args
+ * @param array    $args {
+ *     @type string $label_for
+ *     @type string $class
+ * }
  *
  * @return void
  */
@@ -163,9 +166,9 @@ function current_user_can( $capability ) {
 }
 
 /**
- * @param string|array $plugins
- * @param bool         $silent
- * @param mixed        $network_wide
+ * @param string|string[] $plugins
+ * @param bool            $silent
+ * @param mixed           $network_wide
  *
  * @return void
  */
@@ -240,9 +243,9 @@ function esc_html__( $text, $domain = '' ) {
 }
 
 /**
- * @param string $url
- * @param array  $protocols
- * @param string $_context
+ * @param string   $url
+ * @param string[] $protocols
+ * @param string   $_context
  *
  * @return string
  */
@@ -250,8 +253,8 @@ function esc_url( $url, $protocols = [], $_context = '' ) {
 }
 
 /**
- * @param string $url
- * @param array  $protocols
+ * @param string   $url
+ * @param string[] $protocols
  *
  * @return string
  */
@@ -364,7 +367,7 @@ function is_admin() {
 }
 
 /**
- * @param int|string|array $page
+ * @param int|string|int[]|string[] $page
  *
  * @return bool
  */
@@ -431,7 +434,13 @@ function register_block_type( $name, $args = [] ) {
 /**
  * @param string $option_group
  * @param string $option_name
- * @param array  $args
+ * @param array  $args {
+ *     @type string   $type
+ *     @type string   $description
+ *     @type callable $sanitize_callback
+ *     @type bool     $show_in_rest
+ *     @type mixed    $default
+ * }
  *
  * @return void
  */
@@ -516,7 +525,12 @@ function the_title( $before = '', $after = '', $echo = false ) {
 }
 
 /**
- * @param string|array $args
+ * @param string|array $args {
+ *     @type string  $before
+ *     @type string  $after
+ *     @type bool    $echo
+ *     @type WP_Post $post
+ * }
  *
  * @return string|void
  */
@@ -561,7 +575,15 @@ function wp_create_nonce( $action = 0 ) {
 /**
  * @param string|WP_Error  $message
  * @param string|int       $title
- * @param string|array|int $args
+ * @param string|array|int $args {
+ *     @type int    $response
+ *     @type string $link_url
+ *     @type string $link_text
+ *     @type bool   $back_link
+ *     @type string $text_direction
+ *     @type string $code
+ *     @type bool   $exit
+ * }
  *
  * @return void
  */
@@ -571,7 +593,7 @@ function wp_die( $message = '', $title = '', $args = [] ) {
 /**
  * @param string           $handle
  * @param string           $src
- * @param array            $deps
+ * @param string[]         $deps
  * @param string|bool|null $ver
  * @param bool             $in_footer
  *
@@ -583,7 +605,7 @@ function wp_enqueue_script( $handle, $src = '', $deps = [], $ver = false, $in_fo
 /**
  * @param string           $handle
  * @param string           $src
- * @param array            $deps
+ * @param string[]         $deps
  * @param string|bool|null $ver
  * @param string           $media
  *
@@ -663,7 +685,7 @@ function wp_rand( $min, $max ) {
 /**
  * @param string           $handle
  * @param string|bool      $src
- * @param array            $deps
+ * @param string[]         $deps
  * @param string|bool|null $ver
  * @param bool             $in_footer
  *
@@ -675,7 +697,7 @@ function wp_register_script( $handle, $src, $deps = [], $ver = false, $in_footer
 /**
  * @param string           $handle
  * @param string|bool      $src
- * @param array            $deps
+ * @param string[]         $deps
  * @param string|bool|null $ver
  * @param string           $media
  *
@@ -694,9 +716,9 @@ function wp_send_json( $response, $status_code = null ) {
 }
 
 /**
- * @param string|array $value
+ * @param string|string[] $value
  *
- * @return string|array
+ * @return string|string[]
  */
 function wp_unslash( $value ) {
 }
