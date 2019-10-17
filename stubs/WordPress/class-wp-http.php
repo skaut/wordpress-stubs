@@ -7,10 +7,17 @@
  */
 class WP_Http {
 	/**
-	 * @param string|array $headers
-	 * @param string       $url
+	 * @param string|string[] $headers
+	 * @param string          $url
 	 *
-	 * @return array
+	 * @return array {
+	 *     @type array $response {
+	 *         @type int    $code
+	 *         @type string $message
+	 *     }
+	 *     @type string|string[]  $newheaders
+	 *     @type WP_Http_Cookie[] $cookies
+	 * }
 	 */
 	public static function processHeaders( $headers, $url = '' ) {
 	}
@@ -18,7 +25,10 @@ class WP_Http {
 	/**
 	 * @param string $strResponse
 	 *
-	 * @return array
+	 * @return array {
+	 *     @type string $headers
+	 *     @type string $body
+	 * }
 	 */
 	public static function processResponse( $strResponse ) {
 	}
