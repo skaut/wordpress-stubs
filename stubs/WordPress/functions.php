@@ -18,6 +18,14 @@ function __( $text, $domain = '' ) {
 }
 
 /**
+ * @param mixed $maybeint
+ *
+ * @return int
+ */
+function absint( $maybeint ) {
+}
+
+/**
  * @param string   $tag
  * @param callable $function_to_add
  * @param int      $priority
