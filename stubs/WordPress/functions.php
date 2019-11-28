@@ -251,6 +251,15 @@ function esc_html__( $text, $domain = '' ) {
 }
 
 /**
+ * @param string $text
+ * @param string $domain
+ *
+ * @return void
+ */
+function esc_html_e( $text, $default = '' ) {
+}
+
+/**
  * @param string   $url
  * @param string[] $protocols
  * @param string   $_context
