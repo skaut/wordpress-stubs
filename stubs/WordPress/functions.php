@@ -256,7 +256,7 @@ function esc_html__( $text, $domain = '' ) {
  *
  * @return void
  */
-function esc_html_e( $text, $default = '' ) {
+function esc_html_e( $text, $domain = '' ) {
 }
 
 /**
