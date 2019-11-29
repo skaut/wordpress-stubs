@@ -12,6 +12,11 @@ class WP_Customize_Control {
 	public $json;
 
 	/**
+	 * @var string
+	 */
+	public $type;
+
+	/**
 	 * @var array
 	 */
 	public $settings;
@@ -39,6 +44,12 @@ class WP_Customize_Control {
 	}
 
 	/**
+	 * @return void
+	 */
+	public function enqueue() {
+	}
+
+	/**
 	 * @param string $setting_key
 	 *
 	 * @return string
@@ -58,5 +69,11 @@ class WP_Customize_Control {
 	 * @return mixed
 	 */
 	public function value( $setting_key ) {
+	}
+
+	/**
+	 * @return void
+	 */
+	protected function content_template() {
 	}
 }
