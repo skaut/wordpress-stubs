@@ -74,6 +74,12 @@ class WP_Customize_Control {
 	/**
 	 * @return void
 	 */
+	protected function render_content() {
+	}
+
+	/**
+	 * @return void
+	 */
 	protected function content_template() {
 	}
 }
