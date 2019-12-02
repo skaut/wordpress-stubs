@@ -632,6 +632,15 @@ function wp_enqueue_style( $handle, $src = '', $deps = [], $ver = false, $media 
 }
 
 /**
+ * @param string $stylesheet
+ * @param string $theme_root
+ *
+ * @return WP_Theme
+ */
+function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
+}
+
+/**
  * @param mixed $data
  * @param int   $options
  * @param int   $depth
