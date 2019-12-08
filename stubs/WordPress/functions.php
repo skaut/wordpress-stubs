@@ -638,6 +638,21 @@ function wp_enqueue_style( $handle, $src = '', $deps = [], $ver = false, $media 
 }
 
 /**
+ * @param int          $attachment_id
+ * @param string|array $size
+ * @param bool         $icon
+ *
+ * @return false|array {
+ *     @type string $0
+ *     @type int $1
+ *     @type int $2
+ *     @type bool $3
+ * }
+ */
+function wp_get_attachment_image_src( $attachment_id, $size = '', $icon = false ) {
+}
+
+/**
  * @param string $stylesheet
  * @param string $theme_root
  *
