@@ -465,6 +465,12 @@ function register_setting( $option_group, $option_name, $args = [] ) {
 }
 
 /**
+ * @param string|WP_Widget $widget
+ */
+function register_widget( $widget ) {
+}
+
+/**
  * @param string   $tag
  * @param callable $function_to_remove
  * @param int      $priority
