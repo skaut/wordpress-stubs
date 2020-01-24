@@ -301,7 +301,7 @@ function get_option( $option, $default = false ) {
 
 /**
  * @param int|WP_Post $post
- * @param bool $leavename
+ * @param bool        $leavename
  *
  * @return string|false
  */
@@ -358,7 +358,7 @@ function get_the_ID() {
 }
 
 /**
- * @param int|WP_Post $post
+ * @param int|WP_Post  $post
  * @param string|int[] $size
  * @param string|array $attr
  *
