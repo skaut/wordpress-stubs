@@ -300,6 +300,15 @@ function get_option( $option, $default = false ) {
 }
 
 /**
+ * @param int|WP_Post $post
+ * @param bool        $leavename
+ *
+ * @return string|false
+ */
+function get_permalink( $post, $leavename = false ) {
+}
+
+/**
  * @param string  $setting
  * @param boolean $sanitize
  *
@@ -340,6 +349,22 @@ function get_template_directory() {
  * @return string
  */
 function get_template_directory_uri() {
+}
+
+/**
+ * @return int|false
+ */
+function get_the_ID() {
+}
+
+/**
+ * @param int|WP_Post  $post
+ * @param string|int[] $size
+ * @param string|array $attr
+ *
+ * @return string
+ */
+function get_the_post_thumbnail( $post = null, $size = '', $attr = '' ) {
 }
 
 /**
