@@ -423,6 +423,22 @@ function is_rtl() {
 }
 
 /**
+ * @param int|string|int[]|string[] $post
+ *
+ * @return bool
+ */
+function is_single( $post = '' ) {
+}
+
+/**
+ * @param string|string[] $post_types
+ *
+ * @return bool
+ */
+function is_singular( $post_types = '' ) {
+}
+
+/**
  * @param string $filename
  *
  * @return string
