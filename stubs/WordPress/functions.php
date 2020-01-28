@@ -139,10 +139,11 @@ function admin_url( $path = '', $scheme = '' ) {
 /**
  * @param string $tag
  * @param mixed  $value
+ * @param mixed  ...$args
  *
  * @return mixed
  */
-function apply_filters( $tag, $value ) {
+function apply_filters( $tag, $value, ...$args ) {
 }
 
 /**
