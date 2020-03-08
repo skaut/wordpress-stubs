@@ -29,6 +29,6 @@ class Requests {
 	 *
 	 * @return Requests_Response[]|Requests_Exception[]
 	 */
-	public static function request_multiple( $requests, $options = [] ) {
+	public static function request_multiple( $requests, $options = array() ) {
 	}
 }

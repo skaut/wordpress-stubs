@@ -25,7 +25,7 @@ class WP_Customize_Manager {
 	 *
 	 * @return WP_Customize_Control
 	 */
-	public function add_control( $id, $args = [] ) {
+	public function add_control( $id, $args = array() ) {
 	}
 
 	/**
@@ -42,7 +42,7 @@ class WP_Customize_Manager {
 	 *
 	 * @return WP_Customize_Panel
 	 */
-	public function add_panel( $id, $args = [] ) {
+	public function add_panel( $id, $args = array() ) {
 	}
 
 	/**
@@ -61,7 +61,7 @@ class WP_Customize_Manager {
 	 *
 	 * @return WP_Customize_Section
 	 */
-	public function add_section( $id, $args = [] ) {
+	public function add_section( $id, $args = array() ) {
 	}
 
 	/**
@@ -76,7 +76,7 @@ class WP_Customize_Manager {
 	 *
 	 * @return WP_Customize_Setting
 	 */
-	public function add_setting( $id, $args = [] ) {
+	public function add_setting( $id, $args = array() ) {
 	}
 
 	/**

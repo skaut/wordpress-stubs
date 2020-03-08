@@ -25,6 +25,6 @@ class WP_Customize_Image_Control extends WP_Customize_Upload_Control {
 	 *     @type string               $type
 	 * }
 	 */
-	public function __construct( $manager, $id, $args = [] ) {
+	public function __construct( $manager, $id, $args = array() ) {
 	}
 }

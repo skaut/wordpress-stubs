@@ -85,7 +85,7 @@ function add_settings_error( $setting, $code, $message, $type = '' ) {
  *
  * @return void
  */
-function add_settings_field( $id, $title, $callback, $page, $section = '', $args = [] ) {
+function add_settings_field( $id, $title, $callback, $page, $section = '', $args = array() ) {
 }
 
 /**
@@ -206,7 +206,7 @@ function delete_transient( $transient ) {
  *
  * @return void
  */
-function do_action( $tag, $arg = [] ) {
+function do_action( $tag, $arg = array() ) {
 }
 
 /**
@@ -267,7 +267,7 @@ function esc_html_e( $text, $domain = '' ) {
  *
  * @return string
  */
-function esc_url( $url, $protocols = [], $_context = '' ) {
+function esc_url( $url, $protocols = array(), $_context = '' ) {
 }
 
 /**
@@ -276,7 +276,7 @@ function esc_url( $url, $protocols = [], $_context = '' ) {
  *
  * @return string
  */
-function esc_url_raw( $url, $protocols = [] ) {
+function esc_url_raw( $url, $protocols = array() ) {
 }
 
 /**
@@ -487,7 +487,7 @@ function register_activation_hook( $file, $function ) {
  *
  * @return WP_Block_Type|false
  */
-function register_block_type( $name, $args = [] ) {
+function register_block_type( $name, $args = array() ) {
 }
 
 /**
@@ -503,7 +503,7 @@ function register_block_type( $name, $args = [] ) {
  *
  * @return void
  */
-function register_setting( $option_group, $option_name, $args = [] ) {
+function register_setting( $option_group, $option_name, $args = array() ) {
 }
 
 /**
@@ -599,7 +599,7 @@ function the_title( $before = '', $after = '', $echo = false ) {
  *
  * @return string|void
  */
-function the_title_attribute( $args = [] ) {
+function the_title_attribute( $args = array() ) {
 }
 
 /**
@@ -652,7 +652,7 @@ function wp_create_nonce( $action = 0 ) {
  *
  * @return void
  */
-function wp_die( $message = '', $title = '', $args = [] ) {
+function wp_die( $message = '', $title = '', $args = array() ) {
 }
 
 /**
@@ -664,7 +664,7 @@ function wp_die( $message = '', $title = '', $args = [] ) {
  *
  * @return void
  */
-function wp_enqueue_script( $handle, $src = '', $deps = [], $ver = false, $in_footer = false ) {
+function wp_enqueue_script( $handle, $src = '', $deps = array(), $ver = false, $in_footer = false ) {
 }
 
 /**
@@ -676,7 +676,7 @@ function wp_enqueue_script( $handle, $src = '', $deps = [], $ver = false, $in_fo
  *
  * @return void
  */
-function wp_enqueue_style( $handle, $src = '', $deps = [], $ver = false, $media = '' ) {
+function wp_enqueue_style( $handle, $src = '', $deps = array(), $ver = false, $media = '' ) {
 }
 
 /**
@@ -750,7 +750,7 @@ function wp_nonce_url( $actionurl, $action = 0, $name = '' ) {
  *
  * @return array
  */
-function wp_parse_args( $args, $defaults = [] ) {
+function wp_parse_args( $args, $defaults = array() ) {
 }
 
 /**
@@ -780,7 +780,7 @@ function wp_rand( $min, $max ) {
  *
  * @return bool
  */
-function wp_register_script( $handle, $src, $deps = [], $ver = false, $in_footer = false ) {
+function wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_footer = false ) {
 }
 
 /**
@@ -792,7 +792,7 @@ function wp_register_script( $handle, $src, $deps = [], $ver = false, $in_footer
  *
  * @return bool
  */
-function wp_register_style( $handle, $src, $deps = [], $ver = false, $media = '' ) {
+function wp_register_style( $handle, $src, $deps = array(), $ver = false, $media = '' ) {
 }
 
 /**
