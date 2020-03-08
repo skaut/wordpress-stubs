@@ -841,6 +841,14 @@ function wp_remote_get( $url, $args = array() ) {
 }
 
 /**
+ * @param WP_Error|array $response
+ *
+ * @return int|string
+ */
+function wp_remote_retrieve_response_code( $response ) {
+}
+
+/**
  * @param mixed $response
  * @param int   $status_code
  *
