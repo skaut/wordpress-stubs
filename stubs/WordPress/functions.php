@@ -440,6 +440,14 @@ function is_singular( $post_types = '' ) {
 }
 
 /**
+ * @param mixed $thing
+ *
+ * @return bool
+ */
+function is_wp_error( $thing ) {
+}
+
+/**
  * @param string $filename
  *
  * @return string
