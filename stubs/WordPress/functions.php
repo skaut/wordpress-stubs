@@ -448,6 +448,15 @@ function is_wp_error( $thing ) {
 }
 
 /**
+ * @param string $domain
+ * @param string $mofile
+ *
+ * @return bool
+ */
+function load_textdomain( $domain, $mofile ) {
+}
+
+/**
  * @param string $filename
  *
  * @return string
