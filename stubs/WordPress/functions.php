@@ -201,6 +201,12 @@ function delete_transient( $transient ) {
 }
 
 /**
+ * @return string
+ */
+function determine_locale() {
+}
+
+/**
  * @param string $tag
  * @param mixed  $arg
  *
