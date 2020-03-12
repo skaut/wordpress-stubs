@@ -463,7 +463,7 @@ function load_textdomain( $domain, $mofile ) {
 }
 
 /**
- * @param string $domain
+ * @param string      $domain
  * @param string|bool $path
  *
  * @return bool
