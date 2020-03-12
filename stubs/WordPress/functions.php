@@ -463,6 +463,15 @@ function load_textdomain( $domain, $mofile ) {
 }
 
 /**
+ * @param string      $domain
+ * @param string|bool $path
+ *
+ * @return bool
+ */
+function load_theme_textdomain( $domain, $path = false ) {
+}
+
+/**
  * @param string $filename
  *
  * @return string
