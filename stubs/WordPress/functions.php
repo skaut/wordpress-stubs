@@ -563,6 +563,15 @@ function sanitize_text_field( $str ) {
 }
 
 /**
+ * @param string $name
+ * @param mixed  $value
+ *
+ * @return void
+ */
+function set_theme_mod( $name, $value ) {
+}
+
+/**
  * @param string $transient
  * @param mixed  $value
  * @param int    $expiration
