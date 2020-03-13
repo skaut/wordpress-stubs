@@ -555,6 +555,14 @@ function remove_action( $tag, $function_to_remove, $priority = 0 ) {
 }
 
 /**
+ * @param string $name
+ *
+ * @return void
+ */
+function remove_theme_mod( $name ) {
+}
+
+/**
  * @param string $str
  *
  * @return string
