@@ -776,6 +776,45 @@ function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
 }
 
 /**
+ * @param string|array $args {
+ *     @type int            $ID
+ *     @type int            $post_author
+ *     @type string         $post_date
+ *     @type string         $post_date_gmt
+ *     @type mixed          $post_content
+ *     @type string         $post_content_filtered
+ *     @type string         $post_title
+ *     @type string         $post_excerpt
+ *     @type string         $post_status
+ *     @type string         $post_type
+ *     @type string         $comment_status
+ *     @type string         $ping_status
+ *     @type string         $post_password
+ *     @type string         $post_name
+ *     @type string         $to_ping
+ *     @type string         $pinged
+ *     @type string         $post_modified
+ *     @type string         $post_modified_gmt
+ *     @type int            $post_parent
+ *     @type int            $menu_order
+ *     @type string         $post_mime_type
+ *     @type string         $guid
+ *     @type int[]          $post_category
+ *     @type int[]|string[] $tags_input
+ *     @type string[]       $tax_input
+ *     @type array          $meta_input
+ *     @type string|false   $file
+ * }
+ * @param string|false $file
+ * @param int          $parent
+ * @param bool         $wp_error
+ *
+ * @return int|WP_Error
+ */
+function wp_insert_attachment( $args, $file = false, $parent = 0, $wp_error = false ) {
+}
+
+/**
  * @param mixed $data
  * @param int   $options
  * @param int   $depth
