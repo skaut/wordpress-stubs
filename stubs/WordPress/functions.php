@@ -4,6 +4,11 @@
  */
 
 /**
+ * @var string
+ */
+const ABSPATH = '';
+
+/**
  * @var int
  */
 const DAY_IN_SECONDS = 0;
