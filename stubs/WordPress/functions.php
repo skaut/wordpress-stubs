@@ -907,6 +907,15 @@ function wp_unslash( $value ) {
 }
 
 /**
+ * @param int   $attachment_id
+ * @param array $data
+ *
+ * @return int|false
+ */
+function wp_update_attachment_metadata( $attachment_id, $data ) {
+}
+
+/**
  * @param string     $nonce
  * @param string|int $action
  *
