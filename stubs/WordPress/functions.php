@@ -752,6 +752,15 @@ function wp_enqueue_style( $handle, $src = '', $deps = array(), $ver = false, $m
 }
 
 /**
+ * @param int    $attachment_id
+ * @param string $file
+ *
+ * @return mixed
+ */
+function wp_generate_attachment_metadata( $attachment_id, $file ) {
+}
+
+/**
  * @param int          $attachment_id
  * @param string|array $size
  * @param bool         $icon
