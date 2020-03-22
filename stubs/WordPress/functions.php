@@ -690,6 +690,18 @@ function wp_add_inline_style( $handle, $data ) {
 }
 
 /**
+ * @param string     $filename
+ * @param array|null $mimes
+ *
+ * @return array {
+ *     @type string|false $ext
+ *     @type string|false $type
+ * }
+ */
+function wp_check_filetype( $filename, $mimes = null ) {
+}
+
+/**
  * @param string|int $action
  *
  * @return string
