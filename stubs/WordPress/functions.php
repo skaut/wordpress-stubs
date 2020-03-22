@@ -505,6 +505,17 @@ function plugins_url( $path = '', $plugin = '' ) {
 }
 
 /**
+ * @param string $title
+ * @param string $content
+ * @param string $date
+ * @param string $type
+ *
+ * @return int
+ */
+function post_exists( $title, $content = '', $date = '', $type = '' ) {
+}
+
+/**
  * @param string   $file
  * @param callable $function
  *
@@ -679,6 +690,18 @@ function wp_add_inline_style( $handle, $data ) {
 }
 
 /**
+ * @param string     $filename
+ * @param array|null $mimes
+ *
+ * @return array {
+ *     @type string|false $ext
+ *     @type string|false $type
+ * }
+ */
+function wp_check_filetype( $filename, $mimes = null ) {
+}
+
+/**
  * @param string|int $action
  *
  * @return string
@@ -729,6 +752,15 @@ function wp_enqueue_style( $handle, $src = '', $deps = array(), $ver = false, $m
 }
 
 /**
+ * @param int    $attachment_id
+ * @param string $file
+ *
+ * @return mixed
+ */
+function wp_generate_attachment_metadata( $attachment_id, $file ) {
+}
+
+/**
  * @param int          $attachment_id
  * @param string|array $size
  * @param bool         $icon
@@ -750,6 +782,45 @@ function wp_get_attachment_image_src( $attachment_id, $size = '', $icon = false 
  * @return WP_Theme
  */
 function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
+}
+
+/**
+ * @param string|array $args {
+ *     @type int            $ID
+ *     @type int            $post_author
+ *     @type string         $post_date
+ *     @type string         $post_date_gmt
+ *     @type mixed          $post_content
+ *     @type string         $post_content_filtered
+ *     @type string         $post_title
+ *     @type string         $post_excerpt
+ *     @type string         $post_status
+ *     @type string         $post_type
+ *     @type string         $comment_status
+ *     @type string         $ping_status
+ *     @type string         $post_password
+ *     @type string         $post_name
+ *     @type string         $to_ping
+ *     @type string         $pinged
+ *     @type string         $post_modified
+ *     @type string         $post_modified_gmt
+ *     @type int            $post_parent
+ *     @type int            $menu_order
+ *     @type string         $post_mime_type
+ *     @type string         $guid
+ *     @type int[]          $post_category
+ *     @type int[]|string[] $tags_input
+ *     @type string[]       $tax_input
+ *     @type array          $meta_input
+ *     @type string|false   $file
+ * }
+ * @param string|false $file
+ * @param int          $parent
+ * @param bool         $wp_error
+ *
+ * @return int|WP_Error
+ */
+function wp_insert_attachment( $args, $file = false, $parent = 0, $wp_error = false ) {
 }
 
 /**
@@ -913,6 +984,26 @@ function wp_unslash( $value ) {
  * @return int|false
  */
 function wp_update_attachment_metadata( $attachment_id, $data ) {
+}
+
+/**
+ * @param string      $name
+ * @param string|null $deprecated
+ * @param mixed       $bits
+ * @param string|null $time
+ *
+ * @return array {
+ *     @type string|null  $path
+ *     @type string|null  $url
+ *     @type string|null  $subdir
+ *     @type string|null  $basedir
+ *     @type string|null  $baseurl
+ *     @type string|false $error
+ *     @type string       $file
+ *     @type string       $type
+ * }
+ */
+function wp_upload_bits( $name, $deprecated, $bits, $time = null ) {
 }
 
 /**
