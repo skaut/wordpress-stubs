@@ -695,6 +695,15 @@ function wp_add_inline_style( $handle, $data ) {
 }
 
 /**
+ * @param string $path
+ * @param string $suffix
+ *
+ * @return string
+ */
+function wp_basename( $path, $suffix = '' ) {
+}
+
+/**
  * @param string     $filename
  * @param array|null $mimes
  *
