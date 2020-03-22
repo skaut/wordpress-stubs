@@ -86,4 +86,12 @@ class WP_Customize_Manager {
 	 */
 	public function register_control_type( $control ) {
 	}
+
+	/**
+	 * @param string $id
+	 *
+	 * @return void
+	 */
+	public function remove_control( $id ) {
+	}
 }
