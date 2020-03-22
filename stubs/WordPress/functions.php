@@ -907,6 +907,26 @@ function wp_unslash( $value ) {
 }
 
 /**
+ * @param string      $name
+ * @param string|null $deprecated
+ * @param mixed       $bits
+ * @param string|null $time
+ *
+ * @return array {
+ *     @type string|null  $path
+ *     @type string|null  $url
+ *     @type string|null  $subdir
+ *     @type string|null  $basedir
+ *     @type string|null  $baseurl
+ *     @type string|false $error
+ *     @type string       $file
+ *     @type string       $type
+ * }
+ */
+function wp_upload_bits( $name, $deprecated, $bits, $time = null ) {
+}
+
+/**
  * @param string     $nonce
  * @param string|int $action
  *
