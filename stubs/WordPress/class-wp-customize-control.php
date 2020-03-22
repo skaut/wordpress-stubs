@@ -68,7 +68,7 @@ class WP_Customize_Control {
 	 *
 	 * @return mixed
 	 */
-	public function value( $setting_key ) {
+	public function value( $setting_key = '' ) {
 	}
 
 	/**
