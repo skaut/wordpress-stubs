@@ -849,6 +849,14 @@ function wp_localize_script( $handle, $object_name, $l10n ) {
 }
 
 /**
+ * @param string|int $mime
+ *
+ * @return string|false
+ */
+function wp_mime_type_icon( $mime ) {
+}
+
+/**
  * @param int|string $action
  * @param string     $name
  * @param bool       $referer
