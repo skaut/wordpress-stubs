@@ -505,6 +505,17 @@ function plugins_url( $path = '', $plugin = '' ) {
 }
 
 /**
+ * @param string $title
+ * @param string $content
+ * @param string $date
+ * @param string $type
+ *
+ * @return int
+ */
+function post_exists( $title, $content = '', $date = '', $type = '' ) {
+}
+
+/**
  * @param string   $file
  * @param callable $function
  *
