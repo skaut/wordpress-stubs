@@ -975,7 +975,21 @@ function wp_remote_get( $url, $args = array() ) {
 }
 
 /**
- * @param WP_Error|array $response
+ * @param WP_Error|array $response {
+ *     @type string $body
+ * }
+ *
+ * @return string
+ */
+function wp_remote_retrieve_body( $response ) {
+}
+
+/**
+ * @param WP_Error|array $response {
+ *     @type array $response {
+ *         @type int $code
+ *     }
+ * }
  *
  * @return int|string
  */
