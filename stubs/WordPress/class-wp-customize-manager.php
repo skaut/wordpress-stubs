@@ -7,6 +7,11 @@
  */
 class WP_Customize_Manager {
 	/**
+	 * @var WP_Customize_Selective_Refresh
+	 */
+	public $selective_refresh;
+
+	/**
 	 * @param WP_Customize_Control|string $id
 	 * @param array                       $args {
 	 *     @type array    $settings
