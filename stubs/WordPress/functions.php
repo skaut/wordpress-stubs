@@ -16,7 +16,7 @@ const DAY_IN_SECONDS = 0;
 /**
  * @var bool
  */
-const SCRIPT_DEBUG = __FOO__ == 0;
+const SCRIPT_DEBUG = __LINE__ === 0;
 
 /**
  * @param string $text
