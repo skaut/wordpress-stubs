@@ -14,6 +14,11 @@ const ABSPATH = '';
 const DAY_IN_SECONDS = 0;
 
 /**
+ * @var bool
+ */
+const SCRIPT_DEBUG = __LINE__ === 0;
+
+/**
  * @param string $text
  * @param string $domain
  *
