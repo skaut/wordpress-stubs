@@ -11,6 +11,10 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v2
 
+      - name: "Install php-ast"
+        run: |
+          sudo apt-get install php-ast
+
       - name: "Cache Composer dependencies"
         uses: actions/cache@v2
         env:
