@@ -52,6 +52,10 @@ jobs:
         run: |
           composer install -n --prefer-dist
 
-      - name: "Lint"
+      - name: "PHPCS"
         run: |
-          composer run-script lint
+          composer run-script phpcs
+
+      - name: "Phan"
+        run: |
+          composer run-script phan
