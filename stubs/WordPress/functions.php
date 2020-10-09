@@ -28,6 +28,15 @@ function __( $text, $domain = '' ) {
 }
 
 /**
+ * @param string $single
+ * @param string $plural
+ * @param int    $number
+ * @param string $domain
+ */
+function _n( $single, $plural, $number, $domain = '' ) {
+}
+
+/**
  * @param mixed $maybeint
  *
  * @return int
