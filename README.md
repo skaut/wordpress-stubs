@@ -1,6 +1,6 @@
 # Phan stubs for WordPress
 
-[![CircleCI branch](https://img.shields.io/circleci/project/github/skaut/phan-wordpress-stubs/master.svg)](https://circleci.com/gh/skaut/workflows/phan-wordpress-stubs/tree/master)
+[![GitHub Actions](https://github.com/skaut/phan-wordpress-stubs/workflows/CI/badge.svg)](https://github.com/skaut/phan-wordpress-stubs/actions)
 
 This repo contains stubs for WordPress functions and classes to be used with [phan](https://github.com/phan/phan), the PHP static analyzer. This allows for better type-checking of a codebase as the stubs all have type information.
 
