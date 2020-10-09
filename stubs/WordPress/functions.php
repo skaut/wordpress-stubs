@@ -32,6 +32,8 @@ function __( $text, $domain = '' ) {
  * @param string $plural
  * @param int    $number
  * @param string $domain
+ *
+ * @return string
  */
 function _n( $single, $plural, $number, $domain = '' ) {
 }
