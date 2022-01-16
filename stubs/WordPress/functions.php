@@ -1022,9 +1022,10 @@ function wp_send_json( $response, $status_code = null ) {
 }
 
 /**
- * @param string|string[] $value
+ * @template T of string|string[]
+ * @param T $value
  *
- * @return string|string[]
+ * @return T
  */
 function wp_unslash( $value ) {
 }
