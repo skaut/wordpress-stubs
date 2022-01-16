@@ -26,7 +26,7 @@
         "source": "https://github.com/marekdedic/phan-wordpress-stubs"
     },
     "require": {
-        "php": "^7.0"
+        "php": "^7.0 || ^8.0"
     },
     "suggest": {
         "phan/phan": "A static analyzer for PHP"
@@ -34,7 +34,7 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0",
         "wp-coding-standards/wpcs": "^2.1",
-        "phan/phan": "^4.0"
+        "phan/phan": "^5.0"
     },
     "scripts": {
         "phpcs": "vendor/bin/phpcs",
