@@ -337,6 +337,15 @@ function get_permalink( $post, $leavename = false ) {
 }
 
 /**
+ * @param string $var
+ * @param mixed  $default
+ *
+ * @return mixed
+ */
+function get_query_var( $var, $default = '' ) {
+}
+
+/**
  * @param string  $setting
  * @param boolean $sanitize
  *
