@@ -38,6 +38,8 @@ class WP_Theme implements ArrayAccess {
 
 	/**
 	 * @param mixed $offset
+	 *
+	 * @return void
 	 */
 	public function offsetUnset( $offset ) {
 	}
