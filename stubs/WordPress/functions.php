@@ -440,6 +440,14 @@ function esc_url_raw( $url, $protocols = array() ) {
 }
 
 /**
+ * @param bool $hard
+ *
+ * @return void
+ */
+function flush_rewrite_rules( $hard = false ) {
+}
+
+/**
  * @return string
  */
 function get_admin_page_title() {
