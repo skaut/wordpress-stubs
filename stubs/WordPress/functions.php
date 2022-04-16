@@ -1311,6 +1311,15 @@ function wp_get_attachment_image_src( $attachment_id, $size = '', $icon = false 
 }
 
 /**
+ * @param int|WP_Post $post_id
+ * @param array|null  $args
+ *
+ * @return array
+ */
+function wp_get_post_revisions( $post_id, $args = null ) {
+}
+
+/**
  * @param string $stylesheet
  * @param string $theme_root
  *
@@ -1359,6 +1368,14 @@ function wp_insert_attachment( $args, $file = false, $parent = 0, $wp_error = fa
 }
 
 /**
+ * @param int|WP_Post $post
+ *
+ * @return int|false
+ */
+function wp_is_post_revision( $post ) {
+}
+
+/**
  * @param mixed $data
  * @param int   $options
  * @param int   $depth
@@ -1366,6 +1383,13 @@ function wp_insert_attachment( $args, $file = false, $parent = 0, $wp_error = fa
  * @return string|false
  */
 function wp_json_encode( $data, $options, $depth = 0 ) {
+}
+
+/**
+ * @param string $string
+ * @param string $context
+ */
+function wp_kses_normalize_entities( $string, $context = '' ) {
 }
 
 /**
@@ -1379,11 +1403,25 @@ function wp_localize_script( $handle, $object_name, $l10n ) {
 }
 
 /**
+ * @return void
+ */
+function wp_logout() {
+}
+
+/**
  * @param string|int $mime
  *
  * @return string|false
  */
 function wp_mime_type_icon( $mime ) {
+}
+
+/**
+ * @param string $action
+ *
+ * @return void
+ */
+function wp_nonce_ays( $action ) {
 }
 
 /**
