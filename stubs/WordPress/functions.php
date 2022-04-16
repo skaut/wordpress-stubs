@@ -1590,6 +1590,44 @@ function wp_send_json( $response, $status_code = null ) {
 }
 
 /**
+ * @param int    $user_id
+ * @param string $notify
+ *
+ * @return void
+ */
+function wp_send_new_user_notifications( $user_id, $notify = '' ) {
+}
+
+/**
+ * @param int         $user_id
+ * @param bool        $remember
+ * @param bool|string $secure
+ * @param string      $token
+ *
+ * @return void
+ */
+function wp_set_auth_cookie( $user_id, $remember = false, $secure = '', $token = '' ) {
+}
+
+/**
+ * @param int|null $id
+ * @param string   $name
+ *
+ * @return WP_User
+ */
+function wp_set_current_user( $id, $name ) {
+}
+
+/**
+ * @param string $string
+ * @param bool   $remove_breaks
+ *
+ * @return string
+ */
+function wp_strip_all_tags( $string, $remove_breaks ) {
+}
+
+/**
  * @template T of string|string[]
  * @param T $value
  *
