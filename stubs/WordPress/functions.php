@@ -1033,6 +1033,14 @@ function sanitize_text_field( $str ) {
 }
 
 /**
+ * @param mixed $selected
+ * @param mixed $current
+ * @param bool  $echo
+ */
+function selected( $selected, $current = false, $echo = false ) {
+}
+
+/**
  * @param string $name
  * @param mixed  $value
  *
@@ -1059,6 +1067,14 @@ function set_transient( $transient, $value, $expiration ) {
  * @return void
  */
 function settings_errors( $setting = '', $sanitize = false, $hide_on_update = false ) {
+}
+
+/**
+ * @param string $option_group
+ *
+ * @return void
+ */
+function settings_fields( $option_group ) {
 }
 
 /**
@@ -1119,6 +1135,15 @@ function the_title_attribute( $args = array() ) {
  * @return string
  */
 function trailingslashit( $string ) {
+}
+
+/**
+ * @param string $name
+ * @param string $domain
+ *
+ * @return string
+ */
+function translate_user_role( $name, $domain = '' ) {
 }
 
 /**
