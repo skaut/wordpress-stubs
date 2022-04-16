@@ -244,6 +244,24 @@ function apply_filters( $tag, $value, ...$args ) {
 }
 
 /**
+ * @param string $hook_name
+ * @param array  $args
+ *
+ * @return mixed
+ */
+function apply_filters_ref_array( $hook_name, $args ) {
+}
+
+/**
+ * @param int|string $action
+ * @param string     $query_arg
+ *
+ * @return int|false
+ */
+function check_admin_referer( $action = 0, $query_arg = '' ) {
+}
+
+/**
  * @param int|string   $action
  * @param false|string $query_arg
  * @param bool         $die
