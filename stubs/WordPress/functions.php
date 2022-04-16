@@ -93,6 +93,61 @@ function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $func
 }
 
 /**
+ * @param string                         $id
+ * @param string                         $title
+ * @param callable                       $callback
+ * @param string|array<string>|WP_Screen $screen
+ * @param string                         $context
+ * @param string                         $priority
+ * @param array                          $callback_args
+ *
+ * @return void
+ */
+function add_meta_box( $id, $title, $callback, $screen = null, $context = '', $priority = '', $callback_args = null ) {
+}
+
+/**
+ * @param string $meta_type
+ * @param int    $object_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param bool   $unique
+ *
+ * @return int|false
+ */
+function add_metadata( $meta_type, $object_id, $meta_key, $meta_value, $unique = false ) {
+}
+
+/**
+ * @param string      $option
+ * @param mixed       $value
+ * @param string      $deprecated
+ * @param string|bool $autoload
+ *
+ * @return bool
+ */
+function add_option( $option, $value = '', $deprecated = '', $autoload = '' ) {
+}
+
+/**
+ * @param array ...$args
+ *
+ * @return string
+ */
+function add_query_arg( ...$args ) {
+}
+
+/**
+ * @param string       $regex
+ * @param string|array $query
+ * @param string       $after
+ *
+ * @return void
+ */
+function add_rewrite_rule( $regex, $query, $after = '' ) {
+}
+
+/**
  * @param string $setting
  * @param string $code
  * @param string $message
