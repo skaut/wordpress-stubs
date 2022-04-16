@@ -1464,6 +1464,15 @@ function wp_parse_url( $url, $component = 0 ) {
 }
 
 /**
+ * @param int|object $revision
+ * @param bool       $link
+ *
+ * @return string|false
+ */
+function wp_post_revision_title( $revision, $link = false ) {
+}
+
+/**
  * @param int $min
  * @param int $max
  *
@@ -1553,6 +1562,22 @@ function wp_remote_retrieve_body( $response ) {
  * @return int|string
  */
 function wp_remote_retrieve_response_code( $response ) {
+}
+
+/**
+ * @return WP_Roles
+ */
+function wp_roles() {
+}
+
+/**
+ * @param string $location
+ * @param int    $status
+ * @param string $x_redirect_by
+ *
+ * @return bool
+ */
+function wp_safe_redirect( $location, $status = 0, $x_redirect_by = '' ) {
 }
 
 /**
