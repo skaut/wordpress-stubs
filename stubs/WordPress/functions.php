@@ -14,9 +14,19 @@ const ABSPATH = '';
 const DAY_IN_SECONDS = 0;
 
 /**
+ * @var int
+ */
+const MINUTE_IN_SECONDS = 0;
+
+/**
  * @var bool
  */
 const SCRIPT_DEBUG = __LINE__ === 0;
+
+/**
+ * @var bool
+ */
+const WP_DEBUG = __LINE__ === 0;
 
 /**
  * @param string $text
@@ -36,6 +46,16 @@ function __( $text, $domain = '' ) {
  * @return string
  */
 function _n( $single, $plural, $number, $domain = '' ) {
+}
+
+/**
+ * @param string $text
+ * @param string $context
+ * @param string $domain
+ *
+ * @return string
+ */
+function _x( $text, $context, $domain = '' ) {
 }
 
 /**
@@ -80,6 +100,61 @@ function add_filter( $tag, $function_to_add, $priority = 0, $accepted_args = 0 )
  * @return string
  */
 function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function = '', $icon_url = '', $position = 0 ) {
+}
+
+/**
+ * @param string                         $id
+ * @param string                         $title
+ * @param callable                       $callback
+ * @param string|array<string>|WP_Screen $screen
+ * @param string                         $context
+ * @param string                         $priority
+ * @param array                          $callback_args
+ *
+ * @return void
+ */
+function add_meta_box( $id, $title, $callback, $screen = null, $context = '', $priority = '', $callback_args = null ) {
+}
+
+/**
+ * @param string $meta_type
+ * @param int    $object_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param bool   $unique
+ *
+ * @return int|false
+ */
+function add_metadata( $meta_type, $object_id, $meta_key, $meta_value, $unique = false ) {
+}
+
+/**
+ * @param string      $option
+ * @param mixed       $value
+ * @param string      $deprecated
+ * @param string|bool $autoload
+ *
+ * @return bool
+ */
+function add_option( $option, $value = '', $deprecated = '', $autoload = '' ) {
+}
+
+/**
+ * @param array ...$args
+ *
+ * @return string
+ */
+function add_query_arg( ...$args ) {
+}
+
+/**
+ * @param string       $regex
+ * @param string|array $query
+ * @param string       $after
+ *
+ * @return void
+ */
+function add_rewrite_rule( $regex, $query, $after = '' ) {
 }
 
 /**
@@ -149,6 +224,17 @@ function add_thickbox() {
 }
 
 /**
+ * @param int    $user_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param bool   $unique
+ *
+ * @return int|false
+ */
+function add_user_meta( $user_id, $meta_key, $meta_value, $unique = false ) {
+}
+
+/**
  * @param string $path
  * @param string $scheme
  *
@@ -165,6 +251,24 @@ function admin_url( $path = '', $scheme = '' ) {
  * @return mixed
  */
 function apply_filters( $tag, $value, ...$args ) {
+}
+
+/**
+ * @param string $hook_name
+ * @param array  $args
+ *
+ * @return mixed
+ */
+function apply_filters_ref_array( $hook_name, $args ) {
+}
+
+/**
+ * @param int|string $action
+ * @param string     $query_arg
+ *
+ * @return int|false
+ */
+function check_admin_referer( $action = 0, $query_arg = '' ) {
 }
 
 /**
@@ -196,6 +300,16 @@ function current_user_can( $capability ) {
 }
 
 /**
+ * @param string   $format
+ * @param int|bool $timestamp_with_offset
+ * @param bool     $gmt
+ *
+ * @return string
+ */
+function date_i18n( $format, $timestamp_with_offset = false, $gmt = false ) {
+}
+
+/**
  * @param string|string[] $plugins
  * @param bool            $silent
  * @param mixed           $network_wide
@@ -203,6 +317,18 @@ function current_user_can( $capability ) {
  * @return void
  */
 function deactivate_plugins( $plugins, $silent = false, $network_wide = null ) {
+}
+
+/**
+ * @param string $meta_type
+ * @param int    $object_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param bool   $delete_all
+ *
+ * @return bool
+ */
+function delete_metadata( $meta_type, $object_id, $meta_key, $meta_value = '', $delete_all = false ) {
 }
 
 /**
@@ -219,6 +345,16 @@ function delete_option( $option ) {
  * @return bool
  */
 function delete_transient( $transient ) {
+}
+
+/**
+ * @param int    $user_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ *
+ * @return bool
+ */
+function delete_user_meta( $user_id, $meta_key, $meta_value = '' ) {
 }
 
 /**
@@ -259,6 +395,13 @@ function esc_attr( $text ) {
  * @return string
  */
 function esc_attr__( $text, $domain = '' ) {
+}
+
+/**
+ * @param string $text
+ * @param string $domain
+ */
+function esc_attr_e( $text, $domain = '' ) {
 }
 
 /**
@@ -307,15 +450,92 @@ function esc_url_raw( $url, $protocols = array() ) {
 }
 
 /**
+ * @param bool $hard
+ *
+ * @return void
+ */
+function flush_rewrite_rules( $hard = false ) {
+}
+
+/**
  * @return string
  */
 function get_admin_page_title() {
 }
 
 /**
+ * @param int    $object_id
+ * @param string $object_type
+ * @param string $resource_type
+ *
+ * @return array<int>
+ */
+function get_ancestors( $object_id, $object_type = '', $resource_type = '' ) {
+}
+
+/**
+ * @return WP_Screen|null
+ */
+function get_current_screen() {
+}
+
+/**
+ * @return int
+ */
+function get_current_user_id() {
+}
+
+/**
+ * @param int $user_id
+ *
+ * @return string
+ */
+function get_edit_user_link( $user_id = null ) {
+}
+
+/**
+ * @param string $name
+ * @param array  $args
+ *
+ * @return void|false
+ */
+function get_footer( $name = '', $args = array() ) {
+}
+
+/**
+ * @param string $name
+ * @param array  $args
+ *
+ * @return void|false
+ */
+function get_header( $name = '', $args = array() ) {
+}
+
+/**
+ * @param int|null    $blog_id
+ * @param string      $path
+ * @param string|null $scheme
+ *
+ * @return string
+ */
+function get_home_url( $blog_id = null, $path = '', $scheme = null ) {
+}
+
+/**
  * @return string
  */
 function get_locale() {
+}
+
+/**
+ * @param string $meta_type
+ * @param int    $object_id
+ * @param string $meta_key
+ * @param bool   $single
+ *
+ * @return mixed
+ */
+function get_metadata( $meta_type, $object_id, $meta_key = '', $single = false ) {
 }
 
 /**
@@ -337,6 +557,52 @@ function get_permalink( $post, $leavename = false ) {
 }
 
 /**
+ * @param int|WP_Post|null $post
+ * @param string           $output
+ * @param string           $filter
+ *
+ * @return WP_Post|array|null
+ */
+function get_post( $post = null, $output = '', $filter = '' ) {
+}
+
+/**
+ * @param int    $post_id
+ * @param string $key
+ * @param bool   $single
+ *
+ * @return mixed
+ */
+function get_post_meta( $post_id, $key = '', $single = false ) {
+}
+
+/**
+ * @param int|WP_Post|null $post
+ *
+ * @return string|false
+ */
+function get_post_type( $post = null ) {
+}
+
+/**
+ * @param array|string $args
+ * @param string       $output
+ * @param string       $operator
+ *
+ * @return array<string>|array<WP_Post_Type>
+ */
+function get_post_types( $args = array(), $output = '', $operator = '' ) {
+}
+
+/**
+ * @param string $post_type
+ *
+ * @return WP_Post_Type|null
+ */
+function get_post_type_object( $post_type ) {
+}
+
+/**
  * @param string $var
  * @param mixed  $default
  *
@@ -352,6 +618,15 @@ function get_query_var( $var, $default = '' ) {
  * @return array
  */
 function get_settings_errors( $setting = '', $sanitize = false ) {
+}
+
+/**
+ * @param string $name
+ * @param array  $args
+ *
+ * @return void|false
+ */
+function get_sidebar( $name = null, $args = array() ) {
 }
 
 /**
@@ -389,9 +664,24 @@ function get_template_directory_uri() {
 }
 
 /**
+ * @param string    $field
+ * @param int|false $user_id
+ *
+ * @return string
+ */
+function get_the_author_meta( $field = '', $user_id = false ) {
+}
+
+/**
  * @return int|false
  */
 function get_the_ID() {
+}
+
+/**
+ * @return string|void
+ */
+function get_the_modified_author() {
 }
 
 /**
@@ -402,6 +692,14 @@ function get_the_ID() {
  * @return string
  */
 function get_the_post_thumbnail( $post = null, $size = '', $attr = '' ) {
+}
+
+/**
+ * @param int|WP_Post $post
+ *
+ * @return string
+ */
+function get_the_title( $post ) {
 }
 
 /**
@@ -419,6 +717,16 @@ function get_theme_mod( $name, $default = false ) {
  * @return mixed
  */
 function get_transient( $transient ) {
+}
+
+/**
+ * @param int    $user_id
+ * @param string $key
+ * @param bool   $single
+ *
+ * @return mixed
+ */
+function get_user_meta( $user_id, $key, $single ) {
 }
 
 /**
@@ -440,9 +748,30 @@ function has_post_thumbnail( $post = null ) {
 }
 
 /**
+ * @param int $from
+ * @param int $to
+ *
+ * @return string
+ */
+function human_time_diff( $from, $to ) {
+}
+
+/**
  * @return bool
  */
 function is_admin() {
+}
+
+/**
+ * @return bool
+ */
+function is_admin_bar_showing() {
+}
+
+/**
+ * @return bool
+ */
+function is_network_admin() {
 }
 
 /**
@@ -451,6 +780,14 @@ function is_admin() {
  * @return bool
  */
 function is_page( $page = '' ) {
+}
+
+/**
+ * @param string $plugin
+ *
+ * @return bool
+ */
+function is_plugin_active( $plugin ) {
 }
 
 /**
@@ -473,6 +810,12 @@ function is_single( $post = '' ) {
  * @return bool
  */
 function is_singular( $post_types = '' ) {
+}
+
+/**
+ * @return bool
+ */
+function is_user_logged_in() {
 }
 
 /**
@@ -564,6 +907,64 @@ function register_block_type( $name, $args = array() ) {
 }
 
 /**
+ * @param string   $file
+ * @param callable $callback
+ *
+ * @return void
+ */
+function register_deactivation_hook( $file, $callback ) {
+}
+
+/**
+ * @param string $user_login
+ * @param string $user_email
+ *
+ * @return int|WP_Error
+ */
+function register_new_user( $user_login, $user_email ) {
+}
+
+/**
+ * @param string $post_type
+ * @param array  $args {
+ *     @type string $label
+ *     @type array<string> $labels
+ *     @type string $description
+ *     @type bool $public
+ *     @type bool $hierarchical
+ *     @type bool $exclude_from_search
+ *     @type bool $publicly_queryable
+ *     @type bool $show_ui
+ *     @type bool|string $show_in_menu
+ *     @type bool $show_in_nav_menus
+ *     @type bool $show_in_admin_bar
+ *     @type bool $show_in_rest
+ *     @type string $rest_base
+ *     @type string $rest_namespace
+ *     @type string $rest_controller_class
+ *     @type int $menu_postion
+ *     @type string $menu_icon
+ *     @type string|array $capability_type
+ *     @type array<string> $capabilities
+ *     @type bool $map_meta_cap
+ *     @type array $supports
+ *     @type callable $register_meta_box_cb
+ *     @type array<string> $taxonomies
+ *     @type bool|string $has_archive
+ *     @type bool|array $rewrite
+ *     @type string|bool $query_var
+ *     @type bool $can_export
+ *     @type bool $delete_with_user
+ *     @type array $template
+ *     @type string|false $template_lock
+ * }
+ *
+ * @return WP_Post_Type|WP_Error
+ */
+function register_post_type( $post_type, $args = array() ) {
+}
+
+/**
  * @param string $option_group
  * @param string $option_name
  * @param array  $args {
@@ -596,6 +997,25 @@ function remove_action( $tag, $function_to_remove, $priority = 0 ) {
 }
 
 /**
+ * @param string                $hook_name
+ * @param callable|string|array $callback
+ * @param int                   $priority
+ *
+ * @return bool
+ */
+function remove_filter( $hook_name, $callback, $priority = 0 ) {
+}
+
+/**
+ * @param string|array<string> $key
+ * @param string|false         $query
+ *
+ * @return string
+ */
+function remove_query_arg( $key, $query ) {
+}
+
+/**
  * @param string $name
  *
  * @return void
@@ -604,11 +1024,30 @@ function remove_theme_mod( $name ) {
 }
 
 /**
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param string $object_type
+ * @param string $object_subtype
+ *
+ * @return mixed
+ */
+function sanitize_meta( $meta_key, $meta_value, $object_type, $object_subtype = '' ) {
+}
+
+/**
  * @param string $str
  *
  * @return string
  */
 function sanitize_text_field( $str ) {
+}
+
+/**
+ * @param mixed $selected
+ * @param mixed $current
+ * @param bool  $echo
+ */
+function selected( $selected, $current = false, $echo = false ) {
 }
 
 /**
@@ -638,6 +1077,14 @@ function set_transient( $transient, $value, $expiration ) {
  * @return void
  */
 function settings_errors( $setting = '', $sanitize = false, $hide_on_update = false ) {
+}
+
+/**
+ * @param string $option_group
+ *
+ * @return void
+ */
+function settings_fields( $option_group ) {
 }
 
 /**
@@ -701,6 +1148,15 @@ function trailingslashit( $string ) {
 }
 
 /**
+ * @param string $name
+ * @param string $domain
+ *
+ * @return string
+ */
+function translate_user_role( $name, $domain = '' ) {
+}
+
+/**
  * @param string      $option
  * @param mixed       $value
  * @param string|bool $autoload
@@ -708,6 +1164,36 @@ function trailingslashit( $string ) {
  * @return bool
  */
 function update_option( $option, $value, $autoload = null ) {
+}
+
+/**
+ * @param int    $post_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param mixed  $prev_value
+ *
+ * @return int|bool
+ */
+function update_post_meta( $post_id, $meta_key, $meta_value, $prev_value = '' ) {
+}
+
+/**
+ * @param int    $user_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param mixed  $prev_value
+ *
+ * @return int|bool
+ */
+function update_user_meta( $user_id, $meta_key, $meta_value, $prev_value = '' ) {
+}
+
+/**
+ * @param int|WP_User $user
+ * @param string      $capability
+ * @param mixed       ...$args
+ */
+function user_can( $user, $capability, ...$args ) {
 }
 
 /**
@@ -741,11 +1227,23 @@ function wp_check_filetype( $filename, $mimes = null ) {
 }
 
 /**
+ * @return void
+ */
+function wp_clear_auth_cookie() {
+}
+
+/**
  * @param string|int $action
  *
  * @return string
  */
 function wp_create_nonce( $action = 0 ) {
+}
+
+/**
+ * @return void
+ */
+function wp_destroy_current_session() {
 }
 
 /**
@@ -764,6 +1262,14 @@ function wp_create_nonce( $action = 0 ) {
  * @return void
  */
 function wp_die( $message = '', $title = '', $args = array() ) {
+}
+
+/**
+ * @param string $selected
+ *
+ * @return void
+ */
+function wp_dropdown_roles( $selected = '' ) {
 }
 
 /**
@@ -815,6 +1321,15 @@ function wp_get_attachment_image_src( $attachment_id, $size = '', $icon = false 
 }
 
 /**
+ * @param int|WP_Post $post_id
+ * @param array|null  $args
+ *
+ * @return array
+ */
+function wp_get_post_revisions( $post_id, $args = null ) {
+}
+
+/**
  * @param string $stylesheet
  * @param string $theme_root
  *
@@ -863,6 +1378,14 @@ function wp_insert_attachment( $args, $file = false, $parent = 0, $wp_error = fa
 }
 
 /**
+ * @param int|WP_Post $post
+ *
+ * @return int|false
+ */
+function wp_is_post_revision( $post ) {
+}
+
+/**
  * @param mixed $data
  * @param int   $options
  * @param int   $depth
@@ -870,6 +1393,13 @@ function wp_insert_attachment( $args, $file = false, $parent = 0, $wp_error = fa
  * @return string|false
  */
 function wp_json_encode( $data, $options, $depth = 0 ) {
+}
+
+/**
+ * @param string $string
+ * @param string $context
+ */
+function wp_kses_normalize_entities( $string, $context = '' ) {
 }
 
 /**
@@ -883,11 +1413,25 @@ function wp_localize_script( $handle, $object_name, $l10n ) {
 }
 
 /**
+ * @return void
+ */
+function wp_logout() {
+}
+
+/**
  * @param string|int $mime
  *
  * @return string|false
  */
 function wp_mime_type_icon( $mime ) {
+}
+
+/**
+ * @param string $action
+ *
+ * @return void
+ */
+function wp_nonce_ays( $action ) {
 }
 
 /**
@@ -927,6 +1471,15 @@ function wp_parse_args( $args, $defaults = array() ) {
  * @return mixed
  */
 function wp_parse_url( $url, $component = 0 ) {
+}
+
+/**
+ * @param int|object $revision
+ * @param bool       $link
+ *
+ * @return string|false
+ */
+function wp_post_revision_title( $revision, $link = false ) {
 }
 
 /**
@@ -1022,12 +1575,66 @@ function wp_remote_retrieve_response_code( $response ) {
 }
 
 /**
+ * @return WP_Roles
+ */
+function wp_roles() {
+}
+
+/**
+ * @param string $location
+ * @param int    $status
+ * @param string $x_redirect_by
+ *
+ * @return bool
+ */
+function wp_safe_redirect( $location, $status = 0, $x_redirect_by = '' ) {
+}
+
+/**
  * @param mixed $response
  * @param int   $status_code
  *
  * @return void
  */
 function wp_send_json( $response, $status_code = null ) {
+}
+
+/**
+ * @param int    $user_id
+ * @param string $notify
+ *
+ * @return void
+ */
+function wp_send_new_user_notifications( $user_id, $notify = '' ) {
+}
+
+/**
+ * @param int         $user_id
+ * @param bool        $remember
+ * @param bool|string $secure
+ * @param string      $token
+ *
+ * @return void
+ */
+function wp_set_auth_cookie( $user_id, $remember = false, $secure = '', $token = '' ) {
+}
+
+/**
+ * @param int|null $id
+ * @param string   $name
+ *
+ * @return WP_User
+ */
+function wp_set_current_user( $id, $name ) {
+}
+
+/**
+ * @param string $string
+ * @param bool   $remove_breaks
+ *
+ * @return string
+ */
+function wp_strip_all_tags( $string, $remove_breaks ) {
 }
 
 /**
@@ -1046,6 +1653,14 @@ function wp_unslash( $value ) {
  * @return int|false
  */
 function wp_update_attachment_metadata( $attachment_id, $data ) {
+}
+
+/**
+ * @param array|stdClass|WP_User $userdata
+ *
+ * @return int|WP_Error
+ */
+function wp_update_user( $userdata ) {
 }
 
 /**
