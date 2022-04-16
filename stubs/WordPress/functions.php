@@ -338,6 +338,16 @@ function delete_transient( $transient ) {
 }
 
 /**
+ * @param int    $user_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ *
+ * @return bool
+ */
+function delete_user_meta( $user_id, $meta_key, $meta_value = '' ) {
+}
+
+/**
  * @return string
  */
 function determine_locale() {
