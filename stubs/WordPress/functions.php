@@ -214,6 +214,17 @@ function add_thickbox() {
 }
 
 /**
+ * @param int    $user_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param bool   $unique
+ *
+ * @return int|false
+ */
+function add_user_meta( $user_id, $meta_key, $meta_value, $unique = false ) {
+}
+
+/**
  * @param string $path
  * @param string $scheme
  *
