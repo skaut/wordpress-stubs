@@ -773,6 +773,14 @@ function is_page( $page = '' ) {
 }
 
 /**
+ * @param string $plugin
+ *
+ * @return bool
+ */
+function is_plugin_active( $plugin ) {
+}
+
+/**
  * @return bool
  */
 function is_rtl() {
@@ -792,6 +800,12 @@ function is_single( $post = '' ) {
  * @return bool
  */
 function is_singular( $post_types = '' ) {
+}
+
+/**
+ * @return bool
+ */
+function is_user_logged_in() {
 }
 
 /**
