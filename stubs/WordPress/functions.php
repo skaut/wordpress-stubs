@@ -416,9 +416,24 @@ function get_template_directory_uri() {
 }
 
 /**
+ * @param string    $field
+ * @param int|false $user_id
+ *
+ * @return string
+ */
+function get_the_author_meta( $field = '', $user_id = false ) {
+}
+
+/**
  * @return int|false
  */
 function get_the_ID() {
+}
+
+/**
+ * @return string|void
+ */
+function get_the_modified_author() {
 }
 
 /**
