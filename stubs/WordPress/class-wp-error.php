@@ -7,6 +7,11 @@
  */
 class WP_Error {
 	/**
+	 * @var array<string|int, string>
+	 */
+	public $errors;
+
+	/**
 	 * @param string|int $code
 	 *
 	 * @return string
