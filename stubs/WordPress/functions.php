@@ -710,6 +710,16 @@ function get_transient( $transient ) {
 }
 
 /**
+ * @param int    $user_id
+ * @param string $key
+ * @param bool   $single
+ *
+ * @return mixed
+ */
+function get_user_meta( $user_id, $key, $single ) {
+}
+
+/**
  * @param string $option
  * @param int    $user
  * @param string $deprecated
