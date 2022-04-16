@@ -310,6 +310,18 @@ function deactivate_plugins( $plugins, $silent = false, $network_wide = null ) {
 }
 
 /**
+ * @param string $meta_type
+ * @param int    $object_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param bool   $delete_all
+ *
+ * @return bool
+ */
+function delete_metadata( $meta_type, $object_id, $meta_key, $meta_value = '', $delete_all = false ) {
+}
+
+/**
  * @param string $option
  *
  * @return bool
