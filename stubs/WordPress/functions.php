@@ -547,6 +547,52 @@ function get_permalink( $post, $leavename = false ) {
 }
 
 /**
+ * @param int|WP_Post|null $post
+ * @param string           $output
+ * @param string           $filter
+ *
+ * @return WP_Post|array|null
+ */
+function get_post( $post = null, $output = '', $filter = '' ) {
+}
+
+/**
+ * @param int    $post_id
+ * @param string $key
+ * @param bool   $single
+ *
+ * @return mixed
+ */
+function get_post_meta( $post_id, $key = '', $single = false ) {
+}
+
+/**
+ * @param int|WP_Post|null $post
+ *
+ * @return string|false
+ */
+function get_post_type( $post = null ) {
+}
+
+/**
+ * @param array|string $args
+ * @param string       $output
+ * @param string       $operator
+ *
+ * @return array<string>|array<WP_Post_Type>
+ */
+function get_post_types( $args = array(), $output = '', $operator = '' ) {
+}
+
+/**
+ * @param string $post_type
+ *
+ * @return WP_Post_Type|null
+ */
+function get_post_type_object( $post_type ) {
+}
+
+/**
  * @param string $var
  * @param mixed  $default
  *
