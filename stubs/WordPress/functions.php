@@ -1157,6 +1157,36 @@ function update_option( $option, $value, $autoload = null ) {
 }
 
 /**
+ * @param int    $post_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param mixed  $prev_value
+ *
+ * @return int|bool
+ */
+function update_post_meta( $post_id, $meta_key, $meta_value, $prev_value = '' ) {
+}
+
+/**
+ * @param int    $user_id
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param mixed  $prev_value
+ *
+ * @return int|bool
+ */
+function update_user_meta( $user_id, $meta_key, $meta_value, $prev_value = '' ) {
+}
+
+/**
+ * @param int|WP_User $user
+ * @param string      $capability
+ * @param mixed       ...$args
+ */
+function user_can( $user, $capability, ...$args ) {
+}
+
+/**
  * @param string $handle
  * @param string $data
  *
@@ -1187,11 +1217,23 @@ function wp_check_filetype( $filename, $mimes = null ) {
 }
 
 /**
+ * @return void
+ */
+function wp_clear_auth_cookie() {
+}
+
+/**
  * @param string|int $action
  *
  * @return string
  */
 function wp_create_nonce( $action = 0 ) {
+}
+
+/**
+ * @return void
+ */
+function wp_destroy_current_session() {
 }
 
 /**
@@ -1210,6 +1252,14 @@ function wp_create_nonce( $action = 0 ) {
  * @return void
  */
 function wp_die( $message = '', $title = '', $args = array() ) {
+}
+
+/**
+ * @param string $selected
+ *
+ * @return void
+ */
+function wp_dropdown_roles( $selected = '' ) {
 }
 
 /**
