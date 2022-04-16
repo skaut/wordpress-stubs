@@ -611,6 +611,15 @@ function get_settings_errors( $setting = '', $sanitize = false ) {
 }
 
 /**
+ * @param string $name
+ * @param array  $args
+ *
+ * @return void|false
+ */
+function get_sidebar( $name = null, $args = array() ) {
+}
+
+/**
  * @return string
  */
 function get_stylesheet_directory() {
