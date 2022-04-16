@@ -283,6 +283,13 @@ function esc_attr__( $text, $domain = '' ) {
 
 /**
  * @param string $text
+ * @param string $domain
+ */
+function esc_attr_e( $text, $domain = '' ) {
+}
+
+/**
+ * @param string $text
  *
  * @return string
  */
