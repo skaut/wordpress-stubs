@@ -897,6 +897,64 @@ function register_block_type( $name, $args = array() ) {
 }
 
 /**
+ * @param string   $file
+ * @param callable $callback
+ *
+ * @return void
+ */
+function register_deactivation_hook( $file, $callback ) {
+}
+
+/**
+ * @param string $user_login
+ * @param string $user_email
+ *
+ * @return int|WP_Error
+ */
+function register_new_user( $user_login, $user_email ) {
+}
+
+/**
+ * @param string $post_type
+ * @param array  $args {
+ *     @type string $label
+ *     @type array<string> $labels
+ *     @type string $description
+ *     @type bool $public
+ *     @type bool $hierarchical
+ *     @type bool $exclude_from_search
+ *     @type bool $publicly_queryable
+ *     @type bool $show_ui
+ *     @type bool|string $show_in_menu
+ *     @type bool $show_in_nav_menus
+ *     @type bool $show_in_admin_bar
+ *     @type bool $show_in_rest
+ *     @type string $rest_base
+ *     @type string $rest_namespace
+ *     @type string $rest_controller_class
+ *     @type int $menu_postion
+ *     @type string $menu_icon
+ *     @type string|array $capability_type
+ *     @type array<string> $capabilities
+ *     @type bool $map_meta_cap
+ *     @type array $supports
+ *     @type callable $register_meta_box_cb
+ *     @type array<string> $taxonomies
+ *     @type bool|string $has_archive
+ *     @type bool|array $rewrite
+ *     @type string|bool $query_var
+ *     @type bool $can_export
+ *     @type bool $delete_with_user
+ *     @type array $template
+ *     @type string|false $template_lock
+ * }
+ *
+ * @return WP_Post_Type|WP_Error
+ */
+function register_post_type( $post_type, $args = array() ) {
+}
+
+/**
  * @param string $option_group
  * @param string $option_name
  * @param array  $args {
