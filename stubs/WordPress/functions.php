@@ -39,6 +39,16 @@ function _n( $single, $plural, $number, $domain = '' ) {
 }
 
 /**
+ * @param string $text
+ * @param string $context
+ * @param string $domain
+ *
+ * @return string
+ */
+function _x( $text, $context, $domain = '' ) {
+}
+
+/**
  * @param mixed $maybeint
  *
  * @return int
