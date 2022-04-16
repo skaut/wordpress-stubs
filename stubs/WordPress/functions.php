@@ -454,6 +454,64 @@ function get_admin_page_title() {
 }
 
 /**
+ * @param int    $object_id
+ * @param string $object_type
+ * @param string $resource_type
+ *
+ * @return array<int>
+ */
+function get_ancestors( $object_id, $object_type = '', $resource_type = '' ) {
+}
+
+/**
+ * @return WP_Screen|null
+ */
+function get_current_screen() {
+}
+
+/**
+ * @return int
+ */
+function get_current_user_id() {
+}
+
+/**
+ * @param int $user_id
+ *
+ * @return string
+ */
+function get_edit_user_link( $user_id = null ) {
+}
+
+/**
+ * @param string $name
+ * @param array  $args
+ *
+ * @return void|false
+ */
+function get_footer( $name = '', $args = array() ) {
+}
+
+/**
+ * @param string $name
+ * @param array  $args
+ *
+ * @return void|false
+ */
+function get_header( $name = '', $args = array() ) {
+}
+
+/**
+ * @param int|null    $blog_id
+ * @param string      $path
+ * @param string|null $scheme
+ *
+ * @return string
+ */
+function get_home_url( $blog_id = null, $path = '', $scheme = null ) {
+}
+
+/**
  * @return string
  */
 function get_locale() {
