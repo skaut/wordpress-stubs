@@ -206,6 +206,16 @@ function current_user_can( $capability ) {
 }
 
 /**
+ * @param string   $format
+ * @param int|bool $timestamp_with_offset
+ * @param bool     $gmt
+ *
+ * @return string
+ */
+function date_i18n( $format, $timestamp_with_offset = false, $gmt = false ) {
+}
+
+/**
  * @param string|string[] $plugins
  * @param bool            $silent
  * @param mixed           $network_wide
