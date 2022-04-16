@@ -685,6 +685,14 @@ function get_the_post_thumbnail( $post = null, $size = '', $attr = '' ) {
 }
 
 /**
+ * @param int|WP_Post $post
+ *
+ * @return string
+ */
+function get_the_title( $post ) {
+}
+
+/**
  * @param string      $name
  * @param bool|string $default
  *
