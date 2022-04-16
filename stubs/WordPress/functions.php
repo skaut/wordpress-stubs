@@ -738,9 +738,30 @@ function has_post_thumbnail( $post = null ) {
 }
 
 /**
+ * @param int $from
+ * @param int $to
+ *
+ * @return string
+ */
+function human_time_diff( $from, $to ) {
+}
+
+/**
  * @return bool
  */
 function is_admin() {
+}
+
+/**
+ * @return bool
+ */
+function is_admin_bar_showing() {
+}
+
+/**
+ * @return bool
+ */
+function is_network_admin() {
 }
 
 /**
