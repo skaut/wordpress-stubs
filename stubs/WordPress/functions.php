@@ -1646,6 +1646,14 @@ function wp_update_attachment_metadata( $attachment_id, $data ) {
 }
 
 /**
+ * @param array|stdClass|WP_User $userdata
+ *
+ * @return int|WP_Error
+ */
+function wp_update_user( $userdata ) {
+}
+
+/**
  * @param string      $name
  * @param string|null $deprecated
  * @param mixed       $bits
