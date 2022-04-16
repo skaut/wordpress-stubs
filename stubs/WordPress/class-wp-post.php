@@ -12,6 +12,16 @@ final class WP_Post {
 	public $ID;
 
 	/**
+	 * @var string
+	 */
+	public $post_date;
+
+	/**
+	 * @var string
+	 */
+	public $post_modified;
+
+	/**
 	 * @var int
 	 */
 	public $post_parent;
