@@ -987,6 +987,25 @@ function remove_action( $tag, $function_to_remove, $priority = 0 ) {
 }
 
 /**
+ * @param string                $hook_name
+ * @param callable|string|array $callback
+ * @param int                   $priority
+ *
+ * @return bool
+ */
+function remove_filter( $hook_name, $callback, $priority = 0 ) {
+}
+
+/**
+ * @param string|array<string> $key
+ * @param string|false         $query
+ *
+ * @return string
+ */
+function remove_query_arg( $key, $query ) {
+}
+
+/**
  * @param string $name
  *
  * @return void
