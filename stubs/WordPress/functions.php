@@ -518,6 +518,17 @@ function get_locale() {
 }
 
 /**
+ * @param string $meta_type
+ * @param int    $object_id
+ * @param string $meta_key
+ * @param bool   $single
+ *
+ * @return mixed
+ */
+function get_metadata( $meta_type, $object_id, $meta_key = '', $single = false ) {
+}
+
+/**
  * @param string $option
  * @param mixed  $default
  *
