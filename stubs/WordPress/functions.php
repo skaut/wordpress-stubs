@@ -1014,6 +1014,17 @@ function remove_theme_mod( $name ) {
 }
 
 /**
+ * @param string $meta_key
+ * @param mixed  $meta_value
+ * @param string $object_type
+ * @param string $object_subtype
+ *
+ * @return mixed
+ */
+function sanitize_meta( $meta_key, $meta_value, $object_type, $object_subtype = '' ) {
+}
+
+/**
  * @param string $str
  *
  * @return string
