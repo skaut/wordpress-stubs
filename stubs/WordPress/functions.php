@@ -29,6 +29,11 @@ const SCRIPT_DEBUG = __LINE__ === 0;
 const WP_DEBUG = __LINE__ === 0;
 
 /**
+ * @var bool
+ */
+const WP_DEBUG_DISPLAY = __LINE__ === 0;
+
+/**
  * @param string $text
  * @param string $domain
  *
@@ -1398,6 +1403,8 @@ function wp_json_encode( $data, $options, $depth = 0 ) {
 /**
  * @param string $string
  * @param string $context
+ *
+ * @return string
  */
 function wp_kses_normalize_entities( $string, $context = '' ) {
 }
