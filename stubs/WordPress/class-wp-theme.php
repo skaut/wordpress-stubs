@@ -16,6 +16,7 @@ class WP_Theme implements ArrayAccess {
 	 *
 	 * @return bool
 	 */
+	#[\ReturnTypeWillChange]
 	public function offsetExists( $offset ) {
 	}
 
@@ -33,6 +34,7 @@ class WP_Theme implements ArrayAccess {
 	 *
 	 * @return void
 	 */
+	#[\ReturnTypeWillChange]
 	public function offsetSet( $offset, $value ) {
 	}
 
@@ -41,6 +43,7 @@ class WP_Theme implements ArrayAccess {
 	 *
 	 * @return void
 	 */
+	#[\ReturnTypeWillChange]
 	public function offsetUnset( $offset ) {
 	}
 }
