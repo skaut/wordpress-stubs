@@ -5,7 +5,7 @@
 
 /**
  */
-class WP_Post_Type {
+final class WP_Post_Type {
 	/**
 	 * @var string
 	 */
