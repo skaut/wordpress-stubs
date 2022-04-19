@@ -94,13 +94,13 @@ function add_filter( $tag, $function_to_add, $priority = 0, $accepted_args = 0 )
 }
 
 /**
- * @param string   $page_title
- * @param string   $menu_title
- * @param string   $capability
- * @param string   $menu_slug
- * @param callable $function
- * @param string   $icon_url
- * @param int      $position
+ * @param string          $page_title
+ * @param string          $menu_title
+ * @param string          $capability
+ * @param string          $menu_slug
+ * @param callable|string $function
+ * @param string          $icon_url
+ * @param int             $position
  *
  * @return string
  */
@@ -210,12 +210,12 @@ function add_shortcode( $tag, $callback ) {
 }
 
 /**
- * @param string   $parent_slug
- * @param string   $page_title
- * @param string   $menu_title
- * @param string   $capability
- * @param string   $menu_slug
- * @param callable $function
+ * @param string          $parent_slug
+ * @param string          $page_title
+ * @param string          $menu_title
+ * @param string          $capability
+ * @param string          $menu_slug
+ * @param callable|string $function
  *
  * @return false|string
  */
