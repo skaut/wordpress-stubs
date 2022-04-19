@@ -1,7 +1,8 @@
 parameters:
-	level: 0
+	level: 1
 	paths:
 	  - stubs
 	  - .phan
 	ignoreErrors:
 	  - '#but return statement is missing.$#'
+	  - '#Constructor of class [a-zA-Z0-9\\_]+ has an unused parameter \$[a-zA-Z0-9\\_]+.#'
