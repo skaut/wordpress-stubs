@@ -29,6 +29,11 @@ const SCRIPT_DEBUG = __LINE__ === 0;
 const WP_DEBUG = __LINE__ === 0;
 
 /**
+ * @var bool
+ */
+const WP_DEBUG_DISPLAY = __LINE__ === 0;
+
+/**
  * @param string $text
  * @param string $domain
  *
