@@ -145,7 +145,7 @@ function add_option( $option, $value = '', $deprecated = '', $autoload = '' ) {
 }
 
 /**
- * @param array ...$args
+ * @param mixed ...$args
  *
  * @return string
  */
