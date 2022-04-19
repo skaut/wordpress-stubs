@@ -4,6 +4,7 @@
  */
 
 /**
+ * @implements ArrayAccess<mixed, mixed>
  */
 class WP_Theme implements ArrayAccess {
 	/**

@@ -4,6 +4,8 @@
  */
 
 /**
+ * @implements ArrayAccess<string, string>
+ * @implements IteratorAggregate<string, string>
  */
 class Requests_Cookie_Jar implements ArrayAccess, IteratorAggregate {
 	/**
@@ -43,7 +45,7 @@ class Requests_Cookie_Jar implements ArrayAccess, IteratorAggregate {
 	}
 
 	/**
-	 * @return ArrayIterator
+	 * @return ArrayIterator<string, string>
 	 */
 	#[\ReturnTypeWillChange]
 	public function getIterator() {
