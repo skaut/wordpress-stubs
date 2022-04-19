@@ -4,10 +4,10 @@
  */
 
 /**
- * @param string       $tag
- * @param object|array $function_to_add
- * @param int          $priority
- * @param int          $accepted_args
+ * @param string   $tag
+ * @param callable $function_to_add
+ * @param int      $priority
+ * @param int      $accepted_args
  *
  * @return true
  */
