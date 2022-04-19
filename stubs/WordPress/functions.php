@@ -216,10 +216,11 @@ function add_shortcode( $tag, $callback ) {
  * @param string   $capability
  * @param string   $menu_slug
  * @param callable $function
+ * @param int|null $position
  *
  * @return false|string
  */
-function add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function = '' ) {
+function add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function = '', $position = null ) {
 }
 
 /**
