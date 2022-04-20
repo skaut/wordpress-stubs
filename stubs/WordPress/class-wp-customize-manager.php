@@ -55,17 +55,17 @@ class WP_Customize_Manager {
 	}
 
 	/**
-	 * @param WP_Customize_Section|string $id
-	 * @param array                       $args {
-	 *     @type int             $priority
-	 *     @type string          $panel
-	 *     @type string          $capability
-	 *     @type string|string[] $theme_supports
-	 *     @type string          $title
-	 *     @type string          $description
-	 *     @type string          $type
-	 *     @type callable        $active_callback
-	 *     @type bool            $description_hidden
+	 * @param WP_Customize_Section|string                                                                                                                                                                                   $id
+	 * @param array{priority?: int, panel?: string, capability?: string, theme_supports?: string|array<string>, title?: string, description?: string, type?: string, active_callback?: callable, description_hidden?: bool} $args {
+	 *     @type int                  $priority
+	 *     @type string               $panel
+	 *     @type string               $capability
+	 *     @type string|array<string> $theme_supports
+	 *     @type string               $title
+	 *     @type string               $description
+	 *     @type string               $type
+	 *     @type callable             $active_callback
+	 *     @type bool                 $description_hidden
 	 * }
 	 *
 	 * @return WP_Customize_Section
