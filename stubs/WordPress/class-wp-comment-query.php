@@ -15,7 +15,7 @@ class WP_Comment_Query {
 	 *     @type array<int>           $comment_in
 	 *     @type array<int>           $comment_not_in
 	 *     @type bool                 $count
-	 *     @type array                $date_query
+	 *     @type array<mixed>         $date_query
 	 *     @type string               $fields
 	 *     @type int                  $ID
 	 *     @type array<string>        $include_unapproved
@@ -26,7 +26,7 @@ class WP_Comment_Query {
 	 *     @type string               $meta_compare_key
 	 *     @type string               $meta_type
 	 *     @type string               $meta_type_key
-	 *     @type array                $meta_query
+	 *     @type array<mixed>         $meta_query
 	 *     @type int                  $number
 	 *     @type int                  $paged
 	 *     @type int                  $offset
