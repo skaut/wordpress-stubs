@@ -74,13 +74,17 @@ class WP_Customize_Manager {
 	}
 
 	/**
-	 * @param WP_Customize_Setting|string $id
-	 * @param array                       $args {
-	 *     @type string          $type
-	 *     @type string          $capability
-	 *     @type string|string[] $theme_supports
-	 *     @type string          $default
-	 *     @type string          $transport
+	 * @param WP_Customize_Setting|string                                                                                                                                                                                                       $id
+	 * @param array{type?: string, capability?: string, theme_supports?: string|array<string>, default?: string, transport?: string, validate_callback?: callable, sanitize_callback?: callable, sanitize_js_callback?: callable, dirty?: bool} $args {
+	 *     @type string               $type
+	 *     @type string               $capability
+	 *     @type string|array<string> $theme_supports
+	 *     @type string               $default
+	 *     @type string               $transport
+	 *     @type callable             $validate_callback
+	 *     @type callable             $sanitize_callback
+	 *     @type callable             $sanitize_js_callback
+	 *     @type bool                 $dirty
 	 * }
 	 *
 	 * @return WP_Customize_Setting
