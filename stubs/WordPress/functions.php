@@ -1664,7 +1664,7 @@ function wp_update_attachment_metadata( $attachment_id, $data ) {
 }
 
 /**
- * @param array|stdClass|WP_User $userdata
+ * @param array{ID: int, user_pass?: string, user_login?: string, user_nicename?: string, user_url?: string, user_email?: string, display_name?: string, nickname?: string, first_name?: string, last_name?: string, description?: string, rich_editing?: string, syntax_highlighting?: string, comment_shortcuts?: string, admin_color?: string, use_ssl?: bool, user_registered?: string, user_activation_key?: string, spam?: bool, show_admin_bar_front?: string, role?: string, locale?: string, meta_input: array<string, mixed>}|stdClass|WP_User $userdata
  *
  * @return int|WP_Error
  */
