@@ -43,16 +43,16 @@ class WP_Http {
 	public function get( $url, $args = array() ) {
 	}
 	/**
-	 * @param string|string[] $headers
-	 * @param string          $url
+	 * @param string|array<string> $headers
+	 * @param string               $url
 	 *
-	 * @return array {
-	 *     @type array $response {
+	 * @return array{response: array{code: int, message: string}, newheaders: string|array<string>, cookies: array<WP_Http_Cookie>} {
+	 *     @type array{code: int, message: string} $response {
 	 *         @type int    $code
 	 *         @type string $message
 	 *     }
-	 *     @type string|string[]  $newheaders
-	 *     @type WP_Http_Cookie[] $cookies
+	 *     @type string|array<string>              $newheaders
+	 *     @type array<WP_Http_Cookie>             $cookies
 	 * }
 	 */
 	public static function processHeaders( $headers, $url = '' ) {
