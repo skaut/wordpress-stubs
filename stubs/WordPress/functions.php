@@ -1677,15 +1677,11 @@ function wp_update_user( $userdata ) {
  * @param mixed       $bits
  * @param string|null $time
  *
- * @return array {
- *     @type string|null  $path
- *     @type string|null  $url
- *     @type string|null  $subdir
- *     @type string|null  $basedir
- *     @type string|null  $baseurl
- *     @type string|false $error
+ * @return array{file: string, url: string, type: string, error: false}|array{error: string} {
  *     @type string       $file
+ *     @type string       $url
  *     @type string       $type
+ *     @type string|false $error
  * }
  */
 function wp_upload_bits( $name, $deprecated, $bits, $time = null ) {
