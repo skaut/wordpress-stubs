@@ -24,19 +24,21 @@ class WP_Widget {
 	}
 
 	/**
-	 * @param array $args {
-	 *     @type string after_title
-	 *     @type string after_widget
-	 *     @type string before_title
-	 *     @type string before_widget
-	 *     @type string class
-	 *     @type string description
-	 *     @type string id
-	 *     @type string name
-	 *     @type string widget_id
-	 *     @type string widget_name
+	 * @param array{after_title?: string, after_widget?: string, before_title?: string, before_widget?: string, class?: string, description?: string, id?: string, name?: string, widget_id?: string, widget_name?: string} $args {
+	 *     @type string $after_title
+	 *     @type string $after_widget
+	 *     @type string $before_title
+	 *     @type string $before_widget
+	 *     @type string $class
+	 *     @type string $description
+	 *     @type string $id
+	 *     @type string $name
+	 *     @type string $widget_id
+	 *     @type string $widget_name
 	 * }
-	 * @param array $instance
+	 * @param array<mixed, mixed>                                                                                                                                                                                           $instance
+	 *
+	 * @return void
 	 */
 	public function widget( $args, $instance ) {
 	}
