@@ -1312,11 +1312,11 @@ function wp_generate_attachment_metadata( $attachment_id, $file ) {
 }
 
 /**
- * @param int          $attachment_id
- * @param string|array $size
- * @param bool         $icon
+ * @param int                          $attachment_id
+ * @param string|array{0: int, 1: int} $size
+ * @param bool                         $icon
  *
- * @return false|array {
+ * @return false|array{0: string, 1: int, 2: int, 3: bool} {
  *     @type string $0
  *     @type int $1
  *     @type int $2
