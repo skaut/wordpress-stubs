@@ -7,15 +7,16 @@
  */
 class WP_Widget {
 	/**
-	 * @param string $id_base
-	 * @param string $name
-	 * @param array  $widget_options {
+	 * @param string                                                                        $id_base
+	 * @param string                                                                        $name
+	 * @param array{classname?: string, description?: string, show_instance_in_rest?: bool} $widget_options {
 	 *     @type string $classname
 	 *     @type string $description
+	 *     @type bool   $show_instance_in_rest
 	 * }
-	 * @param array  $control_options {
-	 *     @type int $height
-	 *     @type int $width
+	 * @param array{height?: int, width?: int, id_base?: int|string}                        $control_options {
+	 *     @type int        $height
+	 *     @type int        $width
 	 *     @type int|string $id_base
 	 * }
 	 */
