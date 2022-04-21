@@ -7,25 +7,25 @@
  */
 class WP_Http {
 	/**
-	 * @param string       $url
-	 * @param string|array $args {
-	 *     @type string       $method
-	 *     @type int          $timeout
-	 *     @type int          $redirection
-	 *     @type string       $httpversion
-	 *     @type string       $user-agent
-	 *     @type bool         $reject_unsafe_urls
-	 *     @type bool         $blocking
-	 *     @type string|array $headers
-	 *     @type array        $cookies
-	 *     @type string|array $body
-	 *     @type bool         $compress
-	 *     @type bool         $decompress
-	 *     @type bool         $sslverify
-	 *     @type string       $sslcertificates
-	 *     @type bool         $stream
-	 *     @type string       $filename
-	 *     @type int          $limit_response_size
+	 * @param string                                                                                                                                                                                                                                                                                                                                                                                                            $url
+	 * @param string|array{method?: string, timeout?: int, redirection?: int, httpversion?: string, user-agent?: string, reject_unsafe_urls?: bool, blocking?: bool, headers?: string|array<string, string>, cookies?: array<string, string>, body?: string|array<string, string>, compress?: bool, decompress?: bool, sslverify?: bool, sslcertificates?: string, stream?: bool, filename?: string, limit_response_size?: int} $args {
+	 *     @type string                       $method
+	 *     @type int                          $timeout
+	 *     @type int                          $redirection
+	 *     @type string                       $httpversion
+	 *     @type string                       $user-agent
+	 *     @type bool                         $reject_unsafe_urls
+	 *     @type bool                         $blocking
+	 *     @type string|array<string, string> $headers
+	 *     @type array<string, string>        $cookies
+	 *     @type string|array<string, string> $body
+	 *     @type bool                         $compress
+	 *     @type bool                         $decompress
+	 *     @type bool                         $sslverify
+	 *     @type string                       $sslcertificates
+	 *     @type bool                         $stream
+	 *     @type string                       $filename
+	 *     @type int                          $limit_response_size
 	 * }
 	 *
 	 * @return WP_Error|array {
