@@ -28,16 +28,16 @@ class WP_Http {
 	 *     @type int                          $limit_response_size
 	 * }
 	 *
-	 * @return WP_Error|array {
-	 *     @type Requests_Utility_CaseInsensitiveDictionary $headers
-	 *     @type string                                     $body
-	 *     @type array                                      $response {
-	 *         @type int    $code
-	 *         @type string $message
+	 * @return WP_Error|array{headers: Requests_Utility_CaseInsensitiveDictionary, body: string, response: array{code: int, message: string}, cookies: array<WP_HTTP_Cookie>, filename: string|null, http_response: WP_HTTP_Requests_Response}|array{headers: array<never>, body: string, response: array{code: false, message: false}, cookies: array<never>, http_response: null} {
+	 *     @type Requests_Utility_CaseInsensitiveDictionary|array<never> $headers
+	 *     @type string                                                  $body
+	 *     @type array{code: int|false, message: string|false}           $response {
+	 *         @type int|false    $code
+	 *         @type string|false $message
 	 *     }
-	 *     @type WP_HTTP_Cookie[]          $cookies
-	 *     @type string|null               $filename
-	 *     @type WP_HTTP_Requests_Response $http_response
+	 *     @type array<WP_HTTP_Cookie>                                   $cookies
+	 *     @type string|null                                             $filename
+	 *     @type WP_HTTP_Requests_Response|null                          $http_response
 	 * }
 	 */
 	public function get( $url, $args = array() ) {
