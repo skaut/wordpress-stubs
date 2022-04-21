@@ -1561,7 +1561,7 @@ function wp_remote_get( $url, $args = array() ) {
 }
 
 /**
- * @param WP_Error|array $response {
+ * @param WP_Error|array{body: string} $response {
  *     @type string $body
  * }
  *
