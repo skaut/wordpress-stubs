@@ -1411,9 +1411,9 @@ function wp_kses_normalize_entities( $string, $context = '' ) {
 }
 
 /**
- * @param string $handle
- * @param string $object_name
- * @param array  $l10n
+ * @param string              $handle
+ * @param string              $object_name
+ * @param array<mixed, mixed> $l10n
  *
  * @return bool
  */
