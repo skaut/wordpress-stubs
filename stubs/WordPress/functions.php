@@ -1571,7 +1571,7 @@ function wp_remote_retrieve_body( $response ) {
 }
 
 /**
- * @param WP_Error|array $response {
+ * @param WP_Error|array{response: array{code: int}} $response {
  *     @type array $response {
  *         @type int $code
  *     }
