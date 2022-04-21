@@ -1345,38 +1345,38 @@ function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
 }
 
 /**
- * @param string|array $args {
- *     @type int            $ID
- *     @type int            $post_author
- *     @type string         $post_date
- *     @type string         $post_date_gmt
- *     @type mixed          $post_content
- *     @type string         $post_content_filtered
- *     @type string         $post_title
- *     @type string         $post_excerpt
- *     @type string         $post_status
- *     @type string         $post_type
- *     @type string         $comment_status
- *     @type string         $ping_status
- *     @type string         $post_password
- *     @type string         $post_name
- *     @type string         $to_ping
- *     @type string         $pinged
- *     @type string         $post_modified
- *     @type string         $post_modified_gmt
- *     @type int            $post_parent
- *     @type int            $menu_order
- *     @type string         $post_mime_type
- *     @type string         $guid
- *     @type int[]          $post_category
- *     @type int[]|string[] $tags_input
- *     @type string[]       $tax_input
- *     @type array          $meta_input
- *     @type string|false   $file
+ * @param string|array{ID?: int, post_author?: int, post_date?: string, post_date_gmt?: string, post_content?: mixed, post_content_filtered?: string, post_title?: string, post_excerpt?: string, post_status?: string, post_type?: string, comment_status?: string, ping_status?: string, post_password?: string, post_name?: string, to_ping?: string, pinged?: string, post_modified?: string, post_modified_gmt?: string, post_parent?: int, menu_order?: int, post_mime_type?: string, guid?: string, import_id?: int, post_category?: array<int>, tags_input?: array<int>|array<string>, tax_input: array<string>, meta_input?: array<string, mixed>} $args {
+ *     @type int                      $ID
+ *     @type int                      $post_author
+ *     @type string                   $post_date
+ *     @type string                   $post_date_gmt
+ *     @type mixed                    $post_content
+ *     @type string                   $post_content_filtered
+ *     @type string                   $post_title
+ *     @type string                   $post_excerpt
+ *     @type string                   $post_status
+ *     @type string                   $post_type
+ *     @type string                   $comment_status
+ *     @type string                   $ping_status
+ *     @type string                   $post_password
+ *     @type string                   $post_name
+ *     @type string                   $to_ping
+ *     @type string                   $pinged
+ *     @type string                   $post_modified
+ *     @type string                   $post_modified_gmt
+ *     @type int                      $post_parent
+ *     @type int                      $menu_order
+ *     @type string                   $post_mime_type
+ *     @type string                   $guid
+ *     @type int                      $import_id
+ *     @type array<int>               $post_category
+ *     @type array<int>|array<string> $tags_input
+ *     @type array<string>            $tax_input
+ *     @type array<string, mixed>     $meta_input
  * }
- * @param string|false $file
- * @param int          $parent
- * @param bool         $wp_error
+ * @param string|false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      $file
+ * @param int                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $parent
+ * @param bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              $wp_error
  *
  * @return int|WP_Error
  */
