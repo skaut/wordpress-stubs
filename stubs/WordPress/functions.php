@@ -1464,10 +1464,10 @@ function wp_nonce_url( $actionurl, $action = 0, $name = '' ) {
 }
 
 /**
- * @param string|array|object $args
- * @param array               $defaults
+ * @param string|array<mixed, mixed>|object $args
+ * @param array<mixed, mixed>               $defaults
  *
- * @return array
+ * @return array<mixed, mixed>
  */
 function wp_parse_args( $args, $defaults = array() ) {
 }
