@@ -1655,8 +1655,8 @@ function wp_unslash( $value ) {
 }
 
 /**
- * @param int   $attachment_id
- * @param array $data
+ * @param int          $attachment_id
+ * @param array<mixed> $data
  *
  * @return int|false
  */
