@@ -114,7 +114,7 @@ function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $func
  * @param string|array<string>|WP_Screen $screen
  * @param string                         $context
  * @param string                         $priority
- * @param array                          $callback_args
+ * @param array<int|string, mixed>       $callback_args
  *
  * @return void
  */
