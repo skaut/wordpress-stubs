@@ -1114,8 +1114,8 @@ function switch_theme( $stylesheet ) {
 }
 
 /**
- * @param string|array $size
- * @param string|array $attr
+ * @param string|array{0: int, 1: int}                                                                                      $size
+ * @param string|array{src?: string, class?: string, alt?: string, srcset?: string, sizes?: string, loading?: string|false} $attr
  *
  * @return void
  */
