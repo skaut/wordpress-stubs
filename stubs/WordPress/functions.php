@@ -406,6 +406,8 @@ function esc_attr__( $text, $domain = '' ) {
 /**
  * @param string $text
  * @param string $domain
+ *
+ * @return void
  */
 function esc_attr_e( $text, $domain = '' ) {
 }
