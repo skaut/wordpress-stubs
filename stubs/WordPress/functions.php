@@ -1094,11 +1094,11 @@ function settings_fields( $option_group ) {
 }
 
 /**
- * @param string       $text
- * @param string       $type
- * @param string       $name
- * @param bool         $wrap
- * @param array|string $other_attributes
+ * @param string                       $text
+ * @param string                       $type
+ * @param string                       $name
+ * @param bool                         $wrap
+ * @param array<string, string>|string $other_attributes
  *
  * @return void
  */
