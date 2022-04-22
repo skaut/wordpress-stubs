@@ -500,8 +500,8 @@ function get_edit_user_link( $user_id = null ) {
 }
 
 /**
- * @param string $name
- * @param array  $args
+ * @param string                   $name
+ * @param array<int|string, mixed> $args
  *
  * @return void|false
  */
