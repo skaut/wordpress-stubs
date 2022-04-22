@@ -1253,14 +1253,15 @@ function wp_destroy_current_session() {
 }
 
 /**
- * @param string|WP_Error  $message
- * @param string|int       $title
- * @param string|array|int $args {
+ * @param string|WP_Error                                                                                                                                                  $message
+ * @param string|int                                                                                                                                                       $title
+ * @param string|int|array{response?: int, link_url?: string, link_text?: string, back_link?: bool, text_direction?: string, charset?: string, code?: string, exit?: bool} $args {
  *     @type int    $response
  *     @type string $link_url
  *     @type string $link_text
  *     @type bool   $back_link
  *     @type string $text_direction
+ *     @type string $charset
  *     @type string $code
  *     @type bool   $exit
  * }
