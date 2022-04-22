@@ -905,7 +905,29 @@ function register_activation_hook( $file, $function ) {
 
 /**
  * @param string|WP_Block_Type $name
- * @param array                $args
+ * @param array                $args {
+ *     @type string             $api_version
+ *     @type string             $title
+ *     @type string|null        $category
+ *     @type array<string>|null $parent
+ *     @type string|null        $icon
+ *     @type string             $description
+ *     @type array<string>      $keywords
+ *     @type string|null        $textdomain
+ *     @type array              $styles
+ *     @type array              $variations
+ *     @type array|null         $supports
+ *     @type array|null         $example
+ *     @type callable|null      $render_callback
+ *     @type array|null         $attributes
+ *     @type array              $uses_context
+ *     @type array|null         $provides_context
+ *     @type string|null        $editor_script
+ *     @type string|null        $script
+ *     @type string|null        $view_script
+ *     @type string|null        $editor_style
+ *     @type string|null        $style
+ * }
  *
  * @return WP_Block_Type|false
  */
