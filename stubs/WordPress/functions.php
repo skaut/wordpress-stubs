@@ -1133,7 +1133,7 @@ function the_title( $before = '', $after = '', $echo = false ) {
 }
 
 /**
- * @param string|array $args {
+ * @param string|array{before?: string, after?: string, echo?: bool, post?: WP_Post} $args {
  *     @type string  $before
  *     @type string  $after
  *     @type bool    $echo
