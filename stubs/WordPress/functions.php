@@ -260,8 +260,8 @@ function apply_filters( $tag, $value, ...$args ) {
 }
 
 /**
- * @param string $hook_name
- * @param array  $args
+ * @param string                   $hook_name
+ * @param array<int|string, mixed> $args
  *
  * @return mixed
  */
