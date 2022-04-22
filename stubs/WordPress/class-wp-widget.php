@@ -36,7 +36,7 @@ class WP_Widget {
 	 *     @type string $widget_id
 	 *     @type string $widget_name
 	 * }
-	 * @param array<mixed, mixed>                                                                                                                                                                                           $instance
+	 * @param array<int|string, mixed>                                                                                                                                                                                      $instance
 	 *
 	 * @return void
 	 */

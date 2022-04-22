@@ -629,8 +629,8 @@ function get_settings_errors( $setting = '', $sanitize = false ) {
 }
 
 /**
- * @param string              $name
- * @param array<mixed, mixed> $args
+ * @param string                   $name
+ * @param array<int|string, mixed> $args
  *
  * @return void|false
  */
@@ -1442,9 +1442,9 @@ function wp_kses_normalize_entities( $string, $context = '' ) {
 }
 
 /**
- * @param string              $handle
- * @param string              $object_name
- * @param array<mixed, mixed> $l10n
+ * @param string                   $handle
+ * @param string                   $object_name
+ * @param array<int|string, mixed> $l10n
  *
  * @return bool
  */
@@ -1495,10 +1495,10 @@ function wp_nonce_url( $actionurl, $action = 0, $name = '' ) {
 }
 
 /**
- * @param string|array<mixed, mixed>|object $args
- * @param array<mixed, mixed>               $defaults
+ * @param string|array<int|string, mixed>|object $args
+ * @param array<int|string, mixed>               $defaults
  *
- * @return array<mixed, mixed>
+ * @return array<int|string, mixed>
  */
 function wp_parse_args( $args, $defaults = array() ) {
 }
