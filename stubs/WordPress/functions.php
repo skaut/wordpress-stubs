@@ -931,38 +931,38 @@ function register_new_user( $user_login, $user_email ) {
 }
 
 /**
- * @param string $post_type
- * @param array  $args {
- *     @type string $label
- *     @type array<string> $labels
- *     @type string $description
- *     @type bool $public
- *     @type bool $hierarchical
- *     @type bool $exclude_from_search
- *     @type bool $publicly_queryable
- *     @type bool $show_ui
- *     @type bool|string $show_in_menu
- *     @type bool $show_in_nav_menus
- *     @type bool $show_in_admin_bar
- *     @type bool $show_in_rest
- *     @type string $rest_base
- *     @type string $rest_namespace
- *     @type string $rest_controller_class
- *     @type int $menu_postion
- *     @type string $menu_icon
- *     @type string|array $capability_type
- *     @type array<string> $capabilities
- *     @type bool $map_meta_cap
- *     @type array $supports
- *     @type callable $register_meta_box_cb
- *     @type array<string> $taxonomies
- *     @type bool|string $has_archive
- *     @type bool|array $rewrite
- *     @type string|bool $query_var
- *     @type bool $can_export
- *     @type bool $delete_with_user
- *     @type array $template
- *     @type string|false $template_lock
+ * @param string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          $post_type
+ * @param array{label?: string, labels?: array<string>, description?: string, public?: bool, hierarchical?: bool, exclude_from_search?: bool, publicly_queryable?: bool, show_ui?: bool, show_in_menu?: bool|string, show_in_nav_menus?: bool, show_in_admin_bar?: bool, show_in_rest?: bool, rest_base?: string, rest_namespace?: string, rest_controller_class?: string, menu_postion?: int, menu_icon?: string, capability_type?: string|array<string>, capabilities?: array<string>, map_meta_cap?: bool, supports?: array<string|array<string|string>>, register_meta_box_cb?: callable, taxonomies?: array<string>, has_archive?: bool|string, rewrite?: bool|array{slug?: string, with_front?: bool, feeds?: bool, pages?: bool, ep_mask?: int}, query_var?: string|bool, can_export?: bool, delete_with_user?: bool, template?: array<array{0: string, 1?: array<string, string>}>, template_lock?: string|false} $args {
+ *     @type string                                                                                  $label
+ *     @type array<string>                                                                           $labels
+ *     @type string                                                                                  $description
+ *     @type bool                                                                                    $public
+ *     @type bool                                                                                    $hierarchical
+ *     @type bool                                                                                    $exclude_from_search
+ *     @type bool                                                                                    $publicly_queryable
+ *     @type bool                                                                                    $show_ui
+ *     @type bool|string                                                                             $show_in_menu
+ *     @type bool                                                                                    $show_in_nav_menus
+ *     @type bool                                                                                    $show_in_admin_bar
+ *     @type bool                                                                                    $show_in_rest
+ *     @type string                                                                                  $rest_base
+ *     @type string                                                                                  $rest_namespace
+ *     @type string                                                                                  $rest_controller_class
+ *     @type int                                                                                     $menu_postion
+ *     @type string                                                                                  $menu_icon
+ *     @type string|array<string>                                                                    $capability_type
+ *     @type array<string>                                                                           $capabilities
+ *     @type bool                                                                                    $map_meta_cap
+ *     @type array<string|array<string, string>>                                                     $supports
+ *     @type callable                                                                                $register_meta_box_cb
+ *     @type array<string>                                                                           $taxonomies
+ *     @type bool|string                                                                             $has_archive
+ *     @type bool|array{slug?: string, with_front?: bool, feeds?: bool, pages?: bool, ep_mask?: int} $rewrite
+ *     @type string|bool                                                                             $query_var
+ *     @type bool                                                                                    $can_export
+ *     @type bool                                                                                    $delete_with_user
+ *     @type array<array{0: string, 1?: array<string, string>}>                                      $template
+ *     @type string|false                                                                            $template_lock
  * }
  *
  * @return WP_Post_Type|WP_Error
