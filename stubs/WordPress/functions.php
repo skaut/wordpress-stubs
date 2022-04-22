@@ -509,8 +509,8 @@ function get_footer( $name = '', $args = array() ) {
 }
 
 /**
- * @param string $name
- * @param array  $args
+ * @param string                   $name
+ * @param array<int|string, mixed> $args
  *
  * @return void|false
  */
