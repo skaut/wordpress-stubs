@@ -1052,6 +1052,8 @@ function sanitize_text_field( $str ) {
  * @param mixed $selected
  * @param mixed $current
  * @param bool  $echo
+ *
+ * @return string
  */
 function selected( $selected, $current = false, $echo = false ) {
 }
