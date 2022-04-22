@@ -153,9 +153,9 @@ function add_query_arg( ...$args ) {
 }
 
 /**
- * @param string       $regex
- * @param string|array $query
- * @param string       $after
+ * @param string                       $regex
+ * @param string|array<string, string> $query
+ * @param string                       $after
  *
  * @return void
  */
