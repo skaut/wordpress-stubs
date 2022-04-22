@@ -621,7 +621,7 @@ function get_query_var( $var, $default = '' ) {
  * @param string  $setting
  * @param boolean $sanitize
  *
- * @return array
+ * @return array{setting: string, code: string, message: string, type: string}
  */
 function get_settings_errors( $setting = '', $sanitize = false ) {
 }
