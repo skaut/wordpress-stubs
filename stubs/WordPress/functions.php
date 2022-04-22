@@ -971,9 +971,9 @@ function register_post_type( $post_type, $args = array() ) {
 }
 
 /**
- * @param string $option_group
- * @param string $option_name
- * @param array  $args {
+ * @param string                                                                                                         $option_group
+ * @param string                                                                                                         $option_name
+ * @param array{type?: string, description?: string, sanitize_callback?: callable, show_in_rest?: bool, default?: mixed} $args {
  *     @type string   $type
  *     @type string   $description
  *     @type callable $sanitize_callback
