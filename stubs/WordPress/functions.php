@@ -906,29 +906,54 @@ function register_activation_hook( $file, $function ) {
 }
 
 /**
- * @param string|WP_Block_Type $name
- * @param array                $args {
- *     @type string             $api_version
- *     @type string             $title
- *     @type string|null        $category
+ * @param string|WP_Block_Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        $name
+ * @param array{api_version?: string, title?: string, category?: string|null, parent?: array<string>|null, icon?: string|null, description?: string, keywords?: array<string>, textdomain?: string|null, styles?: array<array{name: string, label: string, isDefault?: bool}>, variations?: array<array{name: string, title: string, description?: string, category?: string, icon?: string, isDefault?: bool, attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, example?: array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int}, scope?: array<string>, keywords?: array<string>, isActive?: array<string>}>, supports?: null|array{align?: bool|array<string>, alignWide?: bool, className?: bool, color?: array{background?: bool, gradients?: bool, link?: bool, text?: bool}, customClassName?: bool, defaultStylePicker?: bool, html?: bool, inserter?: bool, multiple?: bool, reusable?: bool, lock?: bool, spacing?: array{margin?: bool|array<string>, padding?: bool|array<string>}, typography?: array{fontSize?: bool, lineHeight?: bool}}, example?: null|array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int}, render_callback?: callable|null, attributes?: null|array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, uses_context?: array<mixed>, provides_context?: array<mixed>|null, editor_script?: string|null, script?: string|null, view_script?: string|null, editor_style?: string|null, style?: string|null} $args {
+ *     @type string $api_version
+ *     @type string $title
+ *     @type string|null $category
  *     @type array<string>|null $parent
- *     @type string|null        $icon
- *     @type string             $description
- *     @type array<string>      $keywords
- *     @type string|null        $textdomain
- *     @type array              $styles
- *     @type array              $variations
- *     @type array|null         $supports
- *     @type array|null         $example
- *     @type callable|null      $render_callback
- *     @type array|null         $attributes
- *     @type array              $uses_context
- *     @type array|null         $provides_context
- *     @type string|null        $editor_script
- *     @type string|null        $script
- *     @type string|null        $view_script
- *     @type string|null        $editor_style
- *     @type string|null        $style
+ *     @type string|null $icon
+ *     @type string $description
+ *     @type array<string> $keywords
+ *     @type string|null $textdomain
+ *     @type array<array{name: string, label: string, isDefault?: bool}> $styles
+ *     @type array<array{name: string, title: string, description?: string, category?: string, icon?: string, isDefault?: bool, attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, example?: array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int}, scope?: array<string>, keywords?: array<string>, isActive?: array<string>}> $variations
+ *     @type null|array{align?: bool|array<string>, alignWide?: bool, className?: bool, color?: array{background?: bool, gradients?: bool, link?: bool, text?: bool}, customClassName?: bool, defaultStylePicker?: bool, html?: bool, inserter?: bool, multiple?: bool, reusable?: bool, lock?: bool, spacing?: array{margin?: bool|array<string>, padding?: bool|array<string>}, typography?: array{fontSize?: bool, lineHeight?: bool}} $supports {
+ *         @type bool|array<string>                                                   $align
+ *         @type bool                                                                 $alignWide
+ *         @type bool                                                                 $className
+ *         @type array{background?: bool, gradients?: bool, link?: bool, text?: bool} $color {
+ *             @type bool $background
+ *             @type bool $gradients
+ *             @type bool $link
+ *             @type bool $text
+ *         }
+ *         @type bool                                                                 $customClassName
+ *         @type bool                                                                 $defaultStylePicker
+ *         @type bool                                                                 $html
+ *         @type bool                                                                 $inserter
+ *         @type bool                                                                 $multiple
+ *         @type bool                                                                 $reusable
+ *         @type bool                                                                 $lock
+ *         @type array{margin?: bool|array<string>, padding?: bool|array<string>}     $spacing {
+ *             @type bool|array<string> $margin
+ *             @type bool|array<string> $padding
+ *         }
+ *         @type array{fontSize?: bool, lineHeight?: bool}                            $typography {
+ *             @type bool $fontSize
+ *             @type bool $lineHeight
+ *         }
+ *     }
+ *     @type null|array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int} $example
+ *     @type callable|null $render_callback
+ *     @type null|array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}> $attributes
+ *     @type array<mixed> $uses_context
+ *     @type array<mixed>|null $provides_context
+ *     @type string|null $editor_script
+ *     @type string|null $script
+ *     @type string|null $view_script
+ *     @type string|null $editor_style
+ *     @type string|null $style
  * }
  *
  * @return WP_Block_Type|false
