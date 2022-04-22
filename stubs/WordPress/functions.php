@@ -691,9 +691,9 @@ function get_the_modified_author() {
 }
 
 /**
- * @param int|WP_Post  $post
- * @param string|int[] $size
- * @param string|array $attr
+ * @param int|WP_Post|null                                                                                                  $post
+ * @param string|array{0: int, 1: int}                                                                                      $size
+ * @param string|array{src?: string, class?: string, alt?: string, srcset?: string, sizes?: string, loading?: string|false} $attr
  *
  * @return string
  */
