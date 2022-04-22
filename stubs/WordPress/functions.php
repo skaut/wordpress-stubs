@@ -174,12 +174,12 @@ function add_settings_error( $setting, $code, $message, $type = '' ) {
 }
 
 /**
- * @param string   $id
- * @param string   $title
- * @param callable $callback
- * @param string   $page
- * @param string   $section
- * @param array    $args {
+ * @param string                                    $id
+ * @param string                                    $title
+ * @param callable                                  $callback
+ * @param string                                    $page
+ * @param string                                    $section
+ * @param array{label_for?: string, class?: string} $args {
  *     @type string $label_for
  *     @type string $class
  * }
