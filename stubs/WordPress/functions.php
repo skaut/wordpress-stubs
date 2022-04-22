@@ -1198,6 +1198,8 @@ function update_user_meta( $user_id, $meta_key, $meta_value, $prev_value = '' ) 
  * @param int|WP_User $user
  * @param string      $capability
  * @param mixed       ...$args
+ *
+ * @return bool
  */
 function user_can( $user, $capability, ...$args ) {
 }
