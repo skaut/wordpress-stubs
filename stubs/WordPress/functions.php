@@ -1003,9 +1003,9 @@ function remove_action( $tag, $function_to_remove, $priority = 0 ) {
 }
 
 /**
- * @param string                $hook_name
- * @param callable|string|array $callback
- * @param int                   $priority
+ * @param string          $hook_name
+ * @param callable|string $callback
+ * @param int             $priority
  *
  * @return bool
  */
