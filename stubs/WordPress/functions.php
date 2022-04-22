@@ -591,9 +591,9 @@ function get_post_type( $post = null ) {
 }
 
 /**
- * @param array|string $args
- * @param string       $output
- * @param string       $operator
+ * @param array<int|string, mixed>|string $args
+ * @param string                          $output
+ * @param string                          $operator
  *
  * @return array<string>|array<WP_Post_Type>
  */
