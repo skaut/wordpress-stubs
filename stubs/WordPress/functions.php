@@ -627,8 +627,8 @@ function get_settings_errors( $setting = '', $sanitize = false ) {
 }
 
 /**
- * @param string $name
- * @param array  $args
+ * @param string              $name
+ * @param array<mixed, mixed> $args
  *
  * @return void|false
  */
