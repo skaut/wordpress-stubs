@@ -988,6 +988,8 @@ function register_setting( $option_group, $option_name, $args = array() ) {
 
 /**
  * @param string|WP_Widget $widget
+ *
+ * @return void
  */
 function register_widget( $widget ) {
 }
