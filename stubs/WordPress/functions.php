@@ -316,9 +316,9 @@ function date_i18n( $format, $timestamp_with_offset = false, $gmt = false ) {
 }
 
 /**
- * @param string|string[] $plugins
- * @param bool            $silent
- * @param mixed           $network_wide
+ * @param string|array<string> $plugins
+ * @param bool                 $silent
+ * @param mixed                $network_wide
  *
  * @return void
  */
@@ -439,9 +439,9 @@ function esc_html_e( $text, $domain = '' ) {
 }
 
 /**
- * @param string   $url
- * @param string[] $protocols
- * @param string   $_context
+ * @param string        $url
+ * @param array<string> $protocols
+ * @param string        $_context
  *
  * @return string
  */
@@ -449,8 +449,8 @@ function esc_url( $url, $protocols = array(), $_context = '' ) {
 }
 
 /**
- * @param string   $url
- * @param string[] $protocols
+ * @param string        $url
+ * @param array<string> $protocols
  *
  * @return string
  */
@@ -783,7 +783,7 @@ function is_network_admin() {
 }
 
 /**
- * @param int|string|int[]|string[] $page
+ * @param int|string|array<int>|array<string> $page
  *
  * @return bool
  */
@@ -805,7 +805,7 @@ function is_rtl() {
 }
 
 /**
- * @param int|string|int[]|string[] $post
+ * @param int|string|array<int>|array<string> $post
  *
  * @return bool
  */
@@ -813,7 +813,7 @@ function is_single( $post = '' ) {
 }
 
 /**
- * @param string|string[] $post_types
+ * @param string|array<string> $post_types
  *
  * @return bool
  */
@@ -1312,7 +1312,7 @@ function wp_dropdown_roles( $selected = '' ) {
 /**
  * @param string           $handle
  * @param string           $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param bool             $in_footer
  *
@@ -1324,7 +1324,7 @@ function wp_enqueue_script( $handle, $src = '', $deps = array(), $ver = false, $
 /**
  * @param string           $handle
  * @param string           $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param string           $media
  *
@@ -1533,7 +1533,7 @@ function wp_rand( $min, $max ) {
 /**
  * @param string           $handle
  * @param string|bool      $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param bool             $in_footer
  *
@@ -1545,7 +1545,7 @@ function wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_f
 /**
  * @param string           $handle
  * @param string|bool      $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param string           $media
  *
@@ -1677,7 +1677,7 @@ function wp_strip_all_tags( $string, $remove_breaks ) {
 }
 
 /**
- * @template T of string|string[]
+ * @template T of string|array<string>
  * @param T $value
  *
  * @return T

@@ -28,7 +28,7 @@ class Requests {
 	 *     @type callable                                 $complete
 	 * }
 	 *
-	 * @return Requests_Response[]|Requests_Exception[]
+	 * @return array<Requests_Response|Requests_Exception>
 	 */
 	public static function request_multiple( $requests, $options = array() ) {
 	}
