@@ -1221,10 +1221,10 @@ function wp_basename( $path, $suffix = '' ) {
 }
 
 /**
- * @param string     $filename
- * @param array|null $mimes
+ * @param string             $filename
+ * @param array<string>|null $mimes
  *
- * @return array {
+ * @return array{ext: string|false, type: string|false} {
  *     @type string|false $ext
  *     @type string|false $type
  * }
