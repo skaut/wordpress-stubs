@@ -1,17 +1,18 @@
 {
-    "name": "skaut/phan-wordpress-stubs",
-    "description": "Stubs for WordPress functions and classes to be used with phan",
+    "name": "skaut/wordpress-stubs",
+    "description": "High quality stubs for WordPress functions and classes",
     "type": "library",
     "keywords": [
         "WordPress",
         "WordPress plugin",
         "WordPress theme",
         "phan",
+        "phpstan",
         "stub",
         "stubs",
         "WordPress stubs"
     ],
-    "homepage": "https://github.com/marekdedic/phan-wordpress-stubs",
+    "homepage": "https://github.com/skaut/wordpress-stubs",
     "readme": "README.md",
     "license": "MIT",
     "authors": [
@@ -21,15 +22,16 @@
     }
     ],
     "support": {
-        "issues": "https://github.com/marekdedic/phan-wordpress-stubs/issues",
-        "wiki": "https://github.com/marekdedic/phan-wordpress-stubs/wiki",
-        "source": "https://github.com/marekdedic/phan-wordpress-stubs"
+        "issues": "https://github.com/skaut/wordpress-stubs/issues",
+        "wiki": "https://github.com/skaut/wordpress-stubs/wiki",
+        "source": "https://github.com/skaut/wordpress-stubs"
     },
     "require": {
         "php": "^7.0 || ^8.0"
     },
     "suggest": {
-        "phan/phan": "A static analyzer for PHP"
+        "phan/phan": "A static analyzer for PHP",
+        "phstan/phstan": "PHPStan - PHP Static Analysis Tool"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0",
