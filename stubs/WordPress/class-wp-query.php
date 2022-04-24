@@ -22,7 +22,7 @@ class WP_Query {
 	 *
 	 * @return mixed
 	 */
-	public function get( $query_var, $default ) {
+	public function get( $query_var, $default = '' ) {
 	}
 
 	/**
