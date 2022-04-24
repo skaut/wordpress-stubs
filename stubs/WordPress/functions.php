@@ -94,13 +94,13 @@ function add_filter( $tag, $function_to_add, $priority = 0, $accepted_args = 0 )
 }
 
 /**
- * @param string   $page_title
- * @param string   $menu_title
- * @param string   $capability
- * @param string   $menu_slug
- * @param callable $function
- * @param string   $icon_url
- * @param int      $position
+ * @param string          $page_title
+ * @param string          $menu_title
+ * @param string          $capability
+ * @param string          $menu_slug
+ * @param callable|string $function
+ * @param string          $icon_url
+ * @param int             $position
  *
  * @return string
  */
@@ -114,7 +114,7 @@ function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $func
  * @param string|array<string>|WP_Screen $screen
  * @param string                         $context
  * @param string                         $priority
- * @param array                          $callback_args
+ * @param array<int|string, mixed>       $callback_args
  *
  * @return void
  */
@@ -153,9 +153,9 @@ function add_query_arg( ...$args ) {
 }
 
 /**
- * @param string       $regex
- * @param string|array $query
- * @param string       $after
+ * @param string                       $regex
+ * @param string|array<string, string> $query
+ * @param string                       $after
  *
  * @return void
  */
@@ -174,12 +174,12 @@ function add_settings_error( $setting, $code, $message, $type = '' ) {
 }
 
 /**
- * @param string   $id
- * @param string   $title
- * @param callable $callback
- * @param string   $page
- * @param string   $section
- * @param array    $args {
+ * @param string                                    $id
+ * @param string                                    $title
+ * @param callable                                  $callback
+ * @param string                                    $page
+ * @param string                                    $section
+ * @param array{label_for?: string, class?: string} $args {
  *     @type string $label_for
  *     @type string $class
  * }
@@ -210,13 +210,13 @@ function add_shortcode( $tag, $callback ) {
 }
 
 /**
- * @param string   $parent_slug
- * @param string   $page_title
- * @param string   $menu_title
- * @param string   $capability
- * @param string   $menu_slug
- * @param callable $function
- * @param int|null $position
+ * @param string          $parent_slug
+ * @param string          $page_title
+ * @param string          $menu_title
+ * @param string          $capability
+ * @param string          $menu_slug
+ * @param callable|string $function
+ * @param int|null        $position
  *
  * @return false|string
  */
@@ -260,8 +260,8 @@ function apply_filters( $tag, $value, ...$args ) {
 }
 
 /**
- * @param string $hook_name
- * @param array  $args
+ * @param string                   $hook_name
+ * @param array<int|string, mixed> $args
  *
  * @return mixed
  */
@@ -316,9 +316,9 @@ function date_i18n( $format, $timestamp_with_offset = false, $gmt = false ) {
 }
 
 /**
- * @param string|string[] $plugins
- * @param bool            $silent
- * @param mixed           $network_wide
+ * @param string|array<string> $plugins
+ * @param bool                 $silent
+ * @param mixed                $network_wide
  *
  * @return void
  */
@@ -406,6 +406,8 @@ function esc_attr__( $text, $domain = '' ) {
 /**
  * @param string $text
  * @param string $domain
+ *
+ * @return void
  */
 function esc_attr_e( $text, $domain = '' ) {
 }
@@ -437,9 +439,9 @@ function esc_html_e( $text, $domain = '' ) {
 }
 
 /**
- * @param string   $url
- * @param string[] $protocols
- * @param string   $_context
+ * @param string        $url
+ * @param array<string> $protocols
+ * @param string        $_context
  *
  * @return string
  */
@@ -447,8 +449,8 @@ function esc_url( $url, $protocols = array(), $_context = '' ) {
 }
 
 /**
- * @param string   $url
- * @param string[] $protocols
+ * @param string        $url
+ * @param array<string> $protocols
  *
  * @return string
  */
@@ -500,8 +502,8 @@ function get_edit_user_link( $user_id = null ) {
 }
 
 /**
- * @param string $name
- * @param array  $args
+ * @param string                   $name
+ * @param array<int|string, mixed> $args
  *
  * @return void|false
  */
@@ -509,8 +511,8 @@ function get_footer( $name = '', $args = array() ) {
 }
 
 /**
- * @param string $name
- * @param array  $args
+ * @param string                   $name
+ * @param array<int|string, mixed> $args
  *
  * @return void|false
  */
@@ -567,7 +569,7 @@ function get_permalink( $post, $leavename = false ) {
  * @param string           $output
  * @param string           $filter
  *
- * @return WP_Post|array|null
+ * @return WP_Post|null|array{ID: int, post_author: string|int, post_date: string, post_date_gmt: string, post_content: string, post_title: string, post_excerpt: string, post_status: string, comment_status: string, ping_status: string, post_password: string, post_name: string, to_ping: string, pinged: string, post_modified: string, post_modified_gmt: string, post_content_filtered: string, post_parent: int, guid: string, menu_order: int, post_type: string, post_mime_type: string, comment_count: string|int, filter?: string}|array<string|int>
  */
 function get_post( $post = null, $output = '', $filter = '' ) {
 }
@@ -591,9 +593,9 @@ function get_post_type( $post = null ) {
 }
 
 /**
- * @param array|string $args
- * @param string       $output
- * @param string       $operator
+ * @param array<int|string, mixed>|string $args
+ * @param string                          $output
+ * @param string                          $operator
  *
  * @return array<string>|array<WP_Post_Type>
  */
@@ -621,14 +623,14 @@ function get_query_var( $var, $default = '' ) {
  * @param string  $setting
  * @param boolean $sanitize
  *
- * @return array
+ * @return array<array{setting: string, code: string, message: string, type: string}>
  */
 function get_settings_errors( $setting = '', $sanitize = false ) {
 }
 
 /**
- * @param string $name
- * @param array  $args
+ * @param string                   $name
+ * @param array<int|string, mixed> $args
  *
  * @return void|false
  */
@@ -691,9 +693,9 @@ function get_the_modified_author() {
 }
 
 /**
- * @param int|WP_Post  $post
- * @param string|int[] $size
- * @param string|array $attr
+ * @param int|WP_Post|null                                                                                                  $post
+ * @param string|array{0: int, 1: int}                                                                                      $size
+ * @param string|array{src?: string, class?: string, alt?: string, srcset?: string, sizes?: string, loading?: string|false} $attr
  *
  * @return string
  */
@@ -781,7 +783,7 @@ function is_network_admin() {
 }
 
 /**
- * @param int|string|int[]|string[] $page
+ * @param int|string|array<int>|array<string> $page
  *
  * @return bool
  */
@@ -803,7 +805,7 @@ function is_rtl() {
 }
 
 /**
- * @param int|string|int[]|string[] $post
+ * @param int|string|array<int>|array<string> $post
  *
  * @return bool
  */
@@ -811,7 +813,7 @@ function is_single( $post = '' ) {
 }
 
 /**
- * @param string|string[] $post_types
+ * @param string|array<string> $post_types
  *
  * @return bool
  */
@@ -904,8 +906,55 @@ function register_activation_hook( $file, $function ) {
 }
 
 /**
- * @param string|WP_Block_Type $name
- * @param array                $args
+ * @param string|WP_Block_Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        $name
+ * @param array{api_version?: string, title?: string, category?: string|null, parent?: array<string>|null, icon?: string|null, description?: string, keywords?: array<string>, textdomain?: string|null, styles?: array<array{name: string, label: string, isDefault?: bool}>, variations?: array<array{name: string, title: string, description?: string, category?: string, icon?: string, isDefault?: bool, attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, example?: array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int}, scope?: array<string>, keywords?: array<string>, isActive?: array<string>}>, supports?: null|array{align?: bool|array<string>, alignWide?: bool, className?: bool, color?: array{background?: bool, gradients?: bool, link?: bool, text?: bool}, customClassName?: bool, defaultStylePicker?: bool, html?: bool, inserter?: bool, multiple?: bool, reusable?: bool, lock?: bool, spacing?: array{margin?: bool|array<string>, padding?: bool|array<string>}, typography?: array{fontSize?: bool, lineHeight?: bool}}, example?: null|array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int}, render_callback?: callable|null, attributes?: null|array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, uses_context?: array<mixed>, provides_context?: array<mixed>|null, editor_script?: string|null, script?: string|null, view_script?: string|null, editor_style?: string|null, style?: string|null} $args {
+ *     @type string $api_version
+ *     @type string $title
+ *     @type string|null $category
+ *     @type array<string>|null $parent
+ *     @type string|null $icon
+ *     @type string $description
+ *     @type array<string> $keywords
+ *     @type string|null $textdomain
+ *     @type array<array{name: string, label: string, isDefault?: bool}> $styles
+ *     @type array<array{name: string, title: string, description?: string, category?: string, icon?: string, isDefault?: bool, attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, example?: array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int}, scope?: array<string>, keywords?: array<string>, isActive?: array<string>}> $variations
+ *     @type null|array{align?: bool|array<string>, alignWide?: bool, className?: bool, color?: array{background?: bool, gradients?: bool, link?: bool, text?: bool}, customClassName?: bool, defaultStylePicker?: bool, html?: bool, inserter?: bool, multiple?: bool, reusable?: bool, lock?: bool, spacing?: array{margin?: bool|array<string>, padding?: bool|array<string>}, typography?: array{fontSize?: bool, lineHeight?: bool}} $supports {
+ *         @type bool|array<string>                                                   $align
+ *         @type bool                                                                 $alignWide
+ *         @type bool                                                                 $className
+ *         @type array{background?: bool, gradients?: bool, link?: bool, text?: bool} $color {
+ *             @type bool $background
+ *             @type bool $gradients
+ *             @type bool $link
+ *             @type bool $text
+ *         }
+ *         @type bool                                                                 $customClassName
+ *         @type bool                                                                 $defaultStylePicker
+ *         @type bool                                                                 $html
+ *         @type bool                                                                 $inserter
+ *         @type bool                                                                 $multiple
+ *         @type bool                                                                 $reusable
+ *         @type bool                                                                 $lock
+ *         @type array{margin?: bool|array<string>, padding?: bool|array<string>}     $spacing {
+ *             @type bool|array<string> $margin
+ *             @type bool|array<string> $padding
+ *         }
+ *         @type array{fontSize?: bool, lineHeight?: bool}                            $typography {
+ *             @type bool $fontSize
+ *             @type bool $lineHeight
+ *         }
+ *     }
+ *     @type null|array{attributes?: array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}>, innerBlocks?: array<mixed>, viewportWidth?: int} $example
+ *     @type callable|null $render_callback
+ *     @type null|array<array{type?: string, enum?: array<string>, source?: string, selector?: string, attribute?: string, multiline?: string, query?: mixed, default?: string}> $attributes
+ *     @type array<mixed> $uses_context
+ *     @type array<mixed>|null $provides_context
+ *     @type string|null $editor_script
+ *     @type string|null $script
+ *     @type string|null $view_script
+ *     @type string|null $editor_style
+ *     @type string|null $style
+ * }
  *
  * @return WP_Block_Type|false
  */
@@ -931,38 +980,38 @@ function register_new_user( $user_login, $user_email ) {
 }
 
 /**
- * @param string $post_type
- * @param array  $args {
- *     @type string $label
- *     @type array<string> $labels
- *     @type string $description
- *     @type bool $public
- *     @type bool $hierarchical
- *     @type bool $exclude_from_search
- *     @type bool $publicly_queryable
- *     @type bool $show_ui
- *     @type bool|string $show_in_menu
- *     @type bool $show_in_nav_menus
- *     @type bool $show_in_admin_bar
- *     @type bool $show_in_rest
- *     @type string $rest_base
- *     @type string $rest_namespace
- *     @type string $rest_controller_class
- *     @type int $menu_postion
- *     @type string $menu_icon
- *     @type string|array $capability_type
- *     @type array<string> $capabilities
- *     @type bool $map_meta_cap
- *     @type array $supports
- *     @type callable $register_meta_box_cb
- *     @type array<string> $taxonomies
- *     @type bool|string $has_archive
- *     @type bool|array $rewrite
- *     @type string|bool $query_var
- *     @type bool $can_export
- *     @type bool $delete_with_user
- *     @type array $template
- *     @type string|false $template_lock
+ * @param string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          $post_type
+ * @param array{label?: string, labels?: array<string>, description?: string, public?: bool, hierarchical?: bool, exclude_from_search?: bool, publicly_queryable?: bool, show_ui?: bool, show_in_menu?: bool|string, show_in_nav_menus?: bool, show_in_admin_bar?: bool, show_in_rest?: bool, rest_base?: string, rest_namespace?: string, rest_controller_class?: string, menu_postion?: int, menu_icon?: string, capability_type?: string|array<string>, capabilities?: array<string>, map_meta_cap?: bool, supports?: array<string|array<string|string>>, register_meta_box_cb?: callable, taxonomies?: array<string>, has_archive?: bool|string, rewrite?: bool|array{slug?: string, with_front?: bool, feeds?: bool, pages?: bool, ep_mask?: int}, query_var?: string|bool, can_export?: bool, delete_with_user?: bool, template?: array<array{0: string, 1?: array<string, string>}>, template_lock?: string|false} $args {
+ *     @type string                                                                                  $label
+ *     @type array<string>                                                                           $labels
+ *     @type string                                                                                  $description
+ *     @type bool                                                                                    $public
+ *     @type bool                                                                                    $hierarchical
+ *     @type bool                                                                                    $exclude_from_search
+ *     @type bool                                                                                    $publicly_queryable
+ *     @type bool                                                                                    $show_ui
+ *     @type bool|string                                                                             $show_in_menu
+ *     @type bool                                                                                    $show_in_nav_menus
+ *     @type bool                                                                                    $show_in_admin_bar
+ *     @type bool                                                                                    $show_in_rest
+ *     @type string                                                                                  $rest_base
+ *     @type string                                                                                  $rest_namespace
+ *     @type string                                                                                  $rest_controller_class
+ *     @type int                                                                                     $menu_postion
+ *     @type string                                                                                  $menu_icon
+ *     @type string|array<string>                                                                    $capability_type
+ *     @type array<string>                                                                           $capabilities
+ *     @type bool                                                                                    $map_meta_cap
+ *     @type array<string|array<string, string>>                                                     $supports
+ *     @type callable                                                                                $register_meta_box_cb
+ *     @type array<string>                                                                           $taxonomies
+ *     @type bool|string                                                                             $has_archive
+ *     @type bool|array{slug?: string, with_front?: bool, feeds?: bool, pages?: bool, ep_mask?: int} $rewrite
+ *     @type string|bool                                                                             $query_var
+ *     @type bool                                                                                    $can_export
+ *     @type bool                                                                                    $delete_with_user
+ *     @type array<array{0: string, 1?: array<string, string>}>                                      $template
+ *     @type string|false                                                                            $template_lock
  * }
  *
  * @return WP_Post_Type|WP_Error
@@ -971,9 +1020,9 @@ function register_post_type( $post_type, $args = array() ) {
 }
 
 /**
- * @param string $option_group
- * @param string $option_name
- * @param array  $args {
+ * @param string                                                                                                         $option_group
+ * @param string                                                                                                         $option_name
+ * @param array{type?: string, description?: string, sanitize_callback?: callable, show_in_rest?: bool, default?: mixed} $args {
  *     @type string   $type
  *     @type string   $description
  *     @type callable $sanitize_callback
@@ -988,6 +1037,8 @@ function register_setting( $option_group, $option_name, $args = array() ) {
 
 /**
  * @param string|WP_Widget $widget
+ *
+ * @return void
  */
 function register_widget( $widget ) {
 }
@@ -1003,9 +1054,9 @@ function remove_action( $tag, $function_to_remove, $priority = 0 ) {
 }
 
 /**
- * @param string                $hook_name
- * @param callable|string|array $callback
- * @param int                   $priority
+ * @param string          $hook_name
+ * @param callable|string $callback
+ * @param int             $priority
  *
  * @return bool
  */
@@ -1052,6 +1103,8 @@ function sanitize_text_field( $str ) {
  * @param mixed $selected
  * @param mixed $current
  * @param bool  $echo
+ *
+ * @return string
  */
 function selected( $selected, $current = false, $echo = false ) {
 }
@@ -1094,11 +1147,11 @@ function settings_fields( $option_group ) {
 }
 
 /**
- * @param string       $text
- * @param string       $type
- * @param string       $name
- * @param bool         $wrap
- * @param array|string $other_attributes
+ * @param string                       $text
+ * @param string                       $type
+ * @param string                       $name
+ * @param bool                         $wrap
+ * @param array<string, string>|string $other_attributes
  *
  * @return void
  */
@@ -1114,8 +1167,8 @@ function switch_theme( $stylesheet ) {
 }
 
 /**
- * @param string|array $size
- * @param string|array $attr
+ * @param string|array{0: int, 1: int}                                                                                      $size
+ * @param string|array{src?: string, class?: string, alt?: string, srcset?: string, sizes?: string, loading?: string|false} $attr
  *
  * @return void
  */
@@ -1133,7 +1186,7 @@ function the_title( $before = '', $after = '', $echo = false ) {
 }
 
 /**
- * @param string|array $args {
+ * @param string|array{before?: string, after?: string, echo?: bool, post?: WP_Post} $args {
  *     @type string  $before
  *     @type string  $after
  *     @type bool    $echo
@@ -1198,6 +1251,8 @@ function update_user_meta( $user_id, $meta_key, $meta_value, $prev_value = '' ) 
  * @param int|WP_User $user
  * @param string      $capability
  * @param mixed       ...$args
+ *
+ * @return bool
  */
 function user_can( $user, $capability, ...$args ) {
 }
@@ -1221,10 +1276,10 @@ function wp_basename( $path, $suffix = '' ) {
 }
 
 /**
- * @param string     $filename
- * @param array|null $mimes
+ * @param string             $filename
+ * @param array<string>|null $mimes
  *
- * @return array {
+ * @return array{ext: string|false, type: string|false} {
  *     @type string|false $ext
  *     @type string|false $type
  * }
@@ -1253,14 +1308,15 @@ function wp_destroy_current_session() {
 }
 
 /**
- * @param string|WP_Error  $message
- * @param string|int       $title
- * @param string|array|int $args {
+ * @param string|WP_Error                                                                                                                                                  $message
+ * @param string|int                                                                                                                                                       $title
+ * @param string|int|array{response?: int, link_url?: string, link_text?: string, back_link?: bool, text_direction?: string, charset?: string, code?: string, exit?: bool} $args {
  *     @type int    $response
  *     @type string $link_url
  *     @type string $link_text
  *     @type bool   $back_link
  *     @type string $text_direction
+ *     @type string $charset
  *     @type string $code
  *     @type bool   $exit
  * }
@@ -1281,7 +1337,7 @@ function wp_dropdown_roles( $selected = '' ) {
 /**
  * @param string           $handle
  * @param string           $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param bool             $in_footer
  *
@@ -1293,7 +1349,7 @@ function wp_enqueue_script( $handle, $src = '', $deps = array(), $ver = false, $
 /**
  * @param string           $handle
  * @param string           $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param string           $media
  *
@@ -1312,11 +1368,11 @@ function wp_generate_attachment_metadata( $attachment_id, $file ) {
 }
 
 /**
- * @param int          $attachment_id
- * @param string|array $size
- * @param bool         $icon
+ * @param int                          $attachment_id
+ * @param string|array{0: int, 1: int} $size
+ * @param bool                         $icon
  *
- * @return false|array {
+ * @return false|array{0: string, 1: int, 2: int, 3: bool} {
  *     @type string $0
  *     @type int $1
  *     @type int $2
@@ -1327,10 +1383,10 @@ function wp_get_attachment_image_src( $attachment_id, $size = '', $icon = false 
 }
 
 /**
- * @param int|WP_Post $post_id
- * @param array|null  $args
+ * @param int|WP_Post                                                        $post_id
+ * @param array{order?: string, orderby?: string, check_enabled?: bool}|null $args
  *
- * @return array
+ * @return array{WP_Post}|array{int}
  */
 function wp_get_post_revisions( $post_id, $args = null ) {
 }
@@ -1345,38 +1401,38 @@ function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
 }
 
 /**
- * @param string|array $args {
- *     @type int            $ID
- *     @type int            $post_author
- *     @type string         $post_date
- *     @type string         $post_date_gmt
- *     @type mixed          $post_content
- *     @type string         $post_content_filtered
- *     @type string         $post_title
- *     @type string         $post_excerpt
- *     @type string         $post_status
- *     @type string         $post_type
- *     @type string         $comment_status
- *     @type string         $ping_status
- *     @type string         $post_password
- *     @type string         $post_name
- *     @type string         $to_ping
- *     @type string         $pinged
- *     @type string         $post_modified
- *     @type string         $post_modified_gmt
- *     @type int            $post_parent
- *     @type int            $menu_order
- *     @type string         $post_mime_type
- *     @type string         $guid
- *     @type int[]          $post_category
- *     @type int[]|string[] $tags_input
- *     @type string[]       $tax_input
- *     @type array          $meta_input
- *     @type string|false   $file
+ * @param string|array{ID?: int, post_author?: int, post_date?: string, post_date_gmt?: string, post_content?: string, post_content_filtered?: string, post_title?: string, post_excerpt?: string, post_status?: string, post_type?: string, comment_status?: string, ping_status?: string, post_password?: string, post_name?: string, to_ping?: string, pinged?: string, post_modified?: string, post_modified_gmt?: string, post_parent?: int, menu_order?: int, post_mime_type?: string, guid?: string, import_id?: int, post_category?: array<int>, tags_input?: array<int>|array<string>, tax_input: array<string>, meta_input?: array<string, mixed>} $args {
+ *     @type int                      $ID
+ *     @type int                      $post_author
+ *     @type string                   $post_date
+ *     @type string                   $post_date_gmt
+ *     @type string                   $post_content
+ *     @type string                   $post_content_filtered
+ *     @type string                   $post_title
+ *     @type string                   $post_excerpt
+ *     @type string                   $post_status
+ *     @type string                   $post_type
+ *     @type string                   $comment_status
+ *     @type string                   $ping_status
+ *     @type string                   $post_password
+ *     @type string                   $post_name
+ *     @type string                   $to_ping
+ *     @type string                   $pinged
+ *     @type string                   $post_modified
+ *     @type string                   $post_modified_gmt
+ *     @type int                      $post_parent
+ *     @type int                      $menu_order
+ *     @type string                   $post_mime_type
+ *     @type string                   $guid
+ *     @type int                      $import_id
+ *     @type array<int>               $post_category
+ *     @type array<int>|array<string> $tags_input
+ *     @type array<string>            $tax_input
+ *     @type array<string, mixed>     $meta_input
  * }
- * @param string|false $file
- * @param int          $parent
- * @param bool         $wp_error
+ * @param string|false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $file
+ * @param int                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $parent
+ * @param bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $wp_error
  *
  * @return int|WP_Error
  */
@@ -1411,9 +1467,9 @@ function wp_kses_normalize_entities( $string, $context = '' ) {
 }
 
 /**
- * @param string $handle
- * @param string $object_name
- * @param array  $l10n
+ * @param string                   $handle
+ * @param string                   $object_name
+ * @param array<int|string, mixed> $l10n
  *
  * @return bool
  */
@@ -1464,10 +1520,10 @@ function wp_nonce_url( $actionurl, $action = 0, $name = '' ) {
 }
 
 /**
- * @param string|array|object $args
- * @param array               $defaults
+ * @param string|array<int|string, mixed>|object $args
+ * @param array<int|string, mixed>               $defaults
  *
- * @return array
+ * @return array<int|string, mixed>
  */
 function wp_parse_args( $args, $defaults = array() ) {
 }
@@ -1502,7 +1558,7 @@ function wp_rand( $min, $max ) {
 /**
  * @param string           $handle
  * @param string|bool      $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param bool             $in_footer
  *
@@ -1514,7 +1570,7 @@ function wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_f
 /**
  * @param string           $handle
  * @param string|bool      $src
- * @param string[]         $deps
+ * @param array<string>    $deps
  * @param string|bool|null $ver
  * @param string           $media
  *
@@ -1524,44 +1580,44 @@ function wp_register_style( $handle, $src, $deps = array(), $ver = false, $media
 }
 
 /**
- * @param string       $url
- * @param string|array $args {
- *     @type string       $method
- *     @type int          $timeout
- *     @type int          $redirection
- *     @type string       $httpversion
- *     @type string       $user-agent
- *     @type bool         $reject_unsafe_urls
- *     @type bool         $blocking
- *     @type string|array $headers
- *     @type array        $cookies
- *     @type string|array $body
- *     @type bool         $compress
- *     @type bool         $decompress
- *     @type bool         $sslverify
- *     @type string       $sslcertificates
- *     @type bool         $stream
- *     @type string       $filename
- *     @type int          $limit_response_size
+ * @param string                                                                                                                                                                                                                                                                                                                                                                                                            $url
+ * @param string|array{method?: string, timeout?: int, redirection?: int, httpversion?: string, user-agent?: string, reject_unsafe_urls?: bool, blocking?: bool, headers?: string|array<string, string>, cookies?: array<string, string>, body?: string|array<string, string>, compress?: bool, decompress?: bool, sslverify?: bool, sslcertificates?: string, stream?: bool, filename?: string, limit_response_size?: int} $args {
+ *     @type string                       $method
+ *     @type int                          $timeout
+ *     @type int                          $redirection
+ *     @type string                       $httpversion
+ *     @type string                       $user-agent
+ *     @type bool                         $reject_unsafe_urls
+ *     @type bool                         $blocking
+ *     @type string|array<string, string> $headers
+ *     @type array<string, string>        $cookies
+ *     @type string|array<string, string> $body
+ *     @type bool                         $compress
+ *     @type bool                         $decompress
+ *     @type bool                         $sslverify
+ *     @type string                       $sslcertificates
+ *     @type bool                         $stream
+ *     @type string                       $filename
+ *     @type int                          $limit_response_size
  * }
  *
- * @return WP_Error|array {
- *     @type Requests_Utility_CaseInsensitiveDictionary $headers
- *     @type string                                     $body
- *     @type array                                      $response {
- *         @type int    $code
- *         @type string $message
+ * @return WP_Error|array{headers: Requests_Utility_CaseInsensitiveDictionary, body: string, response: array{code: int, message: string}, cookies: array<WP_Http_Cookie>, filename: string|null, http_response: WP_HTTP_Requests_Response}|array{headers: array<never>, body: string, response: array{code: false, message: false}, cookies: array<never>, http_response: null} {
+ *     @type Requests_Utility_CaseInsensitiveDictionary|array<never> $headers
+ *     @type string                                                  $body
+ *     @type array{code: int|false, message: string|false}           $response {
+ *         @type int|false    $code
+ *         @type string|false $message
  *     }
- *     @type WP_HTTP_Cookie[]          $cookies
- *     @type string|null               $filename
- *     @type WP_HTTP_Requests_Response $http_response
+ *     @type array<WP_Http_Cookie>                                   $cookies
+ *     @type string|null                                             $filename
+ *     @type WP_HTTP_Requests_Response|null                          $http_response
  * }
  */
 function wp_remote_get( $url, $args = array() ) {
 }
 
 /**
- * @param WP_Error|array $response {
+ * @param WP_Error|array{body: string} $response {
  *     @type string $body
  * }
  *
@@ -1571,7 +1627,7 @@ function wp_remote_retrieve_body( $response ) {
 }
 
 /**
- * @param WP_Error|array $response {
+ * @param WP_Error|array{response: array{code: int}} $response {
  *     @type array $response {
  *         @type int $code
  *     }
@@ -1646,7 +1702,7 @@ function wp_strip_all_tags( $string, $remove_breaks ) {
 }
 
 /**
- * @template T of string|string[]
+ * @template T of string|array<string>
  * @param T $value
  *
  * @return T
@@ -1655,8 +1711,8 @@ function wp_unslash( $value ) {
 }
 
 /**
- * @param int   $attachment_id
- * @param array $data
+ * @param int          $attachment_id
+ * @param array<mixed> $data
  *
  * @return int|false
  */
@@ -1664,7 +1720,7 @@ function wp_update_attachment_metadata( $attachment_id, $data ) {
 }
 
 /**
- * @param array|stdClass|WP_User $userdata
+ * @param array{ID: int, user_pass?: string, user_login?: string, user_nicename?: string, user_url?: string, user_email?: string, display_name?: string, nickname?: string, first_name?: string, last_name?: string, description?: string, rich_editing?: string, syntax_highlighting?: string, comment_shortcuts?: string, admin_color?: string, use_ssl?: bool, user_registered?: string, user_activation_key?: string, spam?: bool, show_admin_bar_front?: string, role?: string, locale?: string, meta_input: array<string, mixed>}|stdClass|WP_User $userdata
  *
  * @return int|WP_Error
  */
@@ -1677,15 +1733,11 @@ function wp_update_user( $userdata ) {
  * @param mixed       $bits
  * @param string|null $time
  *
- * @return array {
- *     @type string|null  $path
- *     @type string|null  $url
- *     @type string|null  $subdir
- *     @type string|null  $basedir
- *     @type string|null  $baseurl
- *     @type string|false $error
+ * @return array{file: string, url: string, type: string, error: false}|array{error: string} {
  *     @type string       $file
+ *     @type string       $url
  *     @type string       $type
+ *     @type string|false $error
  * }
  */
 function wp_upload_bits( $name, $deprecated, $bits, $time = null ) {
