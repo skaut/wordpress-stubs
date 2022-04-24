@@ -370,12 +370,12 @@ function determine_locale() {
 }
 
 /**
- * @param string $tag
- * @param mixed  $arg
+ * @param string $hook_name
+ * @param mixed  $args
  *
  * @return void
  */
-function do_action( $tag, $arg = array() ) {
+function do_action( $hook_name, ...$args ) {
 }
 
 /**
