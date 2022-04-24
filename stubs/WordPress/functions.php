@@ -1698,7 +1698,7 @@ function wp_set_current_user( $id, $name = '' ) {
  *
  * @return string
  */
-function wp_strip_all_tags( $string, $remove_breaks ) {
+function wp_strip_all_tags( $string, $remove_breaks = false ) {
 }
 
 /**
