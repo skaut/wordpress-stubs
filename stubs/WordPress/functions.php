@@ -1689,7 +1689,7 @@ function wp_set_auth_cookie( $user_id, $remember = false, $secure = '', $token =
  *
  * @return WP_User
  */
-function wp_set_current_user( $id, $name ) {
+function wp_set_current_user( $id, $name = '' ) {
 }
 
 /**
