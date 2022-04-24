@@ -6,7 +6,7 @@ This repo contains stubs for WordPress functions and classes to be used with [ph
 
 ## Alternatives
 
-### `php-stubs/wordpress-stubs`
+### [`php-stubs/wordpress-stubs`](https://github.com/php-stubs/wordpress-stubs)
 
 The `php-stubs/wordpress-stubs` project uses stubs that are exported directly from WordPress source code. That means that the stubs are more complete and updated quicker. On the other hand, a lot of functions and classes are documented poorly in WordPress and array types are almost never typed properly (i. e. just `array<mixed>`). This package has all the stubs created by hand, so they are much more precise.
 
