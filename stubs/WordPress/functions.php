@@ -1454,7 +1454,7 @@ function wp_is_post_revision( $post ) {
  *
  * @return string|false
  */
-function wp_json_encode( $data, $options, $depth = 0 ) {
+function wp_json_encode( $data, $options = 0, $depth = 0 ) {
 }
 
 /**
