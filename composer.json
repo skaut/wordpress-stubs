@@ -31,7 +31,7 @@
     },
     "suggest": {
         "phan/phan": "A static analyzer for PHP",
-        "phstan/phstan": "PHPStan - PHP Static Analysis Tool"
+        "phpstan/phpstan": "PHPStan - PHP Static Analysis Tool"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0",
