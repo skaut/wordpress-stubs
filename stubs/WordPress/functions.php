@@ -371,7 +371,7 @@ function determine_locale() {
 
 /**
  * @param string $hook_name
- * @param mixed  $args
+ * @param mixed  ...$args
  *
  * @return void
  */
