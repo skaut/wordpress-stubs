@@ -2,7 +2,7 @@
 /**
  * PHAN configuration
  *
- * @package phan-wordpress-stubs
+ * @package wordpress-stubs
  */
 
 return array(

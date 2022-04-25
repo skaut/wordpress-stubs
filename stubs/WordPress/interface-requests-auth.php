@@ -1,6 +1,6 @@
 <?php
 /**
- * @package phan-wordpress-stubs
+ * @package wordpress-stubs
  */
 
 /**
