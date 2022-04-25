@@ -370,12 +370,12 @@ function determine_locale() {
 }
 
 /**
- * @param string $tag
- * @param mixed  $arg
+ * @param string $hook_name
+ * @param mixed  ...$args
  *
  * @return void
  */
-function do_action( $tag, $arg = array() ) {
+function do_action( $hook_name, ...$args ) {
 }
 
 /**
@@ -1454,7 +1454,7 @@ function wp_is_post_revision( $post ) {
  *
  * @return string|false
  */
-function wp_json_encode( $data, $options, $depth = 0 ) {
+function wp_json_encode( $data, $options = 0, $depth = 0 ) {
 }
 
 /**
@@ -1689,7 +1689,7 @@ function wp_set_auth_cookie( $user_id, $remember = false, $secure = '', $token =
  *
  * @return WP_User
  */
-function wp_set_current_user( $id, $name ) {
+function wp_set_current_user( $id, $name = '' ) {
 }
 
 /**
@@ -1698,7 +1698,7 @@ function wp_set_current_user( $id, $name ) {
  *
  * @return string
  */
-function wp_strip_all_tags( $string, $remove_breaks ) {
+function wp_strip_all_tags( $string, $remove_breaks = false ) {
 }
 
 /**
