@@ -1081,6 +1081,14 @@ function remove_theme_mod( $name ) {
 }
 
 /**
+ * @param string $key
+ *
+ * @return string
+ */
+function sanitize_key( $key ) {
+}
+
+/**
  * @param string $meta_key
  * @param mixed  $meta_value
  * @param string $object_type
