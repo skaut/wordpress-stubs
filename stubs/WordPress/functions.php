@@ -1081,6 +1081,14 @@ function remove_theme_mod( $name ) {
 }
 
 /**
+ * @param string $key
+ *
+ * @return string
+ */
+function sanitize_key( $key ) {
+}
+
+/**
  * @param string $meta_key
  * @param mixed  $meta_value
  * @param string $object_type
@@ -1401,7 +1409,7 @@ function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
 }
 
 /**
- * @param string|array{ID?: int, post_author?: int, post_date?: string, post_date_gmt?: string, post_content?: string, post_content_filtered?: string, post_title?: string, post_excerpt?: string, post_status?: string, post_type?: string, comment_status?: string, ping_status?: string, post_password?: string, post_name?: string, to_ping?: string, pinged?: string, post_modified?: string, post_modified_gmt?: string, post_parent?: int, menu_order?: int, post_mime_type?: string, guid?: string, import_id?: int, post_category?: array<int>, tags_input?: array<int>|array<string>, tax_input: array<string>, meta_input?: array<string, mixed>} $args {
+ * @param string|array{ID?: int, post_author?: int, post_date?: string, post_date_gmt?: string, post_content?: string, post_content_filtered?: string, post_title?: string, post_excerpt?: string, post_status?: string, post_type?: string, comment_status?: string, ping_status?: string, post_password?: string, post_name?: string, to_ping?: string, pinged?: string, post_modified?: string, post_modified_gmt?: string, post_parent?: int, menu_order?: int, post_mime_type?: string, guid?: string, import_id?: int, post_category?: array<int>, tags_input?: array<int>|array<string>, tax_input?: array<string>, meta_input?: array<string, mixed>} $args {
  *     @type int                      $ID
  *     @type int                      $post_author
  *     @type string                   $post_date
@@ -1430,9 +1438,9 @@ function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
  *     @type array<string>            $tax_input
  *     @type array<string, mixed>     $meta_input
  * }
- * @param string|false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $file
- * @param int                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $parent
- * @param bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $wp_error
+ * @param string|false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        $file
+ * @param int                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 $parent
+ * @param bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $wp_error
  *
  * @return int|WP_Error
  */
