@@ -1560,7 +1560,7 @@ function wp_post_revision_title( $revision, $link = false ) {
  *
  * @return int
  */
-function wp_rand( $min, $max ) {
+function wp_rand( $min = 0, $max = 0 ) {
 }
 
 /**
