@@ -681,6 +681,14 @@ function get_the_author_meta( $field = '', $user_id = false ) {
 }
 
 /**
+ * @param array|string $args
+ * @param array|string $deprecated
+ * @return WP_Term[]|int[]|string[]|string|WP_Error Array of terms
+ */
+function get_terms( $args = array(), $deprecated = '' ) {
+}
+
+/**
  * @return int|false
  */
 function get_the_ID() {
