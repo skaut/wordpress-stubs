@@ -21,17 +21,17 @@ const MINUTE_IN_SECONDS = 0;
 /**
  * @var bool
  */
-const SCRIPT_DEBUG = __LINE__ === 0;
+const SCRIPT_DEBUG = $_GET['SCRIPT_DEBUG'];
 
 /**
  * @var bool
  */
-const WP_DEBUG = __LINE__ === 0;
+const WP_DEBUG = $_GET['WP_DEBUG'];
 
 /**
  * @var bool
  */
-const WP_DEBUG_DISPLAY = __LINE__ === 0;
+const WP_DEBUG_DISPLAY = $_GET['WP_DEBUG_DISPLAY'];
 
 /**
  * @param string $text
