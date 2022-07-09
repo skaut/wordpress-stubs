@@ -40,9 +40,9 @@
         "phpstan/phpstan": "^1.4"
     },
     "scripts": {
-        "phpcs": "vendor/bin/phpcs",
+        "phpcs": "phpcs",
         "phan": "export PHAN_DISABLE_XDEBUG_WARN=1; vendor/bin/phan",
-        "phpstan": "vendor/bin/phpstan",
-        "lint": ["phpcs", "phan", "phpstan"]
+        "phpstan": "phpstan",
+        "lint": ["@phpcs", "@phan", "@phpstan"]
     }
 }
