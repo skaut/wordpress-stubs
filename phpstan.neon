@@ -1,9 +1,9 @@
 parameters:
-	level: max
-	paths:
-	  - stubs
-	  - .phan
-	ignoreErrors:
-	  - '#but return statement is missing.$#'
-	  - '#Constructor of class [a-zA-Z0-9\\_]+ has an unused parameter \$[a-zA-Z0-9\\_]+.#'
-	  - "#Strict comparison using === between [0-9]+ and 0 will always evaluate to false.#"
+  level: max
+  paths:
+    - stubs
+    - .phan
+  ignoreErrors:
+    - '#but return statement is missing.$#'
+    - '#Constructor of class [a-zA-Z0-9\\_]+ has an unused parameter \$[a-zA-Z0-9\\_]+.#'
+    - "#Strict comparison using === between [0-9]+ and 0 will always evaluate to false.#"
