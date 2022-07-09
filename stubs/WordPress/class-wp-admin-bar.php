@@ -24,7 +24,7 @@ class WP_Admin_Bar {
 	/**
 	 * @param string $id
 	 *
-	 * @return object|void
+	 * @return object|null
 	 */
 	public function get_node( $id ) {
 	}
