@@ -1394,7 +1394,7 @@ function wp_get_attachment_image_src( $attachment_id, $size = '', $icon = false 
  * @param int|WP_Post                                                        $post_id
  * @param array{order?: string, orderby?: string, check_enabled?: bool}|null $args
  *
- * @return array{WP_Post}|array{int}
+ * @return array<WP_Post>|array<int>
  */
 function wp_get_post_revisions( $post_id, $args = null ) {
 }
