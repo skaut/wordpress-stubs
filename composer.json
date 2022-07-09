@@ -41,7 +41,7 @@
     },
     "scripts": {
         "phpcs": "phpcs",
-        "phan": "export PHAN_DISABLE_XDEBUG_WARN=1; vendor/bin/phan",
+        "phan": "export PHAN_DISABLE_XDEBUG_WARN=1; phan",
         "phpstan": "phpstan",
         "lint": ["@phpcs", "@phan", "@phpstan"]
     }
