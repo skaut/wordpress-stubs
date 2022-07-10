@@ -7,6 +7,11 @@
  */
 class WP_User {
 	/**
+	 * @var stdClass
+	 */
+	public $data;
+
+	/**
 	 * @var int
 	 */
 	public $ID;
