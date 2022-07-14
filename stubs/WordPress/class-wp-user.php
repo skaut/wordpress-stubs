@@ -20,4 +20,9 @@ class WP_User {
 	 * @var string|null
 	 */
 	public $user_login;
+
+	/**
+	 * @var string|null
+	 */
+	public $display_name;
 }
