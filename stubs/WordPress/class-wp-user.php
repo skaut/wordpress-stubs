@@ -15,4 +15,9 @@ class WP_User {
 	 * @var int
 	 */
 	public $ID;
+
+	/**
+	 * @var string|null
+	 */
+	public $user_login;
 }
