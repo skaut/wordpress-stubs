@@ -687,7 +687,7 @@ function get_the_ID() {
 }
 
 /**
- * @return string|void
+ * @return string|null
  */
 function get_the_modified_author() {
 }
