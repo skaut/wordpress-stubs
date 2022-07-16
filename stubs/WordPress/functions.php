@@ -1295,13 +1295,7 @@ function wp_basename( $path, $suffix = '' ) {
 function wp_check_filetype( $filename, $mimes = null ) {
 }
 
-/**
- * @param string $string
- * @param bool   $strip
- *
- * @return string
- */
-function wp_check_invalid_utf8( $string, $strip = false ) {
+function wp_check_invalid_utf8( string $string, bool $strip = false ) : string {
 }
 
 /**
