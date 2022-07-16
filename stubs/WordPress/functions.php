@@ -1564,6 +1564,14 @@ function wp_post_revision_title( $revision, $link = false ) {
 }
 
 /**
+ * @param string $text
+ *
+ * @return string
+ */
+function wp_pre_kses_less_than( $text ) {
+}
+
+/**
  * @param int $min
  * @param int $max
  *
