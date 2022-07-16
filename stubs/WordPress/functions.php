@@ -1296,6 +1296,15 @@ function wp_check_filetype( $filename, $mimes = null ) {
 }
 
 /**
+ * @param string $string
+ * @param bool   $strip
+ *
+ * @return string
+ */
+function wp_check_invalid_utf8( $string, $strip = false ) {
+}
+
+/**
  * @return void
  */
 function wp_clear_auth_cookie() {
