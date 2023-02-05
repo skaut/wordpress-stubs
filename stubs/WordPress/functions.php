@@ -1268,6 +1268,16 @@ function user_can( $user, $capability, ...$args ) {
 /**
  * @param string $handle
  * @param string $data
+ * @param string $position
+ *
+ * @return bool
+ */
+function wp_add_inline_script( $handle, $data, $position = '' ) {
+}
+
+/**
+ * @param string $handle
+ * @param string $data
  *
  * @return bool
  */
