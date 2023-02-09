@@ -37,6 +37,15 @@ const WP_DEBUG_DISPLAY = __LINE__ === 0;
  * @param string $text
  * @param string $domain
  *
+ * @return void
+ */
+function _e( $text, $domain = '' ) {
+}
+
+/**
+ * @param string $text
+ * @param string $domain
+ *
  * @return string
  */
 function __( $text, $domain = '' ) {
@@ -491,6 +500,15 @@ function get_current_screen() {
  * @return int
  */
 function get_current_user_id() {
+}
+
+/**
+ * @param int|WP_Post $post
+ * @param string      $context
+ *
+ * @return string|null
+ */
+function get_edit_post_link( $post = null, $context = '' ) {
 }
 
 /**
@@ -1064,6 +1082,16 @@ function remove_filter( $hook_name, $callback, $priority = 0 ) {
 }
 
 /**
+ * @param string                         $id
+ * @param string|array<string>|WP_Screen $screen
+ * @param string                         $context
+ *
+ * @return void
+ */
+function remove_meta_box( $id, $screen = null, $context = '' ) {
+}
+
+/**
  * @param string|array<string> $key
  * @param string|false         $query
  *
@@ -1263,6 +1291,20 @@ function update_user_meta( $user_id, $meta_key, $meta_value, $prev_value = '' ) 
  * @return bool
  */
 function user_can( $user, $capability, ...$args ) {
+}
+
+/**
+ * @param string   $widget_id
+ * @param string   $widget_name
+ * @param callable $callback
+ * @param callable $control_callback
+ * @param array    $callback_args
+ * @param string   $context
+ * @param string   $priority
+ *
+ * @return true
+ */
+function wp_add_dashboard_widget( $widget_id, $widget_name, $callback, $control_callback = null, $callback_args = null, $context = '', $priority = '' ) {
 }
 
 /**
