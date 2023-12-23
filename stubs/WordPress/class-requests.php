@@ -3,9 +3,10 @@
  * @package wordpress-stubs
  */
 
-/**
- */
+declare(strict_types = 1);
+
 class Requests {
+
 	/**
 	 * @param array<int|string, array{url: string, headers?: array<string, string>, data?: array<int|string, string>|string, type?: string, cookies?: array<string, string>|Requests_Cookie_Jar}>                                                                                                                                                                                                                                                     $requests
 	 * @param array{timeout?: float, connect_timeout?: float, useragent?: string, follow_redirects?: bool, redirects?: int, blocking?: bool, filename?: string|bool, auth?: Requests_Auth|array<string>|bool, proxy?: Requests_Proxy|array<string>|string|bool, max_bytes?: int|bool, idn?: bool, transport?: string|Requests_Transport, hooks?: Requests_Hooker, verify?: string|bool, verifyname?: bool, data_format?: string, complete?: callable} $options {

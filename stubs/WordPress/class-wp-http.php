@@ -3,9 +3,10 @@
  * @package wordpress-stubs
  */
 
-/**
- */
+declare(strict_types = 1);
+
 class WP_Http {
+
 	/**
 	 * @param string                                                                                                                                                                                                                                                                                                                                                                                                            $url
 	 * @param string|array{method?: string, timeout?: int, redirection?: int, httpversion?: string, user-agent?: string, reject_unsafe_urls?: bool, blocking?: bool, headers?: string|array<string, string>, cookies?: array<string, string>, body?: string|array<string, string>, compress?: bool, decompress?: bool, sslverify?: bool, sslcertificates?: string, stream?: bool, filename?: string, limit_response_size?: int} $args {
@@ -41,32 +42,6 @@ class WP_Http {
 	 * }
 	 */
 	public function get( $url, $args = array() ) {
-	}
-	/**
-	 * @param string|array<string> $headers
-	 * @param string               $url
-	 *
-	 * @return array{response: array{code: int, message: string}, newheaders: string|array<string>, cookies: array<WP_Http_Cookie>} {
-	 *     @type array{code: int, message: string} $response {
-	 *         @type int    $code
-	 *         @type string $message
-	 *     }
-	 *     @type string|array<string>              $newheaders
-	 *     @type array<WP_Http_Cookie>             $cookies
-	 * }
-	 */
-	public static function processHeaders( $headers, $url = '' ) {
-	}
-
-	/**
-	 * @param string $strResponse
-	 *
-	 * @return array{headers: string, body: string} {
-	 *     @type string $headers
-	 *     @type string $body
-	 * }
-	 */
-	public static function processResponse( $strResponse ) {
 	}
 
 	/**
@@ -104,5 +79,32 @@ class WP_Http {
 	 * }
 	 */
 	public function request( $url, $args = array() ) {
+	}
+
+	/**
+	 * @param string|array<string> $headers
+	 * @param string               $url
+	 *
+	 * @return array{response: array{code: int, message: string}, newheaders: string|array<string>, cookies: array<WP_Http_Cookie>} {
+	 *     @type array{code: int, message: string} $response {
+	 *         @type int    $code
+	 *         @type string $message
+	 *     }
+	 *     @type string|array<string>              $newheaders
+	 *     @type array<WP_Http_Cookie>             $cookies
+	 * }
+	 */
+	public static function processHeaders( $headers, $url = '' ) {
+	}
+
+	/**
+	 * @param string $strResponse
+	 *
+	 * @return array{headers: string, body: string} {
+	 *     @type string $headers
+	 *     @type string $body
+	 * }
+	 */
+	public static function processResponse( $strResponse ) {
 	}
 }

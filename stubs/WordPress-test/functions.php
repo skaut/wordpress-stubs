@@ -3,6 +3,8 @@
  * @package wordpress-stubs
  */
 
+declare(strict_types = 1);
+
 /**
  * @param string   $tag
  * @param callable $function_to_add

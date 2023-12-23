@@ -3,9 +3,10 @@
  * @package wordpress-stubs
  */
 
-/**
- */
+declare(strict_types = 1);
+
 class WP_Query {
+
 	/**
 	 * @var array<WP_Post>|array<int>
 	 */

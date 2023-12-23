@@ -3,17 +3,20 @@
  * @package wordpress-stubs
  */
 
+declare(strict_types = 1);
+
 /**
  * @implements ArrayAccess<string, string>
  * @implements IteratorAggregate<string, string>
  */
 class Requests_Utility_CaseInsensitiveDictionary implements ArrayAccess, IteratorAggregate {
+
 	/**
 	 * @param string $key
 	 *
 	 * @return bool
 	 */
-	#[\ReturnTypeWillChange]
+	#[ReturnTypeWillChange]
 	public function offsetExists( $key ) {
 	}
 
@@ -22,7 +25,7 @@ class Requests_Utility_CaseInsensitiveDictionary implements ArrayAccess, Iterato
 	 *
 	 * @return string|null
 	 */
-	#[\ReturnTypeWillChange]
+	#[ReturnTypeWillChange]
 	public function offsetGet( $key ) {
 	}
 
@@ -32,7 +35,7 @@ class Requests_Utility_CaseInsensitiveDictionary implements ArrayAccess, Iterato
 	 *
 	 * @return void
 	 */
-	#[\ReturnTypeWillChange]
+	#[ReturnTypeWillChange]
 	public function offsetSet( $key, $value ) {
 	}
 
@@ -41,14 +44,14 @@ class Requests_Utility_CaseInsensitiveDictionary implements ArrayAccess, Iterato
 	 *
 	 * @return void
 	 */
-	#[\ReturnTypeWillChange]
+	#[ReturnTypeWillChange]
 	public function offsetUnset( $key ) {
 	}
 
 	/**
 	 * @return ArrayIterator<string, string>
 	 */
-	#[\ReturnTypeWillChange]
+	#[ReturnTypeWillChange]
 	public function getIterator() {
 	}
 }

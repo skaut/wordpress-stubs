@@ -3,9 +3,10 @@
  * @package wordpress-stubs
  */
 
-/**
- */
+declare(strict_types = 1);
+
 class WP_Customize_Selective_Refresh {
+
 	/**
 	 * @param WP_Customize_Partial|string                                                                                                                                                                       $id
 	 * @param array{type?: string, selector?: string, settings?: array<string>, primary_setting?: string, capability?: string, render_callback?: callable, container_inclusive?: bool, fallback_refresh?: bool} $args {

@@ -3,9 +3,10 @@
  * @package wordpress-stubs
  */
 
-/**
- */
+declare(strict_types = 1);
+
 class WP_Widget {
+
 	/**
 	 * @param string                                                                        $id_base
 	 * @param string                                                                        $name
