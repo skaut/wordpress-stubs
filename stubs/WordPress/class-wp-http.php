@@ -42,32 +42,6 @@ class WP_Http {
 	 */
 	public function get( $url, $args = array() ) {
 	}
-	/**
-	 * @param string|array<string> $headers
-	 * @param string               $url
-	 *
-	 * @return array{response: array{code: int, message: string}, newheaders: string|array<string>, cookies: array<WP_Http_Cookie>} {
-	 *     @type array{code: int, message: string} $response {
-	 *         @type int    $code
-	 *         @type string $message
-	 *     }
-	 *     @type string|array<string>              $newheaders
-	 *     @type array<WP_Http_Cookie>             $cookies
-	 * }
-	 */
-	public static function processHeaders( $headers, $url = '' ) {
-	}
-
-	/**
-	 * @param string $strResponse
-	 *
-	 * @return array{headers: string, body: string} {
-	 *     @type string $headers
-	 *     @type string $body
-	 * }
-	 */
-	public static function processResponse( $strResponse ) {
-	}
 
 	/**
 	 * @param string                                                                                                                                                                                                                                                                                                                                                                                                            $url
@@ -104,5 +78,32 @@ class WP_Http {
 	 * }
 	 */
 	public function request( $url, $args = array() ) {
+	}
+
+	/**
+	 * @param string|array<string> $headers
+	 * @param string               $url
+	 *
+	 * @return array{response: array{code: int, message: string}, newheaders: string|array<string>, cookies: array<WP_Http_Cookie>} {
+	 *     @type array{code: int, message: string} $response {
+	 *         @type int    $code
+	 *         @type string $message
+	 *     }
+	 *     @type string|array<string>              $newheaders
+	 *     @type array<WP_Http_Cookie>             $cookies
+	 * }
+	 */
+	public static function processHeaders( $headers, $url = '' ) {
+	}
+
+	/**
+	 * @param string $strResponse
+	 *
+	 * @return array{headers: string, body: string} {
+	 *     @type string $headers
+	 *     @type string $body
+	 * }
+	 */
+	public static function processResponse( $strResponse ) {
 	}
 }
