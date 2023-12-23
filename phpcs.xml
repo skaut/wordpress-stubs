@@ -53,6 +53,7 @@
 		<!-- Disabled due to style preferences -->
 		<exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing.IncorrectLinesCountBetweenDifferentAnnotationsTypes"/>
 		<exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
+		<exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"/>
 		<!--
 		<exclude name="SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed.DisallowedPartiallyKeyed"/>
 		<exclude name="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature.RequiredSingleLineSignature"/>
@@ -72,7 +73,6 @@
 		-->
 
 		<!-- Temporarily disabled -->
-		<exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"/>
 		<exclude name="SlevomatCodingStandard.Files.FileLength.FileTooLong"/>
 		<exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong"/>
 		<exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName.NoMatchBetweenTypeNameAndFileName"/>
