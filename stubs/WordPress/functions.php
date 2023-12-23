@@ -638,8 +638,8 @@ function get_query_var( $var, $default = '' ) {
 }
 
 /**
- * @param string  $setting
- * @param boolean $sanitize
+ * @param string $setting
+ * @param bool   $sanitize
  *
  * @return array<array{setting: string, code: string, message: string, type: string}>
  */
