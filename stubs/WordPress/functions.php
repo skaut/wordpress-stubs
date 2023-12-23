@@ -104,7 +104,15 @@ function add_filter( $tag, $function_to_add, $priority = 0, $accepted_args = 0 )
  *
  * @return string
  */
-function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function = '', $icon_url = '', $position = 0 ) {
+function add_menu_page(
+	$page_title,
+	$menu_title,
+	$capability,
+	$menu_slug,
+	$function = '',
+	$icon_url = '',
+	$position = 0
+) {
 }
 
 /**
@@ -220,7 +228,15 @@ function add_shortcode( $tag, $callback ) {
  *
  * @return false|string
  */
-function add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function = '', $position = null ) {
+function add_submenu_page(
+	$parent_slug,
+	$page_title,
+	$menu_title,
+	$capability,
+	$menu_slug,
+	$function = '',
+	$position = null
+) {
 }
 
 /**
