@@ -17,6 +17,7 @@
 		<exclude name="Squiz.Commenting.FunctionComment.InvalidNoReturn"/>
 		<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
 		<exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+		<exclude name="Universal.NamingConventions.NoReservedKeywordParameterNames"/>
 		<exclude name="WordPress.NamingConventions"/>
 		<exclude name="WordPress.Security.EscapeOutput.OutputNotEscaped"/>
 	</rule>
