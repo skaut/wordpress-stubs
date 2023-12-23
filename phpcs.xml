@@ -71,7 +71,6 @@
 		-->
 
 		<!-- Temporarily disabled -->
-		<exclude name="SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment"/>
 		<exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
 		<exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"/>
 		<exclude name="SlevomatCodingStandard.Files.FileLength.FileTooLong"/>
@@ -92,6 +91,7 @@
 		<exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint"/>
 		<exclude name="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint.UselessDocComment"/>
 		<exclude name="SlevomatCodingStandard.Whitespaces.DuplicateSpaces.DuplicateSpaces"/>
+		<exclude name="SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment"/>
 	</rule>
 
 	<rule ref="SlevomatCodingStandard.Attributes.AttributesOrder">
