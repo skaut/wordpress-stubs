@@ -80,9 +80,6 @@
 		<exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPreIncrementOperator"/>
 		<exclude name="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable.DisallowedSuperGlobalVariable"/>
 		-->
-
-		<!-- Temporarily disabled -->
-		<exclude name="SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment"/>
 	</rule>
 
 	<rule ref="SlevomatCodingStandard.Attributes.AttributesOrder">
