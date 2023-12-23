@@ -22,6 +22,7 @@ class Requests_Utility_CaseInsensitiveDictionary implements ArrayAccess, Iterato
 	 *
 	 * @return string|null
 	 */
+	#[\ReturnTypeWillChange]
 	public function offsetGet( $key ) {
 	}
 

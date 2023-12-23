@@ -26,6 +26,7 @@ class WP_Theme implements ArrayAccess {
 	 *
 	 * @return mixed
 	 */
+	#[\ReturnTypeWillChange]
 	public function offsetGet( $offset ) {
 	}
 

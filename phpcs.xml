@@ -3,8 +3,6 @@
 	<file>stubs</file>
 	<file>.phan</file>
 
-	<config name="installed_paths" value="vendor/wp-coding-standards/wpcs"/>
-
 	<arg name="basepath" value="./"/>
 	<arg name="colors"/>
 	<arg value="s"/>
@@ -19,6 +17,7 @@
 		<exclude name="Squiz.Commenting.FunctionComment.InvalidNoReturn"/>
 		<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
 		<exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+		<exclude name="Universal.NamingConventions.NoReservedKeywordParameterNames"/>
 		<exclude name="WordPress.NamingConventions"/>
 		<exclude name="WordPress.Security.EscapeOutput.OutputNotEscaped"/>
 	</rule>

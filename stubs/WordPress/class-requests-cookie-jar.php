@@ -22,6 +22,7 @@ class Requests_Cookie_Jar implements ArrayAccess, IteratorAggregate {
 	 *
 	 * @return string|null
 	 */
+	#[\ReturnTypeWillChange]
 	public function offsetGet( $key ) {
 	}
 
