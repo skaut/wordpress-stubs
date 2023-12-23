@@ -6,6 +6,7 @@
 /**
  */
 final class WP_Post {
+
 	/**
 	 * @var int
 	 */

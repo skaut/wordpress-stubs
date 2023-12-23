@@ -6,6 +6,7 @@
 /**
  */
 class WP_Roles {
+
 	/**
 	 * @param string $role
 	 *

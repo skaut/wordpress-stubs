@@ -7,6 +7,7 @@
  * @implements ArrayAccess<mixed, mixed>
  */
 class WP_Theme implements ArrayAccess {
+
 	/**
 	 * @var string
 	 */

@@ -6,4 +6,5 @@
 /**
  */
 class WP_Http_Cookie {
+
 }

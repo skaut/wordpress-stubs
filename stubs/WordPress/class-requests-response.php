@@ -6,6 +6,7 @@
 /**
  */
 class Requests_Response {
+
 	/**
 	 * @var string
 	 */

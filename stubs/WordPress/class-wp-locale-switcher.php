@@ -6,6 +6,7 @@
 /**
  */
 class WP_Locale_Switcher {
+
 	/**
 	 * @return void
 	 */

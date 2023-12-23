@@ -6,6 +6,7 @@
 namespace PHPUnit\Framework;
 
 class Assert {
+
 	/**
 	 * @param string $expected
 	 * @param mixed  $actual

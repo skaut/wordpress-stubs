@@ -6,6 +6,7 @@
 /**
  */
 class WP_Query {
+
 	/**
 	 * @var array<WP_Post>|array<int>
 	 */

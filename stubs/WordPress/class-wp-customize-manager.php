@@ -6,6 +6,7 @@
 /**
  */
 class WP_Customize_Manager {
+
 	/**
 	 * @var WP_Customize_Selective_Refresh
 	 */

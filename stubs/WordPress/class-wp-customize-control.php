@@ -6,6 +6,7 @@
 /**
  */
 class WP_Customize_Control {
+
 	/**
 	 * @var array<mixed>
 	 */

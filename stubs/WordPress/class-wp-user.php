@@ -6,6 +6,7 @@
 /**
  */
 class WP_User {
+
 	/**
 	 * @var stdClass
 	 */

@@ -6,4 +6,5 @@
 /**
  */
 class WP_HTTP_Response {
+
 }

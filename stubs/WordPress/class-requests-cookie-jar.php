@@ -8,6 +8,7 @@
  * @implements IteratorAggregate<string, string>
  */
 class Requests_Cookie_Jar implements ArrayAccess, IteratorAggregate {
+
 	/**
 	 * @param string $key
 	 *

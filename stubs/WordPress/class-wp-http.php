@@ -6,6 +6,7 @@
 /**
  */
 class WP_Http {
+
 	/**
 	 * @param string                                                                                                                                                                                                                                                                                                                                                                                                            $url
 	 * @param string|array{method?: string, timeout?: int, redirection?: int, httpversion?: string, user-agent?: string, reject_unsafe_urls?: bool, blocking?: bool, headers?: string|array<string, string>, cookies?: array<string, string>, body?: string|array<string, string>, compress?: bool, decompress?: bool, sslverify?: bool, sslcertificates?: string, stream?: bool, filename?: string, limit_response_size?: int} $args {

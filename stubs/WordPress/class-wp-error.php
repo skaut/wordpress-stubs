@@ -6,6 +6,7 @@
 /**
  */
 class WP_Error {
+
 	/**
 	 * @var array<string|int, string>
 	 */

@@ -8,6 +8,7 @@
  * @implements IteratorAggregate<string, string>
  */
 class Requests_Utility_CaseInsensitiveDictionary implements ArrayAccess, IteratorAggregate {
+
 	/**
 	 * @param string $key
 	 *

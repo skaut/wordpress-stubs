@@ -6,4 +6,5 @@
 namespace PHPUnit\Framework;
 
 class TestCase extends Assert {
+
 }

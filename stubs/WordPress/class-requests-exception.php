@@ -6,4 +6,5 @@
 /**
  */
 class Requests_Exception extends Exception {
+
 }

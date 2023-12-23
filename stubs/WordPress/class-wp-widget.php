@@ -6,6 +6,7 @@
 /**
  */
 class WP_Widget {
+
 	/**
 	 * @param string                                                                        $id_base
 	 * @param string                                                                        $name
