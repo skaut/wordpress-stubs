@@ -3,8 +3,6 @@
 	<file>stubs</file>
 	<file>.phan</file>
 
-	<config name="installed_paths" value="vendor/wp-coding-standards/wpcs"/>
-
 	<arg name="basepath" value="./"/>
 	<arg name="colors"/>
 	<arg value="s"/>
