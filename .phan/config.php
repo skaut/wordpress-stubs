@@ -6,7 +6,8 @@
  */
 
 return array(
-	'backward_compatibility_checks'             => false, // Covered by PHPCS.
+	// Covered by PHPCS.
+	'backward_compatibility_checks'             => false,
 	'directory_list'                            => array(
 		'stubs',
 		'.phan',
