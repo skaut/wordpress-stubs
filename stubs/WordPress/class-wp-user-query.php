@@ -46,6 +46,7 @@ class WP_User_Query {
 	 */
 	public function __construct( $query = null ) {
 	}
+
 	/**
 	 * @return array<int|string|stdClass|WP_User>
 	 */

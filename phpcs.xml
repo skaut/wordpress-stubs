@@ -68,7 +68,6 @@
 		-->
 
 		<!-- Temporarily disabled -->
-		<exclude name="SlevomatCodingStandard.Classes.MethodSpacing.IncorrectLinesCountBetweenMethods"/>
 		<exclude name="SlevomatCodingStandard.Classes.RequireAbstractOrFinal.ClassNeitherAbstractNorFinal"/>
 		<exclude name="SlevomatCodingStandard.Classes.SuperfluousErrorNaming.SuperfluousSuffix"/>
 		<exclude name="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming.SuperfluousSuffix"/>
