@@ -3,6 +3,8 @@
  * @package wordpress-stubs
  */
 
+declare(strict_types = 1);
+
 /**
  * @implements ArrayAccess<mixed, mixed>
  */

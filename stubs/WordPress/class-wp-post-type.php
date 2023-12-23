@@ -3,8 +3,8 @@
  * @package wordpress-stubs
  */
 
-/**
- */
+declare(strict_types = 1);
+
 final class WP_Post_Type {
 
 	/**

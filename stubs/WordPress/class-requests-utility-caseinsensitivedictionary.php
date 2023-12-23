@@ -3,6 +3,8 @@
  * @package wordpress-stubs
  */
 
+declare(strict_types = 1);
+
 /**
  * @implements ArrayAccess<string, string>
  * @implements IteratorAggregate<string, string>
