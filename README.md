@@ -1,6 +1,10 @@
 # High quality stubs for WordPress
 
-[![GitHub Actions](https://github.com/skaut/wordpress-stubs/workflows/CI/badge.svg)](https://github.com/skaut/wordpress-stubs/actions)
+[![Packagist Version](https://img.shields.io/packagist/v/skaut/wordpress-stubs?logo=packagist)](https://packagist.org/packages/skaut/wordpress-stubs)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/skaut/wordpress-stubs/CI.yml?branch=master&logo=github)](https://github.com/skaut/wordpress-stubs/actions)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/skaut/wordpress-stubs?logo=packagist)](https://packagist.org/packages/skaut/wordpress-stubs)
+[![Packagist License](https://img.shields.io/packagist/l/skaut/wordpress-stubs)](https://github.com/skaut/wordpress-stubs/blob/master/LICENSE)
+![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/skaut/wordpress-stubs/php?logo=php)
 
 This repo contains stubs for WordPress functions and classes to be used with [phan](https://github.com/phan/phan) or [phpstan](https://phpstan.org/). This allows for better type-checking of a codebase as the stubs all have type information.
 
