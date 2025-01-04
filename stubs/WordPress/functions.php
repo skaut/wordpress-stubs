@@ -317,10 +317,11 @@ function checked( $checked, $current = false, $echo = false ) {
 
 /**
  * @param string $capability
+ * @param mixed  $args
  *
  * @return bool
  */
-function current_user_can( $capability ) {
+function current_user_can( string $capability, ...$args ) {
 }
 
 /**
