@@ -1614,11 +1614,11 @@ function wp_rand( $min = 0, $max = 0 ) {
  * @param string|bool      $src
  * @param array<string>    $deps
  * @param string|bool|null $ver
- * @param bool             $in_footer
+ * @param array|bool       $args
  *
  * @return bool
  */
-function wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_footer = false ) {
+function wp_register_script( $handle, $src, $deps = array(), $ver = false, $args = array() ) {
 }
 
 /**
