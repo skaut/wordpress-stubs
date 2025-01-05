@@ -1614,7 +1614,7 @@ function wp_rand( $min = 0, $max = 0 ) {
  * @param string|bool                     $src
  * @param array<string>                   $deps
  * @param string|bool|null                $ver
- * @param array{string, string|bool}|bool $args
+ * @param array{0:string, 1:string|bool}|bool $args
  *
  * @return bool
  */
