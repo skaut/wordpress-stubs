@@ -1367,7 +1367,7 @@ function wp_destroy_current_session() {
  *     @type bool   $exit
  * }
  *
- * @return void
+ * @return never
  */
 function wp_die( $message = '', $title = '', $args = array() ) {
 }
