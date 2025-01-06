@@ -1610,11 +1610,14 @@ function wp_rand( $min = 0, $max = 0 ) {
 }
 
 /**
- * @param string                                $handle
- * @param string|bool                           $src
- * @param array<string>                         $deps
- * @param string|bool|null                      $ver
- * @param array{0: string, 1: string|bool}|bool $args
+ * @param string                                          $handle
+ * @param string|bool                                     $src
+ * @param array<string>                                   $deps
+ * @param string|bool|null                                $ver
+ * @param bool|array{strategy?: string, in_footer?: bool} $args {
+ *     @type string $strategy
+ *     @type bool $in_footer
+ * }
  *
  * @return bool
  */
