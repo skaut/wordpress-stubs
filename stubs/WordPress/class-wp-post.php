@@ -26,7 +26,7 @@ final class WP_Post {
 	 * @var string
 	 */
 	public $post_date_gmt = '0000-00-00 00:00:00';
-	
+
 	/**
 	 * @var string
 	 */
@@ -111,7 +111,7 @@ final class WP_Post {
 	 * @var string
 	 */
 	public $post_type = 'post';
-	
+
 	/**
 	 * @var string
 	 */
@@ -128,6 +128,17 @@ final class WP_Post {
 	public $filter;
 
 	/**
+	 * @param WP_Post|object $post Post object.
+	 */
+	public function __construct( $post ) {}
+
+	/**
+	 * @param string $filter Filter.
+	 * @return WP_Post|bool|object|array<string, string>
+	 */
+	public function filter( $filter ) {}
+
+	/**
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
 	 * @param int $post_id Post ID.
@@ -136,21 +147,8 @@ final class WP_Post {
 	public static function get_instance( $post_id ) {}
 
 	/**
-	 * @param WP_Post|object $post Post object.
-	 */
-	public function __construct( $post ) {}
-
-	/**
 	 * @param string $key Property to check if set.
 	 * @return bool
 	 */
 	public function __isset( $key ) {}
-
-	/**
-	 * @param string $filter Filter.
-	 * @return WP_Post|bool|object|WP_Post|array
-	 */
-	public function filter( $filter ) {}
-
 }
-
