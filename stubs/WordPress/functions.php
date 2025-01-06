@@ -1610,15 +1610,18 @@ function wp_rand( $min = 0, $max = 0 ) {
 }
 
 /**
- * @param string           $handle
- * @param string|bool      $src
- * @param array<string>    $deps
- * @param string|bool|null $ver
- * @param bool             $in_footer
+ * @param string                                          $handle
+ * @param string|bool                                     $src
+ * @param array<string>                                   $deps
+ * @param string|bool|null                                $ver
+ * @param bool|array{strategy?: string, in_footer?: bool} $args {
+ *     @type string $strategy
+ *     @type bool $in_footer
+ * }
  *
  * @return bool
  */
-function wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_footer = false ) {
+function wp_register_script( $handle, $src, $deps = array(), $ver = false, $args = array() ) {
 }
 
 /**
