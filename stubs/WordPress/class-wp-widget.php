@@ -43,4 +43,18 @@ class WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 	}
+
+	/**
+	 * @param string $field_name
+	 * @return string
+	 */
+	public function get_field_id( $field_name ) {
+	}
+
+	/**
+	 * @param string $field_name
+	 * @return string
+	 */
+	public function get_field_name( $field_name ) {
+	}
 }
