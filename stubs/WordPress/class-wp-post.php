@@ -13,7 +13,7 @@ final class WP_Post {
 	public $ID;
 
 	/**
-	 * @var string
+	 * @var int
 	 */
 	public $post_author = 0;
 
@@ -118,7 +118,7 @@ final class WP_Post {
 	public $post_mime_type = '';
 
 	/**
-	 * @var string
+	 * @var int
 	 */
 	public $comment_count = 0;
 
