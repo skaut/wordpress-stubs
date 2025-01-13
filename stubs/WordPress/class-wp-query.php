@@ -111,4 +111,10 @@ class WP_Query {
 	 */
 	public function have_posts() {
 	}
+
+	/**
+	 * @return void
+	 */
+	public function the_post() {
+	}
 }
