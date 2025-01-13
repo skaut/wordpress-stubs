@@ -1478,12 +1478,19 @@ function wp_get_theme( $stylesheet = '', $theme_root = '' ) {
  *     @type array<string, mixed>     $meta_input
  * }
  * @param string|false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $file
- * @param int                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        $parent
+ * @param int                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        $parent_post_id
  * @param bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $wp_error
+ * @param bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $fire_after_hooks
  *
  * @return int|WP_Error
  */
-function wp_insert_attachment( $args, $file = false, $parent = 0, $wp_error = false ) {
+function wp_insert_attachment(
+	$args,
+	$file = false,
+	$parent_post_id = 0,
+	$wp_error = false,
+	$fire_after_hooks = true
+) {
 }
 
 /**
