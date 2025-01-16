@@ -34,7 +34,7 @@ class WP_Admin_Bar {
 	 *     @type bool         $group  Optional. Whether or not the node is a group. Default false.
 	 *     @type array        $meta   Meta data including the following keys: 'html', 'class', 'rel', 'lang', 'dir',
 	 *                                  'onclick', 'target', 'title', 'tabindex', 'menu_title'. Default empty.
-	 * }|void
+	 * }
 	 */
 	public function get_node( $id ) {
 	}
