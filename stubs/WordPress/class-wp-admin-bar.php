@@ -23,8 +23,8 @@ class WP_Admin_Bar {
 	}
 
 	/**
-	 * @param string $args
-	 * @return array{id: string, title?: string|false, parent?: string|false, href?: string|false, group?: bool, meta?: array{html?: string, class?: string, rel?: string, onclick?: string, target?: string, title?: string|false, tabindex?: string}} $args {
+	 * @param string $id
+	 * @return array{id: string, title?: string|false, parent?: string|false, href?: string|false, group?: bool, meta?: array{html?: string, class?: string, rel?: string, onclick?: string, target?: string, title?: string|false, tabindex?: string}}|void {
 	 *     Arguments for adding a node.
 	 *
 	 *     @type string       $id     ID of the item.
@@ -34,8 +34,8 @@ class WP_Admin_Bar {
 	 *     @type bool         $group  Optional. Whether or not the node is a group. Default false.
 	 *     @type array        $meta   Meta data including the following keys: 'html', 'class', 'rel', 'lang', 'dir',
 	 *                                  'onclick', 'target', 'title', 'tabindex', 'menu_title'. Default empty.
-	 * }
+	 * }|void
 	 */
-	public function get_node( $args ) {
+	public function get_node( $id ) {
 	}
 }
