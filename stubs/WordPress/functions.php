@@ -1152,7 +1152,7 @@ function set_theme_mod( $name, $value ) {
  *
  * @return bool
  */
-function set_transient( $transient, $value, $expiration ) {
+function set_transient( $transient, $value, $expiration = 0 ) {
 }
 
 /**
