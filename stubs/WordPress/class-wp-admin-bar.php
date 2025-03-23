@@ -23,6 +23,21 @@ class WP_Admin_Bar {
 	}
 
 	/**
+	 * @param array{id: string, title?: string|false, parent?: string|false, href?: string|false, group?: bool, meta?: array{html?: string, class?: string, rel?: string, onclick?: string, target?: string, title?: string|false, tabindex?: string}} $node {
+	 *     @type string        $id
+	 *     @type string|false  $title
+	 *     @type string|false  $parent
+	 *     @type string|false  $href
+	 *     @type bool          $group
+	 *     @type array         $meta
+	 * }
+	 *
+	 * @return void
+	 */
+	public function add_node( $node ) {
+	}
+
+	/**
 	 * @param string $id
 	 * @return array{id: string, title?: string|false, parent?: string|false, href?: string|false, group?: bool, meta?: array{html?: string, class?: string, rel?: string, onclick?: string, target?: string, title?: string|false, tabindex?: string}}|void {
 	 *     Arguments for adding a node.
