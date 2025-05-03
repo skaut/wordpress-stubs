@@ -57,4 +57,20 @@ class WP_Widget {
 	 */
 	public function get_field_name( $field_name ) {
 	}
+
+	/**
+	 * @param array<string, string> $new_instance
+	 * @param array<string, string> $old_instance
+	 * @return array<string, string>
+	 */
+	public function update( $new_instance, $old_instance ) {
+		return $new_instance;
+	}
+
+	/**
+	 * @param array<string, string> $instance
+	 * @return string|void
+	 */
+	public function form( $instance ) {
+	}
 }
