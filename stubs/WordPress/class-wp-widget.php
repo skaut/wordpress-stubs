@@ -59,16 +59,16 @@ class WP_Widget {
 	}
 
 	/**
-	 * @param array<string, string> $new_instance
-	 * @param array<string, string> $old_instance
-	 * @return array<string, string>
+	 * @param array<string, mixed> $new_instance
+	 * @param array<string, mixed> $old_instance
+	 * @return array<string, mixed>
 	 */
 	public function update( $new_instance, $old_instance ) {
 		return $new_instance;
 	}
 
 	/**
-	 * @param array<string, string> $instance
+	 * @param array<string, mixed> $instance
 	 * @return string|void
 	 */
 	public function form( $instance ) {
