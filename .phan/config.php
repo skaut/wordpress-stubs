@@ -8,8 +8,6 @@
 declare(strict_types = 1);
 
 return array(
-	// Covered by PHPCS.
-	'backward_compatibility_checks'             => false,
 	'directory_list'                            => array(
 		'stubs',
 		'.phan',
