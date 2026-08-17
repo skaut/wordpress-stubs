@@ -1,5 +1,6 @@
+---
 name: "CI"
-on:
+"on":
   push:
     branches: "*"
   pull_request:
@@ -7,7 +8,7 @@ env:
   php-version: 8.4
   cache-version: 1
 jobs:
-   lint:
+  lint:
     name: "Lint"
     runs-on: ubuntu-latest
     env:
@@ -42,7 +43,9 @@ jobs:
         uses: actions/cache@v6
         with:
           path: "~/.composer/cache"
-          key: composer-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('composer.json') }}
+          key: >-
+            composer-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{
+            hashFiles('composer.json') }}
           restore-keys: |
             composer-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('composer.json') }}
             composer-dependencies-${{ runner.os }}-${{ env.cache-version }}-
