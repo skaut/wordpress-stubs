@@ -1766,7 +1766,7 @@ function wp_set_current_user( $id, $name = '' ) {
 }
 
 /**
- * @template T of string|array<string>
+ * @template T
  * @param T $value
  *
  * @return T
