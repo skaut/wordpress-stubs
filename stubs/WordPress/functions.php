@@ -1758,6 +1758,15 @@ function wp_set_current_user( $id, $name = '' ) {
 }
 
 /**
+ * @template T of string|array<string>
+ * @param T $value
+ *
+ * @return T
+ */
+function wp_slash( $value ) {
+}
+
+/**
  * @param string $string
  * @param bool   $remove_breaks
  *
