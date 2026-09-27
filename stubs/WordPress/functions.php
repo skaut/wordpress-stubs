@@ -872,6 +872,14 @@ function load_theme_textdomain( $domain, $path = false ) {
 }
 
 /**
+ * @param string $data
+ *
+ * @return mixed
+ */
+function maybe_unserialize( $data ) {
+}
+
+/**
  * @param string $filename
  *
  * @return string
