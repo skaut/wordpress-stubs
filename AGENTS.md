@@ -32,7 +32,7 @@ vendor/bin/phpcs stubs/WordPress/functions.php   # lint a single file
 - Each file starts with a `@package wordpress-stubs` docblock and `declare(strict_types = 1);`.
 - Functions/methods have empty bodies and **no native type hints** (the package supports PHP `^7.0`); all types go in docblocks (`@param`, `@return`, `@var`). PHPStan-specific annotations (`@phpstan-return` conditional types, `@template`, array shapes) are used where they add precision.
 - Only declare what is actually stubbed — classes typically contain just the relevant methods/properties, not the full WP API.
-- Functions in `functions.php` are (roughly) in alphabetical order; insert new ones in their alphabetical place. Constants are at the top of the file.
+- Functions in `functions.php` are in alphabetical order; insert new ones in their alphabetical place. Constants are at the top of the file.
 - Constants use placeholder values of the right type. Boolean constants use `__LINE__ === 0` so static analysers don't treat them as a fixed `true`/`false` (the matching "strict comparison will always evaluate to false" error is ignored in `phpstan.neon`).
 - Missing-return errors are suppressed in both phan and PHPStan configs because the bodies are empty by design.
 - Follow the existing WordPress formatting (tabs, spaces inside parentheses, aligned `@param` columns); phpcs enforces it.
