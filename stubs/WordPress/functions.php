@@ -612,6 +612,14 @@ function get_post_type( $post = null ) {
 }
 
 /**
+ * @param string $post_type
+ *
+ * @return WP_Post_Type|null
+ */
+function get_post_type_object( $post_type ) {
+}
+
+/**
  * @param array<int|string, mixed>|string $args
  * @param string                          $output
  * @param string                          $operator
@@ -619,14 +627,6 @@ function get_post_type( $post = null ) {
  * @return array<string>|array<WP_Post_Type>
  */
 function get_post_types( $args = array(), $output = '', $operator = '' ) {
-}
-
-/**
- * @param string $post_type
- *
- * @return WP_Post_Type|null
- */
-function get_post_type_object( $post_type ) {
 }
 
 /**
@@ -657,6 +657,16 @@ function get_sidebar( $name = null, $args = array() ) {
 }
 
 /**
+ * @param int    $blog_id
+ * @param string $path
+ * @param string $scheme
+ *
+ * @return string
+ */
+function get_site_url( $blog_id = null, $path = '', $scheme = '' ) {
+}
+
+/**
  * @return string
  */
 function get_stylesheet_directory() {
@@ -666,16 +676,6 @@ function get_stylesheet_directory() {
  * @return string
  */
 function get_stylesheet_directory_uri() {
-}
-
-/**
- * @param int    $blog_id
- * @param string $path
- * @param string $scheme
- *
- * @return string
- */
-function get_site_url( $blog_id = null, $path = '', $scheme = '' ) {
 }
 
 /**
