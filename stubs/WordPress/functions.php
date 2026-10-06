@@ -11,6 +11,16 @@ declare(strict_types = 1);
 const ABSPATH = '';
 
 /**
+ * @var 'ARRAY_A'
+ */
+const ARRAY_A = 'ARRAY_A';
+
+/**
+ * @var 'ARRAY_N'
+ */
+const ARRAY_N = 'ARRAY_N';
+
+/**
  * @var int
  */
 const DAY_IN_SECONDS = 0;
@@ -19,6 +29,11 @@ const DAY_IN_SECONDS = 0;
  * @var int
  */
 const MINUTE_IN_SECONDS = 0;
+
+/**
+ * @var 'OBJECT'
+ */
+const OBJECT = 'OBJECT';
 
 /**
  * @var bool
