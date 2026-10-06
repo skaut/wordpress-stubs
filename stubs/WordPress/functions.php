@@ -1321,6 +1321,15 @@ function wp_basename( $path, $suffix = '' ) {
 }
 
 /**
+ * @param int|string $key
+ * @param string     $group
+ *
+ * @return bool
+ */
+function wp_cache_delete( $key, $group = '' ) {
+}
+
+/**
  * @param string             $filename
  * @param array<string>|null $mimes
  *
