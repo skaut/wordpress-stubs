@@ -1752,6 +1752,15 @@ function wp_safe_redirect( $location, $status = 0, $x_redirect_by = '' ) {
 }
 
 /**
+ * @param string                                         $handle
+ * @param 'enqueued'|'registered'|'queue'|'to_do'|'done' $status
+ *
+ * @return bool
+ */
+function wp_script_is( $handle, $status = 'enqueued' ) {
+}
+
+/**
  * @param mixed $response
  * @param int   $status_code
  *
